@@ -10,7 +10,7 @@
     "build/"
   ],
   "dependencies": {
-    "@apparatus/gig-data-demo": "^0.0.0",
+    "@apparatus/gig-data-demo": "^0.1.0",
     "@apparatus/gig-types-data": "^0.0.0",
     "date-fns": "2.12.0"
   },
