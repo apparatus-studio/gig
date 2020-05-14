@@ -1,0 +1,28 @@
+{
+  "name": "@apparatus/gig-data-transform-store",
+  "version": "0.0.0",
+  "main": "src/index.ts",
+  "browser": "src/index.ts",
+  "react-native": "src/index.ts",
+  "repository": "apparatus-studio/gig",
+  "license": "MIT",
+  "files": [
+    "build/"
+  ],
+  "dependencies": {
+    "@apparatus/gig-data-demo": "^0.0.0",
+    "@apparatus/gig-data-transform-gig": "^0.0.0",
+    "@apparatus/gig-data-transform-numbers": "^0.0.0",
+    "@apparatus/gig-data-transform-time-report": "^0.0.0",
+    "@apparatus/gig-types-store": "^0.0.0",
+    "elegir": "^1.0.0",
+    "tsfn": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/tape": "^4.2.34",
+    "@apparatus/gig-data-transform-numbers": "^0.0.0",
+    "@apparatus/gig-data-transform-time-report": "^0.0.0",
+    "tape": "^5.0.0-next.5"
+  },
+  "sideEffects": false
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@apparatus/gig-data-demo",
+  "version": "0.0.0",
+  "main": "src/index.ts",
+  "browser": "src/index.ts",
+  "react-native": "src/index.ts",
+  "repository": "apparatus-studio/gig",
+  "license": "MIT",
+  "files": [
+    "build/"
+  ],
+  "dependencies": {
+    "@apparatus/data-currencies": "^0.1.0",
+    "@apparatus/gig-types-data": "*",
+    "@apparatus/gig-types-store": "*",
+    "date-fns": "2.12.0"
+  },
+  "sideEffects": false
+}
