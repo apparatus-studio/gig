@@ -1,0 +1,19 @@
+{
+  "name": "@apparatus/gig-containers-gig-new",
+  "version": "0.0.0",
+  "main": "src/index.ts",
+  "browser": "src/index.ts",
+  "react-native": "src/index.ts",
+  "repository": "apparatus-studio/gig",
+  "license": "MIT",
+  "files": [
+    "build/"
+  ],
+  "dependencies": {
+    "@apparatus/gig-data-store": "^0.1.1",
+    "@apparatus/gig-organisms-gig-new": "^0.1.0",
+    "@babel/runtime": "^7.1.2",
+    "refun": "^2.0.0"
+  },
+  "sideEffects": false
+}
