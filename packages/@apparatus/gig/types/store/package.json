@@ -1,0 +1,18 @@
+{
+  "name": "@apparatus/gig-types-store",
+  "version": "0.0.0",
+  "main": "src/index.ts",
+  "browser": "src/index.ts",
+  "react-native": "src/index.ts",
+  "repository": "apparatus-studio/gig",
+  "license": "MIT",
+  "files": [
+    "build/"
+  ],
+  "dependencies": {
+    "@apparatus/data-currencies": "^0.1.0",
+    "@apparatus/gig-types-data": "^0.0.0",
+    "tsfn": "^1.1.1"
+  },
+  "sideEffects": false
+}
