@@ -1,0 +1,24 @@
+{
+  "name": "@apparatus/gig-containers-main",
+  "version": "0.0.0",
+  "main": "src/index.tsx",
+  "browser": "src/index.tsx",
+  "react-native": "src/index.tsx",
+  "repository": "apparatus-studio/gig",
+  "license": "MIT",
+  "files": [
+    "build/"
+  ],
+  "dependencies": {
+    "@apparatus/effects-update-root-dimensions": "^0.1.0",
+    "@apparatus/gig-data-store": "^0.1.1",
+    "@apparatus/gig-organisms-section-selector": "^0.0.0",
+    "@babel/runtime": "^7.1.2",
+    "refun": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.6",
+    "react": "16.11.0"
+  },
+  "sideEffects": false
+}
