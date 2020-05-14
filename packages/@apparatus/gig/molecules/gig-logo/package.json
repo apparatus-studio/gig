@@ -1,0 +1,22 @@
+{
+  "name": "@apparatus/gig-molecules-gig-logo",
+  "version": "0.0.0",
+  "main": "src/index.tsx",
+  "browser": "src/index.tsx",
+  "react-native": "src/index.tsx",
+  "repository": "apparatus-studio/gig",
+  "license": "MIT",
+  "files": [
+    "build/"
+  ],
+  "dependencies": {
+    "@babel/runtime": "^7.1.2",
+    "@primitives/svg": "^2.0.1",
+    "refun": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.0",
+    "react": "16.11.0"
+  },
+  "sideEffects": false
+}
