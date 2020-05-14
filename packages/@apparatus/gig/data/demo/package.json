@@ -11,8 +11,8 @@
   ],
   "dependencies": {
     "@apparatus/data-currencies": "^0.1.0",
-    "@apparatus/gig-types-data": "*",
-    "@apparatus/gig-types-store": "*",
+    "@apparatus/gig-types-data": "^0.1.0",
+    "@apparatus/gig-types-store": "^0.1.0",
     "date-fns": "2.12.0"
   },
   "sideEffects": false
