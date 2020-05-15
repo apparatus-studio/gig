@@ -9,7 +9,7 @@
     "packages/@apparatus/gig/types/*"
   ],
   "devDependencies": {
-    "@apparatus/blocks-index": "^0.9.0",
+    "@apparatus/blocks-index": "^0.10.0",
     "@apparatus/gig-containers-main": "*",
     "@bubble-dev/eslint-config": "^1.1.0",
     "@bubble-dev/start-preset": "^4.0.0",

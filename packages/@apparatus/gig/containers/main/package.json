@@ -10,7 +10,7 @@
     "build/"
   ],
   "dependencies": {
-    "@apparatus/effects-update-root-dimensions": "^0.1.0",
+    "@apparatus/effects-update-root-dimensions": "^0.1.1",
     "@apparatus/gig-data-store": "^0.1.1",
     "@apparatus/gig-organisms-section-selector": "^0.1.0",
     "@babel/runtime": "^7.1.2",
