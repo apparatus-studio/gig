@@ -16,7 +16,7 @@
     "refun": "^2.0.0"
   },
   "devDependencies": {
-    "@apparatus/gig-data-demo": "^0.1.1",
+    "@apparatus/gig-data-demo": "^0.1.2",
     "@types/react": "^16.9.0",
     "autoprops": "^1.0.0",
     "react": "16.11.0"

@@ -11,13 +11,13 @@
   ],
   "dependencies": {
     "@apparatus/blocks-index": "^0.12.0",
-    "@apparatus/gig-molecules-time-report": "^0.1.1",
-    "@apparatus/gig-types-data": "^0.1.0",
+    "@apparatus/gig-molecules-time-report": "^0.1.2",
+    "@apparatus/gig-types-data": "^0.1.1",
     "@babel/runtime": "^7.1.2",
     "@primitives/view": "*"
   },
   "devDependencies": {
-    "@apparatus/gig-data-demo": "^0.1.0",
+    "@apparatus/gig-data-demo": "^0.1.2",
     "@apparatus/gig-data-transform-time-report": "^0.1.0",
     "@types/react": "^16.8.6",
     "autoprops": "^1.0.2",

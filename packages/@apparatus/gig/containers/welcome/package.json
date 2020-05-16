@@ -10,8 +10,8 @@
     "build/"
   ],
   "dependencies": {
-    "@apparatus/gig-data-store": "^0.1.1",
-    "@apparatus/gig-organisms-welcome": "^0.1.1",
+    "@apparatus/gig-data-store": "^0.1.2",
+    "@apparatus/gig-organisms-welcome": "^0.1.2",
     "@babel/runtime": "^7.1.2",
     "refun": "^2.0.0"
   },
