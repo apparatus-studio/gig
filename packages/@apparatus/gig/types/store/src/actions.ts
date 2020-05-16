@@ -1,5 +1,10 @@
 import { TCurrency } from '@apparatus/data-currencies'
-import { TGig, TPeriod, TRootDimensions } from '@apparatus/gig-types-data'
+import {
+  TGig,
+  TKeyboard,
+  TPeriod,
+  TRootDimensions,
+} from '@apparatus/gig-types-data'
 import { TRequireKeys } from 'tsfn'
 import { TState, TStorableData } from './state'
 
@@ -27,6 +32,11 @@ export type TActionGigUpdate = {
     name: string,
     currentRate: number,
   },
+}
+
+export type TActionKeyboardStatusUpdate = {
+  type: 'KEYBOARD_STATUS_UPDATE',
+  payload: TKeyboard,
 }
 
 export type TActionNavigate = {
@@ -91,6 +101,7 @@ export type TAction =
   | TActionGigNew
   | TActionGigRemove
   | TActionGigUpdate
+  | TActionKeyboardStatusUpdate
   | TActionNavigate
   | TActionPeriodUpdate
   | TActionRootDimensionsUpdate

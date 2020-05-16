@@ -15,13 +15,19 @@ export type TMessage = {
 }
 
 export type TPeriod =
-  | 'today'
-  | 'this-month'
-  | 'total'
+  | 'day'
+  | 'week'
+  | 'month'
 
 export type TRootDimensions = {
   rootWidth: number,
   rootHeight: number,
+}
+
+export type TKeyboard = {
+  isKeyboardVisible: boolean,
+  keyboardHeight: number,
+  keyboardWidth: number,
 }
 
 export type TTimeReport = {

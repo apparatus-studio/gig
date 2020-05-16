@@ -59,10 +59,6 @@ export const OrganismTimeReport: FC<TOrganismTimeReport> = ({
         {nav}
       </ContextHeader>
 
-      <Horizontal hAlign="center">
-        <AtomSpacer multiplier={6}/>
-      </Horizontal>
-
       <Text level={TEXT_LEVEL_PRIMARY_TITLE}>
         {title}
       </Text>

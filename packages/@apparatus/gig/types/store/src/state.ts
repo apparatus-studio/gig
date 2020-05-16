@@ -1,5 +1,10 @@
 import { TCurrency } from '@apparatus/data-currencies'
-import { TGig, TPeriod, TRootDimensions } from '@apparatus/gig-types-data'
+import {
+  TGig,
+  TKeyboard,
+  TPeriod,
+  TRootDimensions,
+} from '@apparatus/gig-types-data'
 
 export type TEnvironment = {
   today: string,
@@ -21,6 +26,7 @@ export type TState = {
 } & TEnvironment
   & TRootDimensions
   & TStorableData
+  & TKeyboard
 
 export type TSection =
   | 'ABOUT_GIG'

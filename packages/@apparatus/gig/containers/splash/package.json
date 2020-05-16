@@ -13,6 +13,7 @@
     "@apparatus/gig-data-store": "^0.1.1",
     "@apparatus/gig-organisms-splash": "^0.1.1",
     "@babel/runtime": "^7.1.2",
+    "react": "16.11.0",
     "refun": "^2.0.0"
   },
   "sideEffects": false

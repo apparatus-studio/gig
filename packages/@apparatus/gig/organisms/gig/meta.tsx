@@ -14,7 +14,7 @@ export const config: TComponentConfig<TOrganismGig> = {
     onTrackTime: [() => {}],
     onUpdatePeriod: [() => {}],
     onUpdateTimeReport: [() => {}],
-    period: ['today', 'this-month', 'total'],
+    period: ['day', 'week', 'month'],
     selectedGig: ['ACME'],
     setShowDrawer: [() => {}],
     showDrawer: [true],

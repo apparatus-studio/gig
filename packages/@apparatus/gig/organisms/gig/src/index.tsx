@@ -85,26 +85,26 @@ export const OrganismGig: FC<TOrganismGig> = ({
         <AtomSpacer multiplier={6}/>
       </Horizontal>
 
-      <Vertical hAlign="start">
+      <Horizontal hAlign="start">
         <TabSelector
           onChange={onUpdatePeriod}
           options={[
             {
-              label: 'Today',
+              label: 'Day',
               value: 'today',
             },
             {
-              label: 'This month',
-              value: 'this-month',
+              label: 'Week',
+              value: 'week',
             },
             {
-              label: 'Total',
-              value: 'total',
+              label: 'Month',
+              value: 'month',
             },
           ]}
           value={period}
         />
-      </Vertical>
+      </Horizontal>
 
       <Horizontal hAlign="center">
         <AtomSpacer multiplier={6}/>

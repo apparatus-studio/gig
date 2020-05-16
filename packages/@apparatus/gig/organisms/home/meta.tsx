@@ -13,9 +13,9 @@ export const config: TComponentConfig<TOrganismHome> = {
     onSettings: [() => {}],
     onUpdatePeriod: [() => {}],
     period: [
-      'this-month',
-      'today',
-      'total',
+      'day',
+      'week',
+      'month',
     ],
     today: ['2020-04-14'],
   },

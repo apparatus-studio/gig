@@ -1,11 +1,11 @@
 import test from 'tape'
 import { getUnixTime, addMinutes, addHours, parseISO } from 'date-fns'
 import { state } from '@apparatus/gig-data-demo'
-import { reducer, initialState } from '../src'
+import { reducer } from '../src'
 
 test('reducer: add gig', (t) => {
   const result = reducer(
-    initialState,
+    state,
     {
       type: 'GIG_NEW',
       payload: {
@@ -46,7 +46,7 @@ test('reducer: add time report', (t) => {
         section: 'HOME',
         today: '2020-04-14',
         selectedGig: 'ACME',
-        period: 'today',
+        period: 'day',
       },
       {
         type: 'GIG_NEW',
@@ -91,27 +91,27 @@ test('reducer: add time report', (t) => {
 
 test('reducer: update time report', (t) => {
   const result = reducer(
-    initialState,
+    state,
     {
       type: 'TIME_REPORT_UPDATE',
       payload: {
-        currentStartTime: initialState.gigs[0].timeReports[1].startTime,
-        startTime: initialState.gigs[0].timeReports[1].startTime - 60 * 60,
-        length: initialState.gigs[0].timeReports[1].length + 30 * 60,
+        currentStartTime: state.gigs[0].timeReports[1].startTime,
+        startTime: state.gigs[0].timeReports[1].startTime - 60 * 60,
+        length: state.gigs[0].timeReports[1].length + 30 * 60,
       },
     }
   )
 
   t.deepEquals(
     result.gigs[0].timeReports[1].startTime,
-    initialState.gigs[0].timeReports[1].startTime - 60 * 60,
-    `should be ${initialState.gigs[0].timeReports[1].startTime - 60 * 60}`
+    state.gigs[0].timeReports[1].startTime - 60 * 60,
+    `should be ${state.gigs[0].timeReports[1].startTime - 60 * 60}`
   )
 
   t.deepEquals(
     result.gigs[0].timeReports[1].length,
-    initialState.gigs[0].timeReports[1].length + 30 * 60,
-    `should be ${initialState.gigs[0].timeReports[1].length + 30 * 60}`
+    state.gigs[0].timeReports[1].length + 30 * 60,
+    `should be ${state.gigs[0].timeReports[1].length + 30 * 60}`
   )
 
   t.deepEquals(
@@ -125,11 +125,11 @@ test('reducer: update time report', (t) => {
 
 test('reducer: delete time report', (t) => {
   const result = reducer(
-    initialState,
+    state,
     {
       type: 'TIME_REPORT_REMOVE',
       payload: {
-        startTime: initialState.gigs[0].timeReports[1].startTime,
+        startTime: state.gigs[0].timeReports[1].startTime,
       },
     }
   )
@@ -142,8 +142,8 @@ test('reducer: delete time report', (t) => {
 
   t.deepEquals(
     result.gigs[0].timeReports[1].startTime,
-    initialState.gigs[0].timeReports[2].startTime,
-    `should be ${initialState.gigs[0].timeReports[2].startTime}`
+    state.gigs[0].timeReports[2].startTime,
+    `should be ${state.gigs[0].timeReports[2].startTime}`
   )
 
   t.deepEquals(
@@ -158,7 +158,7 @@ test('reducer: delete time report', (t) => {
 test('reducer: navigate', (t) => {
   t.deepEquals(
     reducer(
-      initialState,
+      state,
       {
         type: 'NAVIGATE',
         payload: {
@@ -177,7 +177,7 @@ test('reducer: navigate', (t) => {
 test('reducer: update gig', (t) => {
   t.deepEquals(
     reducer(
-      initialState,
+      state,
       {
         type: 'GIG_UPDATE',
         payload: {
@@ -192,7 +192,7 @@ test('reducer: update gig', (t) => {
 
   t.deepEquals(
     reducer(
-      initialState,
+      state,
       {
         type: 'GIG_UPDATE',
         payload: {
@@ -211,7 +211,7 @@ test('reducer: update gig', (t) => {
 test('reducer: remove gig', (t) => {
   const result = reducer(
     {
-      ...initialState,
+      ...state,
       section: 'GIG_REMOVE',
     },
     {
@@ -256,19 +256,19 @@ test('reducer: remove gig', (t) => {
 
 test('reducer: period update', (t) => {
   const result = reducer(
-    initialState,
+    state,
     {
       type: 'PERIOD_UPDATE',
       payload: {
-        period: 'total',
+        period: 'month',
       },
     }
   )
 
   t.deepEquals(
     result.period,
-    'total',
-    `should be total`
+    'month',
+    `should be month`
   )
 
   t.end()
@@ -276,7 +276,7 @@ test('reducer: period update', (t) => {
 
 test('reducer: root dimensions update', (t) => {
   const result = reducer(
-    initialState,
+    state,
     {
       type: 'ROOT_DIMENSIONS_UPDATE',
       payload: {
@@ -301,9 +301,43 @@ test('reducer: root dimensions update', (t) => {
   t.end()
 })
 
+test('reducer: keyboard status update', (t) => {
+  const result = reducer(
+    state,
+    {
+      type: 'KEYBOARD_STATUS_UPDATE',
+      payload: {
+        isKeyboardVisible: true,
+        keyboardHeight: 20,
+        keyboardWidth: 40,
+      },
+    }
+  )
+
+  t.deepEquals(
+    result.isKeyboardVisible,
+    true,
+    'should be true'
+  )
+
+  t.deepEquals(
+    result.keyboardHeight,
+    20,
+    'should be 20'
+  )
+
+  t.deepEquals(
+    result.keyboardWidth,
+    40,
+    'should be 40'
+  )
+
+  t.end()
+})
+
 test('reducer: tracking start', (t) => {
   const result = reducer(
-    initialState,
+    state,
     {
       type: 'TRACKING_START',
       payload: {
@@ -330,7 +364,7 @@ test('reducer: tracking start', (t) => {
 test('reducer: tracking stop', (t) => {
   const result = reducer(
     {
-      ...initialState,
+      ...state,
       startTime: 123442134,
     },
     {
@@ -370,7 +404,7 @@ test('reducer: tracking stop', (t) => {
 
 test('reducer: currency update', (t) => {
   const result = reducer(
-    initialState,
+    state,
     {
       type: 'CURRENCY_UPDATE',
       payload: {
@@ -412,11 +446,11 @@ test('reducer: sync state', (t) => {
   ]
 
   const result = reducer(
-    initialState,
+    state,
     {
       type: 'SYNC_STATE',
       payload: {
-        currentCurrency: initialState.currencies[7],
+        currentCurrency: state.currencies[7],
         gigs,
         selectedGig: 'Ericsson',
       },
@@ -425,8 +459,8 @@ test('reducer: sync state', (t) => {
 
   t.deepEquals(
     result.currentCurrency,
-    initialState.currencies[7],
-    `should be ${JSON.stringify(initialState.currencies[7])}`
+    state.currencies[7],
+    `should be ${JSON.stringify(state.currencies[7])}`
   )
 
   t.deepEquals(

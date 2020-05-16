@@ -8,13 +8,16 @@ export const initialState: TState = {
   currencies,
   currentCurrency: currencies[91],
   gigs: [],
+  isKeyboardVisible: false,
+  keyboardHeight: 0,
+  keyboardWidth: 0,
   patreonLink: 'https://patreon.com/Apparatus',
-  section: 'SPLASH',
-  selectedGig: '',
-  period: 'today',
-  today: '2020-04-14',
+  period: 'day',
   rootWidth: 375,
   rootHeight: 500,
+  section: 'SPLASH',
+  selectedGig: '',
+  today: '2020-04-14',
 }
 
 export const reducer: Reducer<TState, TAction> = (state = initialState, action) => {
@@ -50,6 +53,13 @@ export const reducer: Reducer<TState, TAction> = (state = initialState, action) 
         selectedGig: gigs.length > 0
           ? gigs[gigs.length - 1].name
           : '',
+      }
+    }
+
+    case 'KEYBOARD_STATUS_UPDATE': {
+      return {
+        ...state,
+        ...action.payload,
       }
     }
 

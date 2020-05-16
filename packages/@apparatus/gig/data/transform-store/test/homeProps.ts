@@ -14,10 +14,10 @@ test('homeProps: month', (t) => {
   t.end()
 })
 
-test('homeProps: total', (t) => {
+test('homeProps: month', (t) => {
   const selectedState = homeProps({
     ...state,
-    period: 'total',
+    period: 'month',
   })
 
   t.deepEquals(
@@ -35,10 +35,10 @@ test('homeProps: total', (t) => {
   t.end()
 })
 
-test('homeProps: this-month', (t) => {
+test('homeProps: week', (t) => {
   const selectedState = homeProps({
     ...state,
-    period: 'this-month',
+    period: 'week',
   })
 
   t.deepEquals(
@@ -59,7 +59,7 @@ test('homeProps: this-month', (t) => {
 test('homeProps: today', (t) => {
   const selectedState = homeProps({
     ...state,
-    period: 'today',
+    period: 'day',
   })
 
   t.deepEquals(

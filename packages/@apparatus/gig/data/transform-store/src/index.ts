@@ -53,17 +53,17 @@ export const todayEarnings = ({ gigs, today }: TState): number => (
 
 export const homeProps = (state: TExtend<TState, {}>) => ({
   hours: elegir(
-    state.period === 'total',
+    state.period === 'month',
     totalHours(state),
-    state.period === 'this-month',
+    state.period === 'week',
     thisMonthHours(state),
     true,
     todayHours(state)
   ),
   earnings: elegir(
-    state.period === 'total',
+    state.period === 'month',
     totalEarnings(state),
-    state.period === 'this-month',
+    state.period === 'week',
     thisMonthEarnings(state),
     true,
     todayEarnings(state)

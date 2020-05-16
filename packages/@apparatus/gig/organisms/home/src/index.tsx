@@ -20,6 +20,7 @@ import {
   FullCover,
   MainScrollable,
   ScrollHorizontal,
+  Horizontal,
 } from '@apparatus/blocks-index'
 import { hoursInHooman, moneyInHooman } from '@apparatus/gig-data-transform-numbers'
 import * as transformGig from '@apparatus/gig-data-transform-gig'
@@ -74,27 +75,29 @@ export const OrganismHome: FC<TOrganismHome> = ({
       </Text>
       <AtomSpacer multiplier={4}/>
       <Text level={TEXT_LEVEL_BODY}>
-        You’ve worked a total of <AtomText level={TEXT_LEVEL_BODY} isBold>{hoursInHooman(hours)}</AtomText> {elegir(period === 'today', 'today', period === 'this-month', 'this month', true, 'in total')}.
+        You’ve worked a total of <AtomText level={TEXT_LEVEL_BODY} isBold>{hoursInHooman(hours)}</AtomText> {elegir(period === 'day', 'day', period === 'week', 'this week', true, 'this month')}.
       </Text>
       <AtomSpacer multiplier={4}/>
-      <TabSelector
-        onChange={onUpdatePeriod}
-        options={[
-          {
-            label: 'Today',
-            value: 'today',
-          },
-          {
-            label: 'This month',
-            value: 'this-month',
-          },
-          {
-            label: 'Total',
-            value: 'total',
-          },
-        ]}
-        value={period}
-      />
+      <Horizontal>
+        <TabSelector
+          onChange={onUpdatePeriod}
+          options={[
+            {
+              label: 'Day',
+              value: 'day',
+            },
+            {
+              label: 'Week',
+              value: 'week',
+            },
+            {
+              label: 'Month',
+              value: 'month',
+            },
+          ]}
+          value={period}
+        />
+      </Horizontal>
       <AtomSpacer multiplier={4}/>
       <Text level={TEXT_LEVEL_SECONDARY_TITLE}>
         Your Gigs
@@ -108,18 +111,18 @@ export const OrganismHome: FC<TOrganismHome> = ({
               title={gig.name}
               description={`You’ve worked ${hoursInHooman(
                 elegir(
-                  period === 'total',
-                  transformGig.totalHours(gig),
-                  period === 'this-month',
+                  period === 'month',
+                  transformGig.thisMonthHours(gig, month),
+                  period === 'week',
                   transformGig.thisMonthHours(gig, month),
                   true,
                   transformGig.todayHours(gig, today)
                 )
               )} and generated ${moneyInHooman(
                 elegir(
-                  period === 'total',
-                  transformGig.totalEarnings(gig),
-                  period === 'this-month',
+                  period === 'month',
+                  transformGig.thisMonthEarnings(gig, month),
+                  period === 'week',
                   transformGig.thisMonthEarnings(gig, month),
                   true,
                   transformGig.todayEarnings(gig, today)

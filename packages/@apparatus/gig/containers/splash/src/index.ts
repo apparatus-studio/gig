@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { component, mapHandlers, mapSafeTimeout, mapWithProps } from 'refun'
 import { mapStoreState, mapStoreDispatch } from '@apparatus/gig-data-store'
 import { OrganismSplash } from '@apparatus/gig-organisms-splash'
@@ -17,7 +18,9 @@ export const componentSplash = component(
   }),
   mapSafeTimeout('setLocalTimeout'),
   mapWithProps(({ setLocalTimeout, onLoaded }) => {
-    setLocalTimeout(onLoaded, 1000)
+    useEffect(() => {
+      setLocalTimeout(onLoaded, 3000)
+    }, [])
 
     return {}
   })
