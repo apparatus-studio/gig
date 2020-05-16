@@ -1,3 +1,7 @@
+## v0.1.3
+
+* 🐞 update root size measuring, avoid android bug
+
 ## v0.1.2
 
 * 🐞 update period and introduce keyboard status data
