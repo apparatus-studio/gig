@@ -10,23 +10,7 @@
     "build/"
   ],
   "dependencies": {
-    "@apparatus/blocks-index": "^0.10.0",
-    "@apparatus/gig-containers-about-gig": "^0.1.0",
-    "@apparatus/gig-containers-currency-select": "^0.1.0",
-    "@apparatus/gig-containers-gig": "^0.1.0",
-    "@apparatus/gig-containers-gig-congratulations": "^0.1.0",
-    "@apparatus/gig-containers-gig-new": "^0.1.0",
-    "@apparatus/gig-containers-gig-remove": "^0.1.0",
-    "@apparatus/gig-containers-gig-update": "^0.1.0",
-    "@apparatus/gig-containers-home": "^0.1.0",
-    "@apparatus/gig-containers-onboarding": "^0.1.0",
-    "@apparatus/gig-containers-settings": "^0.1.0",
-    "@apparatus/gig-containers-splash": "^0.1.0",
-    "@apparatus/gig-containers-time-report": "^0.1.0",
-    "@apparatus/gig-containers-track-time": "^0.1.0",
-    "@apparatus/gig-containers-welcome": "^0.1.0",
-    "@apparatus/gig-types-data": "^0.1.0",
-    "@apparatus/gig-types-store": "^0.1.0",
+    "@apparatus/blocks-index": "^0.12.0",
     "@babel/runtime": "^7.1.2"
   },
   "devDependencies": {
