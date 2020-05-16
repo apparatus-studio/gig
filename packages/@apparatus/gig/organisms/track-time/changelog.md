@@ -1,3 +1,9 @@
+## v0.1.2
+
+* 🐞 update blocks version
+
+* ♻️ update dependencies `@apparatus/gig-molecules-time-tracked`
+
 ## v0.1.1
 
 * 🐞 update root size measurement and block index
