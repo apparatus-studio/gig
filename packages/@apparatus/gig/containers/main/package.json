@@ -11,7 +11,7 @@
   ],
   "dependencies": {
     "@apparatus/effects-update-keyboard-status": "^0.1.1",
-    "@apparatus/effects-update-root-dimensions": "^0.1.1",
+    "@apparatus/effects-update-root-dimensions": "^0.1.2",
     "@apparatus/gig-containers-about-gig": "^0.1.0",
     "@apparatus/gig-containers-currency-select": "^0.1.0",
     "@apparatus/gig-containers-gig": "^0.1.0",

@@ -740,10 +740,10 @@
     "@types/react-native" "^0.62.9"
     react-native "^0.62.2"
 
-"@apparatus/effects-update-root-dimensions@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@apparatus/effects-update-root-dimensions/-/effects-update-root-dimensions-0.1.1.tgz#5c3201c467ca6b195d32ca8f9309ec7572c2a693"
-  integrity sha512-u6c1yo1+XtsXnx1Ucgwj24lBg7/RF01cmt1PRxVxok/M9aDNNjoRba/+MJDF07i2kgJUkCnj9V9yh2PP885hHw==
+"@apparatus/effects-update-root-dimensions@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@apparatus/effects-update-root-dimensions/-/effects-update-root-dimensions-0.1.2.tgz#a7be6cbb241182b5cb98ab97bc93b674e1dae2a5"
+  integrity sha512-s8+cv0NjahgdyXxkMMhWUcuHClY/s9xcX9PbsIUK7f7VYWuq+QhQ0Ixw+Xvm3zBpOCW8TFiM1KFNNoeRLymvhA==
   dependencies:
     "@types/react-native" "^0.62.9"
     react-native "^0.62.2"
