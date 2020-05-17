@@ -1,3 +1,7 @@
+## v0.2.0
+
+* ♻️ update dependencies `@apparatus/gig-organisms-splash`
+
 ## v0.1.1
 
 * 🐞 update period and introduce keyboard status data

@@ -1,3 +1,7 @@
+## v0.2.0
+
+* 🌱 theme support and new blocks version
+
 ## v0.1.2
 
 * 🐞 update blocks version
