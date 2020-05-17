@@ -6,10 +6,11 @@
     "packages/@apparatus/gig/data/*",
     "packages/@apparatus/gig/molecules/*",
     "packages/@apparatus/gig/organisms/*",
+    "packages/@apparatus/gig/themes/*",
     "packages/@apparatus/gig/types/*"
   ],
   "devDependencies": {
-    "@apparatus/blocks-index": "^0.10.0",
+    "@apparatus/blocks-index": "^0.13.0",
     "@apparatus/gig-containers-main": "*",
     "@bubble-dev/eslint-config": "^1.1.0",
     "@bubble-dev/start-preset": "^4.0.0",

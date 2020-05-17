@@ -1,5 +1,12 @@
 import React, { FC, ReactElement } from 'react'
-import { ContextParentSizeProvider, ContextDebugProvider, SideNavigation } from '@apparatus/blocks-index'
+import {
+  ContextParentSizeProvider,
+  ContextDebugProvider,
+  SideNavigation,
+  ContextThemeProvider,
+  createTheme,
+} from '@apparatus/blocks-index'
+import * as tokens from '@apparatus/gig-themes-gig-tokens'
 
 export type TOrganismSectionSelector = {
   Section: () => ReactElement,
@@ -17,9 +24,11 @@ export const OrganismSectionSelector: FC<TOrganismSectionSelector> = ({
     parentWidth={parentWidth}
   >
     <ContextDebugProvider shouldDebug={false}>
-      <SideNavigation
-        Component={Section}
-      />
+      <ContextThemeProvider theme={createTheme(tokens)}>
+        <SideNavigation
+          Component={Section}
+        />
+      </ContextThemeProvider>
     </ContextDebugProvider>
   </ContextParentSizeProvider>
 )
