@@ -7,6 +7,7 @@ export const config: TComponentConfig<TOrganismSettings> = {
     onAboutGig: [() => {}],
     onBack: [() => {}],
     onChangeCurrency: [() => {}],
+    onStartShare: [() => {}],
     onSupportUs: [() => {}],
   },
   required: [
@@ -14,6 +15,7 @@ export const config: TComponentConfig<TOrganismSettings> = {
     'onAboutGig',
     'onBack',
     'onChangeCurrency',
+    'onStartShare',
     'onSupportUs',
   ],
 }

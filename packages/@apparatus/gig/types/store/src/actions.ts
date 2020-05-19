@@ -56,6 +56,14 @@ export type TActionRootDimensionsUpdate = {
   payload: TRootDimensions,
 }
 
+export type TActionShareStart = {
+  type: 'SHARE_START',
+}
+
+export type TActionShareStop = {
+  type: 'SHARE_STOP',
+}
+
 export type TActionSyncState = {
   type: 'SYNC_STATE',
   payload: TStorableData,
@@ -105,6 +113,8 @@ export type TAction =
   | TActionNavigate
   | TActionPeriodUpdate
   | TActionRootDimensionsUpdate
+  | TActionShareStart
+  | TActionShareStop
   | TActionSyncState
   | TActionTimeReportNew
   | TActionTimeReportRemove

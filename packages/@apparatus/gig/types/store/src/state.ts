@@ -19,6 +19,7 @@ export type TStorableData = {
 export type TState = {
   currencies: TCurrency[],
   section: TSection,
+  shouldShare: boolean,
   startTime?: number,
   length?: number,
   period: TPeriod,

@@ -424,6 +424,40 @@ test('reducer: currency update', (t) => {
   t.end()
 })
 
+test('reducer: share start', (t) => {
+  const result = reducer(
+    state,
+    {
+      type: 'SHARE_START',
+    }
+  )
+
+  t.deepEquals(
+    result.shouldShare,
+    true,
+    'should be true'
+  )
+
+  t.end()
+})
+
+test('reducer: share stop', (t) => {
+  const result = reducer(
+    state,
+    {
+      type: 'SHARE_STOP',
+    }
+  )
+
+  t.deepEquals(
+    result.shouldShare,
+    false,
+    'should be false'
+  )
+
+  t.end()
+})
+
 test('reducer: sync state', (t) => {
   const gigs = [
     {

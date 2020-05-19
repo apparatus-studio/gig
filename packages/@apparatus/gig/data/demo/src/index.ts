@@ -75,7 +75,8 @@ export const state: TState = {
   period: 'day',
   rootWidth: 375,
   rootHeight: 600,
-  section: 'HOME',
+  section: 'SETTINGS',
   selectedGig: 'ACME',
+  shouldShare: false,
   today: '2020-04-14',
 }

@@ -15,6 +15,7 @@ export type TOrganismSettings = {
   onBack: () => void,
   onChangeCurrency: () => void,
   onSupportUs: () => void,
+  onStartShare: () => void,
 }
 
 export const OrganismSettings: FC<TOrganismSettings> = ({
@@ -23,6 +24,7 @@ export const OrganismSettings: FC<TOrganismSettings> = ({
   onBack,
   onChangeCurrency,
   onSupportUs,
+  onStartShare,
 }) => (
   <FullCover>
     <MainScrollable multiplier={10}>
@@ -51,6 +53,10 @@ export const OrganismSettings: FC<TOrganismSettings> = ({
       <ListOption
         optionName="Support Us On Patreon"
         onPress={onSupportUs}
+      />
+      <ListOption
+        optionName="Export to CSV"
+        onPress={onStartShare}
       />
     </MainScrollable>
   </FullCover>

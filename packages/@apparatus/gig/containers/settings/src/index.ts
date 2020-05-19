@@ -34,6 +34,11 @@ export const componentSettings = component(
     onSupportUs: ({ patreonLink }) => async () => {
       await openLink(patreonLink)
     },
+    onStartShare: ({ dispatch }) => () => {
+      dispatch({
+        type: 'SHARE_START',
+      })
+    },
   }),
   mapWithProps(({ currentCurrency }) => ({
     currentCurrencyName: `${currentCurrency.code} / ${currentCurrency.symbol}`,

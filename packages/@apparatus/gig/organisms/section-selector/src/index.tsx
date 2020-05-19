@@ -7,6 +7,7 @@ import {
   createTheme,
 } from '@apparatus/blocks-index'
 import * as tokens from '@apparatus/gig-themes-gig-tokens'
+import { ContainerShare } from '@apparatus/gig-containers-share'
 
 export type TOrganismSectionSelector = {
   Section: FC<any>,
@@ -19,18 +20,21 @@ export const OrganismSectionSelector: FC<TOrganismSectionSelector> = ({
   parentWidth,
   parentHeight,
 }) => (
-  <ContextParentSizeProvider
-    parentHeight={parentHeight}
-    parentWidth={parentWidth}
-  >
-    <ContextDebugProvider shouldDebug={false}>
-      <ContextThemeProvider theme={createTheme(tokens)}>
-        <SideNavigation
-          Component={Section}
-        />
-      </ContextThemeProvider>
-    </ContextDebugProvider>
-  </ContextParentSizeProvider>
+  <>
+    <ContainerShare/>
+    <ContextParentSizeProvider
+      parentHeight={parentHeight}
+      parentWidth={parentWidth}
+    >
+      <ContextDebugProvider shouldDebug={false}>
+        <ContextThemeProvider theme={createTheme(tokens)}>
+          <SideNavigation
+            Component={Section}
+          />
+        </ContextThemeProvider>
+      </ContextDebugProvider>
+    </ContextParentSizeProvider>
+  </>
 )
 
 OrganismSectionSelector.displayName = 'OrganismSectionSelector'

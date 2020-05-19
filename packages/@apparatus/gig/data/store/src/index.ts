@@ -2,6 +2,7 @@ import { currencies } from '@apparatus/data-currencies'
 import { TState, TAction } from '@apparatus/gig-types-store'
 import { createStore, Reducer } from 'redux'
 import { StoreContextFactory } from 'refun'
+// import { state as demoState } from '@apparatus/gig-data-demo'
 import { trackingStop } from './trackingStop'
 
 export const initialState: TState = {
@@ -17,6 +18,7 @@ export const initialState: TState = {
   rootHeight: 500,
   section: 'SPLASH',
   selectedGig: '',
+  shouldShare: false,
   today: '2020-04-14',
 }
 
@@ -60,6 +62,20 @@ export const reducer: Reducer<TState, TAction> = (state = initialState, action) 
       return {
         ...state,
         ...action.payload,
+      }
+    }
+
+    case 'SHARE_START': {
+      return {
+        ...state,
+        shouldShare: true,
+      }
+    }
+
+    case 'SHARE_STOP': {
+      return {
+        ...state,
+        shouldStart: false,
       }
     }
 
