@@ -1,6 +1,6 @@
 {
   "name": "@apparatus/gig-organisms-home",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": "src/index.tsx",
   "browser": "src/index.tsx",
   "react-native": "src/index.tsx",

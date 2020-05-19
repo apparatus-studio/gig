@@ -1,3 +1,7 @@
+## v0.2.0
+
+* ♻️ update dependencies `@apparatus/gig-data-transform-gig`, `@apparatus/gig-data-transform-time-report`, `@apparatus/gig-data-demo`, `@apparatus/gig-types-store`
+
 ## v0.1.3
 
 * 🐞 fix time report edit page

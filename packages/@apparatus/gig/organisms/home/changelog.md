@@ -1,3 +1,7 @@
+## v0.3.0
+
+* ♻️ update dependencies `@apparatus/gig-data-transform-gig`
+
 ## v0.2.0
 
 * 🌱 theme support and new blocks version

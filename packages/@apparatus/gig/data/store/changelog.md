@@ -1,3 +1,9 @@
+## v0.2.0
+
+* 🌱 testing csv sharing
+
+* ♻️ update dependencies `@apparatus/gig-data-demo`, `@apparatus/gig-types-store`
+
 ## v0.1.2
 
 * 🐞 update period and introduce keyboard status data

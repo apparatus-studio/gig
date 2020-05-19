@@ -1,3 +1,7 @@
+## v0.3.0
+
+* ♻️ update dependencies `@apparatus/gig-containers-settings`, `@apparatus/gig-containers-gig`, `@apparatus/gig-containers-gig-update`, `@apparatus/gig-containers-home`, `@apparatus/gig-containers-time-report`, `@apparatus/gig-containers-track-time`, `@apparatus/gig-containers-about-gig`, `@apparatus/gig-containers-currency-select`, `@apparatus/gig-containers-gig-new`, `@apparatus/gig-containers-gig-remove`, `@apparatus/gig-data-store`, `@apparatus/gig-containers-gig-congratulations`, `@apparatus/gig-containers-onboarding`, `@apparatus/gig-containers-splash`, `@apparatus/gig-containers-welcome`, `@apparatus/gig-organisms-section-selector`, `@apparatus/gig-types-store`
+
 ## v0.2.1
 
 * 🐞 fix time report edit page

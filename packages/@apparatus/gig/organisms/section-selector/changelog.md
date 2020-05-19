@@ -1,3 +1,9 @@
+## v0.3.0
+
+* 🌱 testing csv sharing
+
+* ♻️ update dependencies `@apparatus/gig-containers-share`
+
 ## v0.2.1
 
 * 🐞 fix time report edit page
