@@ -719,6 +719,82 @@
     lottie-web "^5.6.8"
     react-native "^0.62.2"
 
+"@apparatus/meta-start-preset@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/meta-start-preset/-/meta-start-preset-0.2.0.tgz#e84d8e07f797b428e4e6f0d7f1e52d330cea821e"
+  integrity sha512-egBwEwSlYvzb777bMltB1ZZZUz5Hh5fqxgWo9bYdXPK4KPWmlGoHuIcT/AUS0bXZht39X0RaHl0mf2ioCJ1BBA==
+  dependencies:
+    "@auto/changelog" "^0.1.0"
+    "@auto/commit-prompt" "^0.1.0"
+    "@auto/core" "^0.1.0"
+    "@auto/fs" "^1.0.0"
+    "@auto/github" "^0.1.0"
+    "@auto/slack" "^0.1.0"
+    "@auto/tag" "^0.1.0"
+    "@auto/telegram" "^0.1.0"
+    "@babel/core" "^7.8.0"
+    "@babel/register" "^7.8.0"
+    "@nextools/babel-config" "^0.1.4"
+    "@rebox/android" "^2.0.5"
+    "@rebox/ios" "^2.0.5"
+    "@rebox/web" "^2.1.5"
+    "@start/plugin" "^1.0.0"
+    "@start/plugin-copy" "^1.0.0"
+    "@start/plugin-env" "^1.0.0"
+    "@start/plugin-find" "^1.0.0"
+    "@start/plugin-input-files" "^1.0.0"
+    "@start/plugin-lib-babel" "^1.0.0"
+    "@start/plugin-lib-eslint" "^1.0.0"
+    "@start/plugin-lib-istanbul" "^1.0.0"
+    "@start/plugin-lib-tape" "^2.0.0"
+    "@start/plugin-lib-typescript-check" "^1.0.0"
+    "@start/plugin-lib-typescript-generate" "^2.0.0"
+    "@start/plugin-overwrite" "^1.0.0"
+    "@start/plugin-parallel" "^1.0.0"
+    "@start/plugin-read" "^1.0.0"
+    "@start/plugin-remove" "^1.0.0"
+    "@start/plugin-rename" "^1.0.0"
+    "@start/plugin-sequence" "^1.0.0"
+    "@start/plugin-write" "^1.0.0"
+    "@start/reporter-verbose" "^1.0.0"
+    "@x-ray/chrome-perf-snapshots" "^1.2.3"
+    "@x-ray/chrome-screenshots" "^1.0.5"
+    "@x-ray/common-utils" "^1.0.2"
+    "@x-ray/firefox-screenshots" "^1.0.3"
+    "@x-ray/native-screenshots" "^1.0.0"
+    "@x-ray/native-screenshots-app" "^1.0.2"
+    "@x-ray/screenshot-utils" "^1.0.3"
+    "@x-ray/snapshots" "^1.0.4"
+    "@x-ray/web-mobile-screenshots" "^1.0.3"
+    "@x-ray/web-mobile-screenshots-app" "^1.0.1"
+    copie "^1.0.0"
+    dleet "^1.0.0"
+    dotenv "^8.0.0"
+    escape-string-regexp "^3.0.0"
+    execa "^4.0.0"
+    fixdeps "^1.0.0"
+    globby "^11.0.0"
+    lottie-react-native "^3.3.2"
+    make-dir "^3.0.0"
+    move-path "^1.0.0"
+    nanomatch "^1.2.13"
+    node-fetch "^2.6.0"
+    pifs "^1.0.0"
+    prompts "^2.1.0"
+    react "16.11.0"
+    react-native-exception-handler "^2.10.8"
+    react-native-share "^3.3.2"
+    react-native-svg "^12.1.0"
+    react-native-view-shot "^3.1.1"
+    rplace "^0.2.0"
+    rsolve "^0.1.0"
+    stroki "^0.1.0"
+    tap-diff "^0.1.1"
+    tsfn "^1.1.0"
+    typeon "^1.0.0"
+    weslint "^0.1.0"
+    ws "^7.2.5"
+
 "@auto/changelog@^0.1.0":
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/@auto/changelog/-/changelog-0.1.3.tgz#4d34d6e1f8e5f7276d06c1bfd21657889a8bee22"
@@ -1116,7 +1192,7 @@
     "@babel/helper-remap-async-to-generator" "^7.8.3"
     "@babel/plugin-syntax-async-generators" "^7.8.0"
 
-"@babel/plugin-proposal-class-properties@^7.0.0", "@babel/plugin-proposal-class-properties@^7.7.0":
+"@babel/plugin-proposal-class-properties@^7.0.0", "@babel/plugin-proposal-class-properties@^7.7.0", "@babel/plugin-proposal-class-properties@^7.8.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-class-properties/-/plugin-proposal-class-properties-7.8.3.tgz#5e06654af5cd04b608915aada9b2a6788004464e"
   integrity sha512-EqFhbo7IosdgPgZggHaNObkmO1kNUe3slaKu54d5OWvy+p9QIKOzK1GAEpAIsZtWVtPXUHSMcT4smvDrCfY4AA==
@@ -1139,6 +1215,14 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.8.3"
     "@babel/plugin-syntax-export-default-from" "^7.8.3"
+
+"@babel/plugin-proposal-export-namespace-from@^7.8.3":
+  version "7.8.3"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-export-namespace-from/-/plugin-proposal-export-namespace-from-7.8.3.tgz#63ad57265d0e3912afd666eb44ce26fa8cd2c774"
+  integrity sha512-WKK+9jz6TWUTX1uej9/EUVOmM1sK7aHv6bZyxbUV3NJjbiIZRqJITeXGMo7D631J72PEnIORh5VOlFCSlrLicg==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.8.3"
+    "@babel/plugin-syntax-export-namespace-from" "^7.8.3"
 
 "@babel/plugin-proposal-json-strings@^7.8.3":
   version "7.8.3"
@@ -1189,6 +1273,14 @@
     "@babel/helper-plugin-utils" "^7.8.3"
     "@babel/plugin-syntax-optional-chaining" "^7.8.0"
 
+"@babel/plugin-proposal-private-methods@^7.8.3":
+  version "7.8.3"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-private-methods/-/plugin-proposal-private-methods-7.8.3.tgz#01248c6c8dc292116b3b4ebd746150f4f0728bab"
+  integrity sha512-ysLAper960yy1TVXa2lMYdCQIGqtUXo8sVb+zYE7UTiZSLs6/wbZ0PrrXEKESJcK3SgFWrF8WpsaDzdslhuoZA==
+  dependencies:
+    "@babel/helper-create-class-features-plugin" "^7.8.3"
+    "@babel/helper-plugin-utils" "^7.8.3"
+
 "@babel/plugin-proposal-unicode-property-regex@^7.4.4", "@babel/plugin-proposal-unicode-property-regex@^7.8.3":
   version "7.8.8"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-unicode-property-regex/-/plugin-proposal-unicode-property-regex-7.8.8.tgz#ee3a95e90cdc04fe8cd92ec3279fa017d68a0d1d"
@@ -1229,6 +1321,13 @@
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-export-default-from/-/plugin-syntax-export-default-from-7.8.3.tgz#f1e55ce850091442af4ba9c2550106035b29d678"
   integrity sha512-a1qnnsr73KLNIQcQlcQ4ZHxqqfBKM6iNQZW2OMTyxNbA2WC7SHWHtGVpFzWtQAuS2pspkWVzdEBXXx8Ik0Za4w==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.8.3"
+
+"@babel/plugin-syntax-export-namespace-from@^7.8.3":
+  version "7.8.3"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-export-namespace-from/-/plugin-syntax-export-namespace-from-7.8.3.tgz#028964a9ba80dbc094c915c487ad7c4e7a66465a"
+  integrity sha512-MXf5laXo6c1IbEbegDmzGPwGNTsHZmEy6QGznu5Sh2UCWvueywb2ee+CCE4zQiZstxU9BMoQO9i6zUFSY0Kj0Q==
   dependencies:
     "@babel/helper-plugin-utils" "^7.8.3"
 
@@ -1778,115 +1877,6 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@bubble-dev/babel-config@^0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@bubble-dev/babel-config/-/babel-config-0.1.7.tgz#0e8ef7269a3358c22ef73c6fe2961d5ab57c713e"
-  integrity sha512-dnJSgBcDTA8gWHUkmS0MOSdpQaSmAnNNoCbgqe6UMGCQg6sErAfouEEhTjAmNAi4fTYuuglukXR9HAWASqH+Aw==
-  dependencies:
-    "@babel/plugin-syntax-bigint" "^7.8.0"
-    "@babel/plugin-transform-runtime" "^7.8.0"
-    "@babel/preset-env" "^7.8.0"
-    "@babel/preset-react" "^7.8.0"
-    "@babel/preset-typescript" "^7.8.0"
-    "@bubble-dev/browsers-list" "^1.0.0"
-    babel-plugin-transform-inline-environment-variables "^0.4.3"
-    metro-react-native-babel-preset "0.58.0"
-
-"@bubble-dev/browsers-list@^1.0.0":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@bubble-dev/browsers-list/-/browsers-list-1.0.1.tgz#003ed1005b94bcbcea09fb79c9898514dd3267fd"
-  integrity sha512-wLGnNjrvUuVTqB5iDSuEfJRjoefLB1kua2f5sIG8+FB9j9nqqEofpObmEVQSvc2mNbcJYewB84S09Ca7QqOTuQ==
-
-"@bubble-dev/eslint-config@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@bubble-dev/eslint-config/-/eslint-config-1.1.0.tgz#509ba85edfcc199325b901147a7d657ef7d575f6"
-  integrity sha512-IFfTv1YRwuBmTEblhPIYIiG5JWqLmbF9eRrTz6n4G4KBIReTGkTQOKa4Ql9YCr1JqftLZ5YS5sw2SgN5I73v2g==
-  dependencies:
-    "@typescript-eslint/eslint-plugin" "^2.18.0"
-    "@typescript-eslint/parser" "^2.18.0"
-    eslint-plugin-import "^2.18.2"
-    eslint-plugin-react "^7.14.3"
-
-"@bubble-dev/start-preset@^4.0.0":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@bubble-dev/start-preset/-/start-preset-4.0.2.tgz#5b7467a06ae936ff9d538e2482f12f6e244b47a3"
-  integrity sha512-bFsGukH7xTl53Ql7MX2AGekQeVboZvWKK7m5VG8sbjcebq/GbWp778T1hhodLEC1Pdkya4irQkZJiJJPxYRMMg==
-  dependencies:
-    "@auto/changelog" "^0.1.0"
-    "@auto/commit-prompt" "^0.1.0"
-    "@auto/core" "^0.1.0"
-    "@auto/fs" "^1.0.0"
-    "@auto/github" "^0.1.0"
-    "@auto/slack" "^0.1.0"
-    "@auto/tag" "^0.1.0"
-    "@auto/telegram" "^0.1.0"
-    "@babel/core" "^7.8.0"
-    "@babel/register" "^7.8.0"
-    "@bubble-dev/babel-config" "^0.1.7"
-    "@rebox/android" "^2.0.5"
-    "@rebox/ios" "^2.0.5"
-    "@rebox/web" "^2.1.5"
-    "@start/plugin" "^1.0.0"
-    "@start/plugin-copy" "^1.0.0"
-    "@start/plugin-env" "^1.0.0"
-    "@start/plugin-find" "^1.0.0"
-    "@start/plugin-input-files" "^1.0.0"
-    "@start/plugin-lib-babel" "^1.0.0"
-    "@start/plugin-lib-eslint" "^1.0.0"
-    "@start/plugin-lib-istanbul" "^1.0.0"
-    "@start/plugin-lib-tape" "^2.0.0"
-    "@start/plugin-lib-typescript-check" "^1.0.0"
-    "@start/plugin-lib-typescript-generate" "^2.0.0"
-    "@start/plugin-overwrite" "^1.0.0"
-    "@start/plugin-parallel" "^1.0.0"
-    "@start/plugin-read" "^1.0.0"
-    "@start/plugin-remove" "^1.0.0"
-    "@start/plugin-rename" "^1.0.0"
-    "@start/plugin-sequence" "^1.0.0"
-    "@start/plugin-write" "^1.0.0"
-    "@start/reporter-verbose" "^1.0.0"
-    "@x-ray/chrome-perf-snapshots" "^1.2.3"
-    "@x-ray/chrome-screenshots" "^1.0.5"
-    "@x-ray/common-utils" "^1.0.2"
-    "@x-ray/firefox-screenshots" "^1.0.3"
-    "@x-ray/native-screenshots" "^1.0.0"
-    "@x-ray/native-screenshots-app" "^1.0.2"
-    "@x-ray/screenshot-utils" "^1.0.3"
-    "@x-ray/snapshots" "^1.0.4"
-    "@x-ray/web-mobile-screenshots" "^1.0.3"
-    "@x-ray/web-mobile-screenshots-app" "^1.0.1"
-    copie "^1.0.0"
-    dleet "^1.0.0"
-    dotenv "^8.0.0"
-    escape-string-regexp "^3.0.0"
-    execa "^4.0.0"
-    fixdeps "^1.0.0"
-    globby "^11.0.0"
-    lottie-react-native "^3.3.2"
-    make-dir "^3.0.0"
-    move-path "^1.0.0"
-    nanomatch "^1.2.13"
-    node-fetch "^2.6.0"
-    pifs "^1.0.0"
-    prompts "^2.1.0"
-    react "16.11.0"
-    react-native-exception-handler "^2.10.8"
-    react-native-svg "^12.1.0"
-    react-native-view-shot "^3.1.1"
-    rplace "^0.2.0"
-    rsolve "^0.1.0"
-    stroki "^0.1.0"
-    tap-diff "^0.1.1"
-    tsfn "^1.1.0"
-    typeon "^1.0.0"
-    weslint "^0.1.0"
-    ws "^7.2.5"
-
-"@bubble-dev/typescript-config@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@bubble-dev/typescript-config/-/typescript-config-1.0.1.tgz#eff96606f7cee015118b3ee684c99fbd0842b57e"
-  integrity sha512-eTskaFKZNeJWWT7aGm/7QgnABR9MA2GmKmeHfBKsibrxbycnC1CBIM8yFUDeuBuGpKlh/qRflwiQL0c8CrSGUw==
-
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@cnakazawa/watch/-/watch-1.0.4.tgz#f864ae85004d0fcab6f50be9141c4da368d1656a"
@@ -2398,6 +2388,43 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
+
+"@nextools/babel-config@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@nextools/babel-config/-/babel-config-0.1.4.tgz#77e50720a2e3d9caa232ebb762bcb6a0942b1f28"
+  integrity sha512-2XZIYbW6TeTbJ0Py+5SydrY67Dqk0NAI2BYPBTvyqaUbXJnc0JJWvT+Q2vP/Ke9Or3jQRNXKyFmGECPe0Lphug==
+  dependencies:
+    "@babel/plugin-proposal-class-properties" "^7.8.3"
+    "@babel/plugin-proposal-export-namespace-from" "^7.8.3"
+    "@babel/plugin-proposal-private-methods" "^7.8.3"
+    "@babel/plugin-syntax-bigint" "^7.8.0"
+    "@babel/plugin-transform-runtime" "^7.8.0"
+    "@babel/preset-env" "^7.8.0"
+    "@babel/preset-react" "^7.8.0"
+    "@babel/preset-typescript" "^7.8.0"
+    "@nextools/browsers-list" "^0.1.0"
+    babel-plugin-transform-inline-environment-variables "^0.4.3"
+    metro-react-native-babel-preset "0.58.0"
+
+"@nextools/browsers-list@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@nextools/browsers-list/-/browsers-list-0.1.0.tgz#ea7874ced42126ee30a87fbeb746ce09afbe1c29"
+  integrity sha512-2gGUTiI6/EAOPnpAqmpHKVGEsFkubwxTVAGzulWV9hY/XMKafUP7sNw1JjVj7am7N5NBInD3zhy9diGeEMJRjA==
+
+"@nextools/eslint-config@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@nextools/eslint-config/-/eslint-config-0.1.2.tgz#1058b3f1daf69c19e6f86059646d6e534e649535"
+  integrity sha512-JVqkgmwyHqZW0kkYnB3T/yc4Sb1xzBVu3Ohjwro+5z2s5eqajJna8Nb53AekAf5RbLotPnV1mcy38ITIDzjz3w==
+  dependencies:
+    "@typescript-eslint/eslint-plugin" "^2.18.0"
+    "@typescript-eslint/parser" "^2.18.0"
+    eslint-plugin-import "^2.18.2"
+    eslint-plugin-react "^7.14.3"
+
+"@nextools/typescript-config@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@nextools/typescript-config/-/typescript-config-0.1.0.tgz#5a7a21bfa2c813885593e9e93237d71a9e5f6a5e"
+  integrity sha512-3kIhV16uIOWdrLMd89Yzzb225MGLb1VQydR8yTyn6A2JdzubErN18KFkbeLk/vLf/2wDxPyVqqNeEEFnmHf6NA==
 
 "@nodelib/fs.scandir@2.1.3":
   version "2.1.3"
@@ -3169,7 +3196,15 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
   integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
 
-"@types/react-native@^0.62.9":
+"@types/react-native-share@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@types/react-native-share/-/react-native-share-3.1.0.tgz#06b3772257d77a8f56af05aa92729efaf6387069"
+  integrity sha512-qW4gLw04HPHMDDzosX34eSdCKQanncqy8RH4KJNittkpxc5MLBmosa0d/05AEAjPhnuzciw6UK+WHbZ/XcApOA==
+  dependencies:
+    "@types/react" "*"
+    "@types/react-native" "*"
+
+"@types/react-native@*", "@types/react-native@^0.62.9":
   version "0.62.10"
   resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.62.10.tgz#82c481df21db4e7460755dc3fc7091e333a1d2bd"
   integrity sha512-QR4PGrzZ3IvRIHlScyIPuv2GV8tD/BMICZz514KGvn3KHbh0mLphHHemtHZC1o8u4xM5LxwVpMpMYHQ+ncSfag==
@@ -11225,6 +11260,11 @@ react-native-safe-modules@^1.0.0:
   integrity sha512-ShT8duWBT30W4OFcltZl+UvpPDikZFURvLDQqAsrvbyy6HzWPGJDCpdqM+6GqzPPs4DPEW31YfMNmdJcZ6zI2w==
   dependencies:
     dedent "^0.6.0"
+
+react-native-share@^3.3.2:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/react-native-share/-/react-native-share-3.3.2.tgz#06d1d3f14ba8eeb95e7e94e4db6a286e9902bd29"
+  integrity sha512-Pvkr62TiCX511RMPL+wvy9Fofre4HQnvUT5zzgPPN3vszP/C8lUb7cmFu/8x5U14t3JQg+xW/svNK5eKNebJKw==
 
 react-native-svg@^12.1.0:
   version "12.1.0"

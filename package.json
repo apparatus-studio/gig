@@ -12,9 +12,9 @@
   "devDependencies": {
     "@apparatus/blocks-index": "^0.13.0",
     "@apparatus/gig-containers-main": "*",
-    "@bubble-dev/eslint-config": "^1.1.0",
-    "@bubble-dev/start-preset": "^4.0.0",
-    "@bubble-dev/typescript-config": "^1.0.1",
+    "@apparatus/meta-start-preset": "^0.2.0",
+    "@nextools/eslint-config": "^0.1.2",
+    "@nextools/typescript-config": "^0.1.0",
     "@sandbox/ui": "^3.0.0",
     "@start/plugin": "^1.0.0",
     "@types/node": "^13.13.4",
@@ -76,7 +76,7 @@
     }
   },
   "eslintConfig": {
-    "extends": "@bubble-dev/eslint-config"
+    "extends": "@nextools/eslint-config"
   },
   "eslintIgnore": [
     "build/",
