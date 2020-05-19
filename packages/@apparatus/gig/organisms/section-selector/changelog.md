@@ -1,3 +1,7 @@
+## v0.2.1
+
+* 🐞 fix time report edit page
+
 ## v0.2.0
 
 * 🌱 theme support and new blocks version

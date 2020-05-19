@@ -1,3 +1,9 @@
+## v0.1.3
+
+* 🐞 fix time report edit page
+
+* ♻️ update dependencies `@apparatus/gig-data-transform-numbers`, `@apparatus/gig-data-transform-time-report`
+
 ## v0.1.2
 
 * 🐞 update period and introduce keyboard status data

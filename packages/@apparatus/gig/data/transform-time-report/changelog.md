@@ -1,3 +1,7 @@
+## v0.1.2
+
+* 🐞 fix time report edit page
+
 ## v0.1.1
 
 * 🐞 fix dependency versions
