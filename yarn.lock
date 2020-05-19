@@ -396,9 +396,9 @@
     refun "^2.0.0"
 
 "@apparatus/blocks-molecules-side-navigation@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-side-navigation/-/blocks-molecules-side-navigation-0.3.0.tgz#d01cc174eba23b8c796b73b72c534400f567265b"
-  integrity sha512-KGn9klLBVUG32FlsK7R5Wi0YqwWUuKKciQkowb+q56glnbOU2ZH/o+JOkxAbGP8BzL9FgpcsKBA+DWsnm1xEvA==
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-side-navigation/-/blocks-molecules-side-navigation-0.3.1.tgz#1ab2b87f9d402954b9b605600802a328886b6d02"
+  integrity sha512-2fmXwFA/vBNu4Ra4UiLyqI41P4HJSkOOi44NFOeWKEXY+Gbw9bmnEZB+M+KRgr2u2H68WS3VQ1DapZbBm4L5YQ==
   dependencies:
     "@apparatus/blocks-contexts-parent-size" "^0.1.0"
     "@apparatus/blocks-utils-horizontal" "^0.2.0"

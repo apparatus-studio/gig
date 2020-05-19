@@ -20,7 +20,7 @@ import { ContainerWelcome } from '@apparatus/gig-containers-welcome'
 import { OrganismSectionSelector } from '@apparatus/gig-organisms-section-selector'
 import { TSection } from '@apparatus/gig-types-store'
 
-const selectSection = (section: TSection): FC => {
+const selectSection = (section: TSection): FC<any> => {
   switch (section) {
     case 'CHANGE_CURRENCY':
       return ContainerCurrencySelect

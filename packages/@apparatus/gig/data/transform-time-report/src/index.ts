@@ -65,8 +65,8 @@ export const splitByDay = (timeReports: TTimeReport[]): TDayReport[] => (
   )
 )
 
-export const lengthInHooman = (timeReport: TTimeReport): string => {
-  const totalHours = timeReport.length / 60 / 60
+export const lengthInHooman = (length: number): string => {
+  const totalHours = length / 60 / 60
   const flooredHours = Math.floor(totalHours)
 
   if (totalHours - flooredHours === 0) {
@@ -93,7 +93,7 @@ export const startTimeInHooman = (timeReport: TTimeReport): string => (
 
 export const endTimeInHooman = (timeReport: TTimeReport): string => (
   formatISO9075(
-    fromUnixTime(timeReport.startTime + (timeReport.length)),
+    fromUnixTime(timeReport.startTime + timeReport.length),
     { representation: 'time' }
   )
     .slice(0, 5)

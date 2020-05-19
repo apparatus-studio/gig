@@ -10,7 +10,7 @@ import {
 } from '@apparatus/gig-data-transform-gig'
 import { TExtend } from 'tsfn'
 import { splitByDay, lengthInHooman } from '@apparatus/gig-data-transform-time-report'
-import { hoursInHooman, moneyInHooman } from '@apparatus/gig-data-transform-numbers'
+import { moneyInHooman } from '@apparatus/gig-data-transform-numbers'
 
 export const currentGig = ({ gigs, selectedGig }: TState) =>
   gigs.find((gig) => gig.name === selectedGig)
@@ -81,40 +81,10 @@ export const gigProps = (state: TState) => {
   return gig !== undefined
     ? {
       days: splitByDay(gig.timeReports),
-      totalHours: hoursInHooman(totalGigHours(gig)),
+      totalHours: lengthInHooman(gig.timeReports.map(({ length }) => length).reduce((a, b) => a + b, 0)),
       totalEarnings: moneyInHooman(totalGigEarnings(gig)),
     }
     : {}
-}
-
-export const timeReportProps = (state: TExtend<TState, {}>) => {
-  const isNew = (
-    state.startTime === undefined ||
-    state.length === undefined
-  )
-
-  return {
-    isNew,
-    currentRate: currentGig(state)?.currentRate,
-    ...(state.startTime === undefined || state.length === undefined)
-      ? {
-        nav: 'New Time Report',
-        title: 'Add Report',
-        primaryCallToAction: 'Save report',
-        secondaryCallToAction: 'Discard',
-      }
-      : {
-        nav: 'Edit Time Report',
-        title: lengthInHooman({
-          startTime: state.startTime,
-          length: state.length,
-          rate: 0,
-          currency: '',
-        }),
-        primaryCallToAction: 'Save changes',
-        secondaryCallToAction: 'Delete report',
-      },
-  }
 }
 
 export const trackTimeProps = (state: TState) => ({

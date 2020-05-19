@@ -41,5 +41,7 @@ export const moneyInHooman = (money: number): string => {
 
   const withCommas = addCommas(`${floored}`.split('').reverse()).reverse().join('')
 
-  return `${withCommas}${money - floored > 0 ? `.${`${money - floored}`.split('.')[1]}` : ''}`
+  const decimals = `${money - floored}`.split('.')[1]
+
+  return `${withCommas}${money - floored > 0 ? `.${decimals.length > 2 ? decimals.slice(0, 2) : decimals}` : ''}`
 }

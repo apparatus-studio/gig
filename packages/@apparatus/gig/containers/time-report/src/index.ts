@@ -1,14 +1,13 @@
 import { mapStoreState, mapStoreDispatch } from '@apparatus/gig-data-store'
 import { component, mapWithProps, mapHandlers, mapState } from 'refun'
-import { endTimeInHooman, startTimeInHooman } from '@apparatus/gig-data-transform-time-report'
-import { timeReportProps } from '@apparatus/gig-data-transform-store'
+import { endTimeInHooman, startTimeInHooman, lengthInHooman } from '@apparatus/gig-data-transform-time-report'
+import { currentGig } from '@apparatus/gig-data-transform-store'
 import { fromUnixTime, formatISO9075 } from 'date-fns'
 import { startTimeFromHooman, lengthFromHooman } from '@apparatus/gig-data-transform-input'
 import { OrganismTimeReport } from '@apparatus/gig-organisms-time-report'
 
 export const componentTimeReport = component(
   mapStoreState((state) => state, ['section']),
-  mapWithProps(timeReportProps),
   mapStoreDispatch('dispatch'),
   mapHandlers({
     onBack: ({ dispatch, selectedGig }) => () => {
@@ -54,6 +53,24 @@ export const componentTimeReport = component(
     ),
     ['startTime', 'today']
   ),
+  mapWithProps((state) => {
+    return {
+      currentRate: currentGig(state)?.currentRate,
+      ...(state.internalStartTime === '' || state.internalEndTime === '')
+        ? {
+          nav: 'New Time Report',
+          title: 'Add Report',
+          primaryCallToAction: 'Save report',
+          secondaryCallToAction: 'Discard',
+        }
+        : {
+          nav: 'Edit Time Report',
+          title: lengthInHooman(lengthFromHooman(state.internalStartTime, state.internalEndTime)),
+          primaryCallToAction: 'Save changes',
+          secondaryCallToAction: 'Delete report',
+        },
+    }
+  }),
   mapHandlers({
     onSave: ({ dispatch, internalDate, internalEndTime, internalStartTime, startTime }) => () => {
       if (startTime === undefined) {

@@ -1,4 +1,4 @@
-import React, { FC, ReactElement } from 'react'
+import React, { FC } from 'react'
 import {
   ContextParentSizeProvider,
   ContextDebugProvider,
@@ -9,7 +9,7 @@ import {
 import * as tokens from '@apparatus/gig-themes-gig-tokens'
 
 export type TOrganismSectionSelector = {
-  Section: () => ReactElement,
+  Section: FC<any>,
   parentHeight: number,
   parentWidth: number,
 }

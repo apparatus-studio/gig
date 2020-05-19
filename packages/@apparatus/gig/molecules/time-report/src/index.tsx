@@ -21,7 +21,7 @@ export const TimeReport = component(
   mapWithProps(({ startTime, length, rate, currency }) => ({
     startTimeInHooman: startTimeInHooman({ startTime, length, rate, currency }),
     endTime: endTimeInHooman({ startTime, length, rate, currency }),
-    howMany: lengthInHooman({ startTime, length, rate, currency }),
+    howMany: lengthInHooman(length),
   }))
 )(({ startTimeInHooman, endTime, howMany, onPress }) => (
   <ListOption

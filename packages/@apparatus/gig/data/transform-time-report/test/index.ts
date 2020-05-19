@@ -53,7 +53,7 @@ test('splitByDay', (t) => {
 test('lengthInHooman', (t) => {
   t.deepEquals(
     lengthInHooman(
-      ACME.timeReports[0]
+      ACME.timeReports[0].length
     ),
     '3 hours',
     'should be 3 hours'
@@ -61,7 +61,7 @@ test('lengthInHooman', (t) => {
 
   t.deepEquals(
     lengthInHooman(
-      BigBuy.timeReports[0]
+      BigBuy.timeReports[0].length
     ),
     '4 h  30 min',
     'should be 4 h  30 min'
