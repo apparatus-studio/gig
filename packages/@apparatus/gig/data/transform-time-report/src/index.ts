@@ -84,7 +84,7 @@ export const lengthInHooman = (length: number): string => {
 
 export const startTimeInHooman = (timeReport: TTimeReport): string => (
   formatISO9075(
-    fromUnixTime(timeReport.startTime),
+    fromUnixTime(timeReport.startTime - timeReport.timeZoneOffset),
     { representation: 'time' }
   )
     .slice(0, 5)
@@ -93,7 +93,7 @@ export const startTimeInHooman = (timeReport: TTimeReport): string => (
 
 export const endTimeInHooman = (timeReport: TTimeReport): string => (
   formatISO9075(
-    fromUnixTime(timeReport.startTime + timeReport.length),
+    fromUnixTime((timeReport.startTime + timeReport.length) - timeReport.timeZoneOffset),
     { representation: 'time' }
   )
     .slice(0, 5)

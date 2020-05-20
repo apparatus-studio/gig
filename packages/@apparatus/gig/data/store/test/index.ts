@@ -474,6 +474,8 @@ test('reducer: sync state', (t) => {
             )
           ),
           length: 3 * (60 * 60),
+          timeZone: 'Europe/Stockholm',
+          timeZoneOffset: -1,
         },
       ],
     },

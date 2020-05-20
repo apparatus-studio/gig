@@ -15,6 +15,8 @@ export const trackingStop = (state: TState, action: TActionTrackingStop): TState
       length,
       rate: gig.currentRate,
       currency: 'SEK',
+      timeZone: state.currentTimeZone,
+      timeZoneOffset: state.currentTimeZoneOffset,
     }
     : undefined
 

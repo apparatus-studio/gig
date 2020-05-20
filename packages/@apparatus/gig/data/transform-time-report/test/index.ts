@@ -19,6 +19,8 @@ test('splitByDay', (t) => {
               new Date('2020-04-14 15:00:00')
             ),
             length: 3 * (60 * 60),
+            timeZone: 'Europe/Stockholm',
+            timeZoneOffset: -1,
           },
           {
             rate: 1500,
@@ -27,6 +29,8 @@ test('splitByDay', (t) => {
               new Date('2020-04-14 10:00:00')
             ),
             length: 2 * (60 * 60),
+            timeZone: 'Europe/Stockholm',
+            timeZoneOffset: -1,
           },
         ],
       },
@@ -40,6 +44,8 @@ test('splitByDay', (t) => {
               new Date('2020-04-13 10:00:00')
             ),
             length: 5 * (60 * 60),
+            timeZone: 'Europe/Stockholm',
+            timeZoneOffset: -1,
           },
         ],
       },

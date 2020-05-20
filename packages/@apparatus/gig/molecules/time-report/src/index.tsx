@@ -8,6 +8,8 @@ export type TTimeReport = {
   length: number,
   rate: number,
   currency: string,
+  timeZone: string,
+  timeZoneOffset: number,
   onSelect: (startTime: number, length: number) => void,
 }
 
@@ -18,9 +20,9 @@ export const TimeReport = component(
       onSelect(startTime, length)
     },
   }),
-  mapWithProps(({ startTime, length, rate, currency }) => ({
-    startTimeInHooman: startTimeInHooman({ startTime, length, rate, currency }),
-    endTime: endTimeInHooman({ startTime, length, rate, currency }),
+  mapWithProps(({ startTime, length, rate, currency, timeZone, timeZoneOffset }) => ({
+    startTimeInHooman: startTimeInHooman({ startTime, length, rate, currency, timeZone, timeZoneOffset }),
+    endTime: endTimeInHooman({ startTime, length, rate, currency, timeZone, timeZoneOffset }),
     howMany: lengthInHooman(length),
   }))
 )(({ startTimeInHooman, endTime, howMany, onPress }) => (

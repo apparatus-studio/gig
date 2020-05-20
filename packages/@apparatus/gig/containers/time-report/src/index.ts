@@ -23,9 +23,16 @@ export const componentTimeReport = component(
   mapState(
     'internalStartTime',
     'setInternalStartTime',
-    ({ startTime, length }) => (
+    ({ startTime, length, currentTimeZone, currentTimeZoneOffset }) => (
       (startTime !== undefined && length !== undefined)
-        ? startTimeInHooman({ startTime, length, rate: 0, currency: '' })
+        ? startTimeInHooman({
+          startTime,
+          length,
+          rate: 0,
+          currency: '',
+          timeZone: currentTimeZone,
+          timeZoneOffset: currentTimeZoneOffset,
+        })
         : ''
     ),
     ['startTime']
@@ -33,9 +40,16 @@ export const componentTimeReport = component(
   mapState(
     'internalEndTime',
     'setInternalEndTime',
-    ({ startTime, length }) => (
+    ({ startTime, length, currentTimeZone, currentTimeZoneOffset }) => (
       (startTime !== undefined && length !== undefined)
-        ? endTimeInHooman({ startTime, length, rate: 0, currency: '' })
+        ? endTimeInHooman({
+          startTime,
+          length,
+          rate: 0,
+          currency: '',
+          timeZone: currentTimeZone,
+          timeZoneOffset: currentTimeZoneOffset,
+        })
         : ''
     ),
     ['startTime', 'length']

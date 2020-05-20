@@ -17,6 +17,8 @@ export const ACME: TGig = {
         )
       ),
       length: 3 * (60 * 60),
+      timeZone: 'Europe/Stockholm',
+      timeZoneOffset: -1,
     },
     {
       rate: 1200, // 6000 total
@@ -28,6 +30,8 @@ export const ACME: TGig = {
         )
       ),
       length: 5 * (60 * 60),
+      timeZone: 'Europe/Stockholm',
+      timeZoneOffset: -1,
     },
     {
       rate: 1500, // 3000 total
@@ -39,6 +43,8 @@ export const ACME: TGig = {
         )
       ),
       length: 2 * (60 * 60),
+      timeZone: 'Europe/Stockholm',
+      timeZoneOffset: -1,
     },
   ], // 10 hours | 13500 kr
 }
@@ -60,6 +66,8 @@ export const BigBuy: TGig = {
         )
       ),
       length: 4 * (60 * 60) + (60 * 30),
+      timeZone: 'Europe/Stockholm',
+      timeZoneOffset: -1,
     },
   ], // 4.5 hours | 6300 kr
 }
@@ -67,6 +75,8 @@ export const BigBuy: TGig = {
 export const state: TState = {
   currencies,
   currentCurrency: currencies[0],
+  currentTimeZone: 'Europe/Stockholm',
+  currentTimeZoneOffset: -1,
   gigs: [ACME, BigBuy],
   isKeyboardVisible: false,
   keyboardHeight: 0,

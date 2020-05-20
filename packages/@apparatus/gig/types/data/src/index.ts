@@ -31,8 +31,10 @@ export type TKeyboard = {
 }
 
 export type TTimeReport = {
-  rate: number,
-  currency: string,
-  startTime: number,
-  length: number,
+  rate: number, // in the selected currency
+  currency: string, // from the official currency list
+  startTime: number, // timestamp in seconds
+  length: number, // in seconds
+  timeZone: string, // from IANA timeZone database https://www.iana.org/time-zones
+  timeZoneOffset: number, // in seconds
 }

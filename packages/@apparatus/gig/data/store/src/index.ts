@@ -8,6 +8,8 @@ import { trackingStop } from './trackingStop'
 export const initialState: TState = {
   currencies,
   currentCurrency: currencies[91],
+  currentTimeZone: 'Europe/Stockholm',
+  currentTimeZoneOffset: -1,
   gigs: [],
   isKeyboardVisible: false,
   keyboardHeight: 0,
@@ -104,6 +106,8 @@ export const reducer: Reducer<TState, TAction> = (state = initialState, action) 
                     startTime: action.payload.startTime,
                     length: action.payload.length,
                     currency: 'SEK',
+                    timeZone: state.currentTimeZone,
+                    timeZoneOffset: state.currentTimeZoneOffset,
                   },
                 ],
               }

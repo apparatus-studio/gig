@@ -8,6 +8,8 @@ import {
 
 export type TEnvironment = {
   today: string,
+  currentTimeZone: string,
+  currentTimeZoneOffset: number,
 }
 
 export type TStorableData = {

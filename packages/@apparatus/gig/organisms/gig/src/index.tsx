@@ -128,6 +128,8 @@ export const OrganismGig: FC<TOrganismGig> = ({
                 rate={report.rate}
                 length={report.length}
                 currency={report.currency}
+                timeZone={report.timeZone}
+                timeZoneOffset={report.timeZoneOffset}
                 onSelect={onUpdateTimeReport}
               />
             ))}

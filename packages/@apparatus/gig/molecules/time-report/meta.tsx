@@ -9,6 +9,8 @@ export const config: TComponentConfig<TTimeReport> = {
     onSelect: [() => {}],
     rate: [ACME.timeReports[0].rate],
     startTime: [ACME.timeReports[0].startTime],
+    timeZone: [ACME.timeReports[0].timeZone],
+    timeZoneOffset: [ACME.timeReports[0].timeZoneOffset],
   },
   required: [
     'currency',
@@ -16,6 +18,8 @@ export const config: TComponentConfig<TTimeReport> = {
     'onSelect',
     'rate',
     'startTime',
+    'timeZone',
+    'timeZoneOffset',
   ],
 }
 
