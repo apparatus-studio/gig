@@ -1,3 +1,9 @@
+## v0.4.0
+
+* 🌱 add time zones support (not yet configurable)
+
+* ♻️ update dependencies `@apparatus/gig-molecules-time-report`, `@apparatus/gig-types-data`
+
 ## v0.3.0
 
 * ♻️ update dependencies `@apparatus/gig-molecules-time-report`

@@ -1,3 +1,7 @@
+## v0.4.0
+
+* ♻️ update dependencies `@apparatus/gig-data-store`, `@apparatus/gig-types-data`, `@apparatus/gig-organisms-onboarding`
+
 ## v0.3.0
 
 * ♻️ update dependencies `@apparatus/gig-data-store`

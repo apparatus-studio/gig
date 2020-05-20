@@ -1,3 +1,7 @@
+## v0.4.0
+
+* ♻️ update dependencies `@apparatus/gig-data-transform-store`, `@apparatus/gig-data-store`, `@apparatus/gig-organisms-gig`, `@apparatus/gig-types-data`
+
 ## v0.3.0
 
 * ♻️ update dependencies `@apparatus/gig-data-transform-store`, `@apparatus/gig-organisms-gig`, `@apparatus/gig-data-store`

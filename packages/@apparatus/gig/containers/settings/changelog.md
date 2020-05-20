@@ -1,3 +1,7 @@
+## v0.4.0
+
+* ♻️ update dependencies `@apparatus/gig-data-store`
+
 ## v0.3.0
 
 * 🌱 testing csv sharing

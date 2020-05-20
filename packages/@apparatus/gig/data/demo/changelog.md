@@ -1,3 +1,11 @@
+## v0.3.0
+
+* 🌱 add first day of week config
+
+* 🌱 add time zones support (not yet configurable)
+
+* ♻️ update dependencies `@apparatus/gig-types-store`, `@apparatus/gig-types-data`
+
 ## v0.2.0
 
 * 🌱 testing csv sharing

@@ -1,3 +1,9 @@
+## v0.3.0
+
+* 🌱 add time zones support (not yet configurable)
+
+* ♻️ update dependencies `@apparatus/gig-data-demo`, `@apparatus/gig-types-data`
+
 ## v0.2.0
 
 * ♻️ update dependencies `@apparatus/gig-data-demo`

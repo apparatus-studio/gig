@@ -1,6 +1,6 @@
 {
   "name": "@apparatus/gig-molecules-time-report",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "main": "src/index.tsx",
   "browser": "src/index.tsx",
   "react-native": "src/index.tsx",
