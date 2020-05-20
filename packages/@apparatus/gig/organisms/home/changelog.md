@@ -1,3 +1,7 @@
+## v0.5.0
+
+* ♻️ update dependencies `@apparatus/gig-data-transform-gig`
+
 ## v0.4.0
 
 * ♻️ update dependencies `@apparatus/gig-data-transform-gig`, `@apparatus/gig-types-data`

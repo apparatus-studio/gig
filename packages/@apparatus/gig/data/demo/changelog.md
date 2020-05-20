@@ -1,3 +1,7 @@
+## v0.4.0
+
+* 🌱 add this week earnings and hours calculations
+
 ## v0.3.0
 
 * 🌱 add first day of week config

@@ -1,3 +1,7 @@
+## v0.4.0
+
+* ♻️ update dependencies `@apparatus/gig-data-transform-time-report`, `@apparatus/gig-data-demo`, `@apparatus/gig-data-transform-gig`
+
 ## v0.3.0
 
 * ♻️ update dependencies `@apparatus/gig-data-transform-gig`, `@apparatus/gig-data-demo`, `@apparatus/gig-types-store`, `@apparatus/gig-data-transform-time-report`

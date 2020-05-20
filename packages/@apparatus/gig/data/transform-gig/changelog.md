@@ -1,3 +1,9 @@
+## v0.4.0
+
+* 🌱 add this week earnings and hours calculations
+
+* ♻️ update dependencies `@apparatus/gig-data-demo`
+
 ## v0.3.0
 
 * ♻️ update dependencies `@apparatus/gig-data-demo`, `@apparatus/gig-types-data`
