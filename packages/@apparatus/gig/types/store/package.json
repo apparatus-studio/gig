@@ -11,7 +11,7 @@
   ],
   "dependencies": {
     "@apparatus/data-currencies": "^0.1.0",
-    "@apparatus/gig-types-data": "^0.1.1",
+    "@apparatus/gig-types-data": "^0.2.0",
     "tsfn": "^1.1.1"
   },
   "sideEffects": false

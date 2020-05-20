@@ -10,9 +10,9 @@
     "build/"
   ],
   "dependencies": {
-    "@apparatus/gig-data-store": "^0.2.0",
-    "@apparatus/gig-organisms-onboarding": "^0.2.0",
-    "@apparatus/gig-types-data": "^0.1.1",
+    "@apparatus/gig-data-store": "^0.3.0",
+    "@apparatus/gig-organisms-onboarding": "^0.3.0",
+    "@apparatus/gig-types-data": "^0.2.0",
     "@babel/runtime": "^7.1.2",
     "refun": "^2.0.0"
   },

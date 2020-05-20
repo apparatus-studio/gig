@@ -11,7 +11,7 @@
   ],
   "dependencies": {
     "@apparatus/effects-open-link": "^0.1.0",
-    "@apparatus/gig-data-store": "^0.2.0",
+    "@apparatus/gig-data-store": "^0.3.0",
     "@apparatus/gig-organisms-settings": "^0.3.0",
     "@babel/runtime": "^7.1.2",
     "refun": "^2.0.0"
