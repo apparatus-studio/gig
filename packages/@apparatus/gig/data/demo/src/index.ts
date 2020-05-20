@@ -77,6 +77,7 @@ export const state: TState = {
   currentCurrency: currencies[0],
   currentTimeZone: 'Europe/Stockholm',
   currentTimeZoneOffset: -1,
+  firstDayOfWeek: 'Monday',
   gigs: [ACME, BigBuy],
   isKeyboardVisible: false,
   keyboardHeight: 0,

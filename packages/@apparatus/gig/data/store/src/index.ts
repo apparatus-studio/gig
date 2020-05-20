@@ -10,6 +10,7 @@ export const initialState: TState = {
   currentCurrency: currencies[91],
   currentTimeZone: 'Europe/Stockholm',
   currentTimeZoneOffset: -1,
+  firstDayOfWeek: 'Monday',
   gigs: [],
   isKeyboardVisible: false,
   keyboardHeight: 0,

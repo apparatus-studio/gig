@@ -10,6 +10,7 @@ export type TEnvironment = {
   today: string,
   currentTimeZone: string,
   currentTimeZoneOffset: number,
+  firstDayOfWeek: 'Monday' | 'Tuesday' | 'Wednesday' | 'Thursday' | 'Friday' | 'Saturday' | 'Sunday',
 }
 
 export type TStorableData = {
