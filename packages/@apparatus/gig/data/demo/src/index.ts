@@ -72,6 +72,78 @@ export const BigBuy: TGig = {
   ], // 4.5 hours | 6300 kr
 }
 
+export const BlackMesa: TGig = {
+  name: 'BlackMesa',
+  currentRate: 1500,
+  timeReports: [
+    {
+      rate: 1500, // 4500 total
+      currency: 'SEK',
+      startTime: getUnixTime(
+        addHours(
+          parseISO('2020-04-14'),
+          15
+        )
+      ),
+      length: 3 * (60 * 60),
+      timeZone: 'Europe/Stockholm',
+      timeZoneOffset: -1,
+    },
+    {
+      rate: 1200, // 6000 total
+      currency: 'SEK',
+      startTime: getUnixTime(
+        addHours(
+          parseISO('2020-04-13'),
+          10
+        )
+      ),
+      length: 5 * (60 * 60),
+      timeZone: 'Europe/Stockholm',
+      timeZoneOffset: -1,
+    },
+    {
+      rate: 1500, // 3000 total
+      currency: 'SEK',
+      startTime: getUnixTime(
+        addHours(
+          parseISO('2020-04-14'),
+          10
+        )
+      ),
+      length: 2 * (60 * 60),
+      timeZone: 'Europe/Stockholm',
+      timeZoneOffset: -1,
+    },
+    {
+      rate: 1500, // 3000 total
+      currency: 'SEK',
+      startTime: getUnixTime(
+        addHours(
+          parseISO('2020-04-12'),
+          10
+        )
+      ),
+      length: 2 * (60 * 60),
+      timeZone: 'Europe/Stockholm',
+      timeZoneOffset: -1,
+    },
+    {
+      rate: 1500, // 3000 total
+      currency: 'SEK',
+      startTime: getUnixTime(
+        addHours(
+          parseISO('2020-04-26'),
+          10
+        )
+      ),
+      length: 2 * (60 * 60),
+      timeZone: 'Europe/Stockholm',
+      timeZoneOffset: -1,
+    },
+  ],
+}
+
 export const state: TState = {
   currencies,
   currentCurrency: currencies[0],

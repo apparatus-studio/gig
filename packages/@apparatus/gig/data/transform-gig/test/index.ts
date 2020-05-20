@@ -1,6 +1,6 @@
 import test from 'tape'
-import { ACME, BigBuy } from '@apparatus/gig-data-demo'
-import { totalEarnings, totalHours, todayEarnings, todayHours, thisMonthEarnings, thisMonthHours } from '../src'
+import { ACME, BigBuy, BlackMesa } from '@apparatus/gig-data-demo'
+import { totalEarnings, totalHours, todayEarnings, todayHours, thisMonthEarnings, thisMonthHours, thisWeekEarnings, thisWeekHours } from '../src'
 
 test('totalEarnings', (t) => {
   t.deepEquals(
@@ -125,6 +125,50 @@ test('thisMonthHours', (t) => {
     ),
     4.5,
     'should be 4.5'
+  )
+
+  t.end()
+})
+
+test('thisWeekEarnings', (t) => {
+  t.deepEquals(
+    thisWeekEarnings(
+      BlackMesa,
+      '2020-04-14'
+    ),
+    13500,
+    'should be 13500'
+  )
+
+  t.deepEquals(
+    thisWeekEarnings(
+      BlackMesa,
+      '2020-04-26'
+    ),
+    3000,
+    'should be 3000'
+  )
+
+  t.end()
+})
+
+test('thisWeekHours', (t) => {
+  t.deepEquals(
+    thisWeekHours(
+      BlackMesa,
+      '2020-04-14'
+    ),
+    10,
+    'should be 10'
+  )
+
+  t.deepEquals(
+    thisWeekHours(
+      BlackMesa,
+      '2020-04-22'
+    ),
+    2,
+    'should be 2'
   )
 
   t.end()
