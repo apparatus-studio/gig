@@ -1,3 +1,7 @@
+## v0.3.1
+
+* 🐞 better alignment of chat bubbles
+
 ## v0.3.0
 
 * ♻️ update dependencies `@apparatus/gig-types-data`

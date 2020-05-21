@@ -1,3 +1,9 @@
+## v0.5.0
+
+* 🌱 use day | week | month periods properly
+
+* ♻️ update dependencies `@apparatus/gig-data-transform-gig`, `@apparatus/gig-data-demo`, `@apparatus/gig-types-store`
+
 ## v0.4.0
 
 * ♻️ update dependencies `@apparatus/gig-data-transform-time-report`, `@apparatus/gig-data-demo`, `@apparatus/gig-data-transform-gig`

@@ -1,3 +1,9 @@
+## v0.6.0
+
+* 🌱 support state sync
+
+* ♻️ update dependencies `@apparatus/gig-containers-share`, `@apparatus/gig-containers-sync-state`
+
 ## v0.5.0
 
 * ♻️ update dependencies `@apparatus/gig-containers-share`

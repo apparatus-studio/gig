@@ -1,3 +1,9 @@
+## v0.6.0
+
+* 🐞 point to the right section after loading
+
+* ♻️ update dependencies `@apparatus/gig-data-store`
+
 ## v0.5.0
 
 * ♻️ update dependencies `@apparatus/gig-data-store`

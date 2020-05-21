@@ -1,3 +1,9 @@
+## v0.4.0
+
+* 🌱 support state sync
+
+* 🐞 point to the right section after loading
+
 ## v0.3.0
 
 * 🌱 add first day of week config

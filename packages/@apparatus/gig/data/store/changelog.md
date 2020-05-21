@@ -1,3 +1,11 @@
+## v0.5.0
+
+* 🐞 point to the right section after loading
+
+* 🐞 land in the proper place after onboarding
+
+* ♻️ update dependencies `@apparatus/gig-data-demo`, `@apparatus/gig-types-store`
+
 ## v0.4.0
 
 * ♻️ update dependencies `@apparatus/gig-data-demo`
