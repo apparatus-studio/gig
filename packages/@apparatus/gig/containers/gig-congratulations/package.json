@@ -10,7 +10,7 @@
     "build/"
   ],
   "dependencies": {
-    "@apparatus/gig-data-store": "^0.4.0",
+    "@apparatus/gig-data-store": "^0.5.0",
     "@apparatus/gig-organisms-gig-congratulations": "^0.2.0",
     "@babel/runtime": "^7.1.2",
     "refun": "^2.0.0"

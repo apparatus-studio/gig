@@ -10,7 +10,7 @@
     "build/"
   ],
   "dependencies": {
-    "@apparatus/gig-data-store": "^0.4.0",
+    "@apparatus/gig-data-store": "^0.5.0",
     "@apparatus/gig-organisms-currency-select": "^0.2.0",
     "@babel/runtime": "^7.1.2",
     "fuse.js": "^5.2.1",
