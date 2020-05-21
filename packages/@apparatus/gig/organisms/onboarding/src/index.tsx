@@ -46,7 +46,7 @@ export const OrganismOnboarding: FC<TOrganismOnboarding> = component(
           >
             <ChatBubble
               key={index}
-              containerWidth={parentWidth - (GRID * 20)}
+              containerWidth={parentWidth - (GRID * 30)}
               direction={author === 'gig' ? 'left' : 'right'}
             >
               {body}
