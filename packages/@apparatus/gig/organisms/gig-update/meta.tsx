@@ -3,6 +3,7 @@ import { OrganismGigUpdate, TOrganismGigUpdate } from './src'
 
 export const config: TComponentConfig<TOrganismGigUpdate> = {
   props: {
+    isKeyboardVisible: [true],
     gigName: ['BigBuy'],
     onBack: [() => {}],
     onSave: [() => {}],

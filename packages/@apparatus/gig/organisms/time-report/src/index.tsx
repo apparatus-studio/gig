@@ -22,6 +22,7 @@ export type TOrganismTimeReport = {
   internalDate: string,
   internalEndTime: string,
   internalStartTime: string,
+  isKeyboardVisible: boolean,
   length?: number,
   nav: string,
   onBack: () => void,
@@ -41,6 +42,7 @@ export const OrganismTimeReport: FC<TOrganismTimeReport> = ({
   internalDate,
   internalEndTime,
   internalStartTime,
+  isKeyboardVisible,
   nav,
   onBack,
   onDiscard,
@@ -102,15 +104,17 @@ export const OrganismTimeReport: FC<TOrganismTimeReport> = ({
       />
     </MainScrollable>
 
-    <Bottom multiplier={10}>
-      <Vertical width="100%">
-        <Button level={BUTTON_LEVEL_PRIMARY} onPress={onSave}>
-          {primaryCallToAction}
-        </Button>
-        <Button level={BUTTON_LEVEL_SECONDARY} onPress={onDiscard}>
-          {secondaryCallToAction}
-        </Button>
-      </Vertical>
-    </Bottom>
+    {!isKeyboardVisible && (
+      <Bottom multiplier={10}>
+        <Vertical width="100%">
+          <Button level={BUTTON_LEVEL_PRIMARY} onPress={onSave}>
+            {primaryCallToAction}
+          </Button>
+          <Button level={BUTTON_LEVEL_SECONDARY} onPress={onDiscard}>
+            {secondaryCallToAction}
+          </Button>
+        </Vertical>
+      </Bottom>
+    )}
   </FullCover>
 )

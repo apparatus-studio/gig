@@ -144,44 +144,48 @@ export const OrganismGig: FC<TOrganismGig> = ({
 
     {(showDrawer !== undefined && showDrawer) && (
       <Overlay onPress={() => setShowDrawer(false)}>
-        <ActionSheet>
-          <Text level={TEXT_LEVEL_SECONDARY_TITLE}>
-            Manage {selectedGig}
-          </Text>
-          <AtomSpacer multiplier={6}/>
-          <ListOption
-            code="edit"
-            optionName="Edit"
-            onPress={onEdit}
-          />
-          <ListOption
-            code="remote"
-            optionName="Remove"
-            onPress={onRemove}
-          />
-          <ListOption
-            code="export-csv"
-            optionName="Export CSV"
-            onPress={onExportCSV}
-          />
-        </ActionSheet>
+        <Bottom multiplier={0}>
+          <ActionSheet>
+            <Text level={TEXT_LEVEL_SECONDARY_TITLE}>
+              Manage {selectedGig}
+            </Text>
+            <AtomSpacer multiplier={6}/>
+            <ListOption
+              code="edit"
+              optionName="Edit"
+              onPress={onEdit}
+            />
+            <ListOption
+              code="remote"
+              optionName="Remove"
+              onPress={onRemove}
+            />
+            <ListOption
+              code="export-csv"
+              optionName="Export CSV"
+              onPress={onExportCSV}
+            />
+          </ActionSheet>
+        </Bottom>
       </Overlay>
     )}
 
-    <Bottom multiplier={10}>
-      <Vertical hAlign="center" width="100%">
-        <Horizontal>
-          <StickyButton name={ICON_NAMES_PLUS} onPress={onAddTimeReport}>
-            Create report
-          </StickyButton>
-          <AtomSpacer multiplier={10}/>
-          <AtomSpacer multiplier={10}/>
-          <StickyButton name={ICON_NAMES_TIMER} onPress={onTrackTime}>
-            Track time
-          </StickyButton>
-        </Horizontal>
-      </Vertical>
-    </Bottom>
+    {(showDrawer === undefined || !showDrawer) && (
+      <Bottom multiplier={10}>
+        <Vertical hAlign="center" width="100%">
+          <Horizontal>
+            <StickyButton name={ICON_NAMES_PLUS} onPress={onAddTimeReport}>
+              Create report
+            </StickyButton>
+            <AtomSpacer multiplier={10}/>
+            <AtomSpacer multiplier={10}/>
+            <StickyButton name={ICON_NAMES_TIMER} onPress={onTrackTime}>
+              Track time
+            </StickyButton>
+          </Horizontal>
+        </Vertical>
+      </Bottom>
+    )}
   </FullCover>
 )
 

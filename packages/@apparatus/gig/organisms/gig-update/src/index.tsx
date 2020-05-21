@@ -14,6 +14,7 @@ import {
 
 export type TOrganismGigUpdate = {
   gigName: string,
+  isKeyboardVisible: boolean,
   onBack: () => void,
   onSave: () => void,
   rate: string,
@@ -23,6 +24,7 @@ export type TOrganismGigUpdate = {
 
 export const OrganismGigUpdate: FC<TOrganismGigUpdate> = ({
   gigName,
+  isKeyboardVisible,
   onBack,
   onSave,
   rate,
@@ -44,10 +46,12 @@ export const OrganismGigUpdate: FC<TOrganismGigUpdate> = ({
       <Input value={rate} onChange={setRate}/>
     </MainScrollable>
 
-    <Bottom multiplier={10}>
-      <Button level={BUTTON_LEVEL_PRIMARY} onPress={onSave}>
-        Save changes
-      </Button>
-    </Bottom>
+    {!isKeyboardVisible && (
+      <Bottom multiplier={10}>
+        <Button level={BUTTON_LEVEL_PRIMARY} onPress={onSave}>
+          Save changes
+        </Button>
+      </Bottom>
+    )}
   </FullCover>
 )

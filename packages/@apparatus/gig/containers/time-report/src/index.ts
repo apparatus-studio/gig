@@ -7,7 +7,7 @@ import { startTimeFromHooman, lengthFromHooman } from '@apparatus/gig-data-trans
 import { OrganismTimeReport } from '@apparatus/gig-organisms-time-report'
 
 export const componentTimeReport = component(
-  mapStoreState((state) => state, ['section']),
+  mapStoreState((state) => state, ['isKeyboardVisible', 'section']),
   mapStoreDispatch('dispatch'),
   mapHandlers({
     onBack: ({ dispatch, selectedGig }) => () => {

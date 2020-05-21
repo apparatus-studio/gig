@@ -1,8 +1,9 @@
 import { component, mapState, mapHandlers } from 'refun'
-import { mapStoreDispatch } from '@apparatus/gig-data-store'
+import { mapStoreDispatch, mapStoreState } from '@apparatus/gig-data-store'
 import { OrganismGigNew } from '@apparatus/gig-organisms-gig-new'
 
 export const componentGigNew = component(
+  mapStoreState((state) => state, ['isKeyboardVisible']),
   mapStoreDispatch('dispatch'),
   mapHandlers({
     onBack: ({ dispatch }) => () => {

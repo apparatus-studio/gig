@@ -6,7 +6,7 @@ import { OrganismGigUpdate } from '@apparatus/gig-organisms-gig-update'
 export const componentGigUpdate = component(
   mapStoreState(
     (state) => state,
-    ['section', 'selectedGig']
+    ['isKeyboardVisible', 'section', 'selectedGig']
   ),
   mapWithProps(gigUpdateProps),
   mapStoreDispatch('dispatch'),

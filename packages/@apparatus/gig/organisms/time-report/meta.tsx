@@ -6,6 +6,7 @@ export const config: TComponentConfig<TOrganismTimeReport> = {
     internalDate: ['2020-02-01'],
     internalEndTime: ['18.00'],
     internalStartTime: ['10.00'],
+    isKeyboardVisible: [true],
     nav: ['New Time Report', 'Edit Time Report'],
     onBack: [() => {}],
     onDiscard: [() => {}],

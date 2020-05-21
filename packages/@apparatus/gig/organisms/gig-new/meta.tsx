@@ -4,6 +4,7 @@ import { OrganismGigNew, TOrganismGigNew } from './src'
 export const config: TComponentConfig<TOrganismGigNew> = {
   props: {
     gigName: ['BigBuy'],
+    isKeyboardVisible: [true],
     rate: ['1600'],
     setGigName: [() => {}],
     setRate: [() => {}],
