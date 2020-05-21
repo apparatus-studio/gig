@@ -12,15 +12,11 @@
   "dependencies": {
     "@apparatus/gig-data-demo": "^0.4.0",
     "@apparatus/gig-data-transform-gig": "^0.4.0",
-    "@apparatus/gig-data-transform-numbers": "^0.1.1",
-    "@apparatus/gig-data-transform-time-report": "^0.4.0",
     "@apparatus/gig-types-store": "^0.3.0",
     "elegir": "^1.0.0",
     "tsfn": "^1.1.1"
   },
   "devDependencies": {
-    "@apparatus/gig-data-transform-numbers": "^0.1.1",
-    "@apparatus/gig-data-transform-time-report": "^0.4.0",
     "@types/tape": "^4.2.34",
     "tape": "^5.0.0-next.5"
   },
