@@ -1,3 +1,7 @@
+## v0.2.1
+
+* 🐞 fix drawers and hide bottom when keyboard is open
+
 ## v0.2.0
 
 * 🌱 theme support and new blocks version

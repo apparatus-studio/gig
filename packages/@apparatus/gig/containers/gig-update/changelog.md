@@ -1,3 +1,9 @@
+## v0.6.1
+
+* 🐞 fix drawers and hide bottom when keyboard is open
+
+* ♻️ update dependencies `@apparatus/gig-organisms-gig-update`
+
 ## v0.6.0
 
 * ♻️ update dependencies `@apparatus/gig-data-store`, `@apparatus/gig-data-transform-store`

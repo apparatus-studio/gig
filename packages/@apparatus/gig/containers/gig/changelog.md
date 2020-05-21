@@ -1,3 +1,7 @@
+## v0.6.1
+
+* 🐞 fix drawers and hide bottom when keyboard is open
+
 ## v0.6.0
 
 * 🌱 use day | week | month periods properly
