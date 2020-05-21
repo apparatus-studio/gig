@@ -7,6 +7,7 @@ export const components: TComponents = {
   OrganismGigCongratulations: () => import('@apparatus/gig-organisms-gig-congratulations/meta' /* webpackChunkName: "OrganismGigCongratulations" */),
   OrganismGigNew: () => import('@apparatus/gig-organisms-gig-new/meta' /* webpackChunkName: "OrganismGigNew" */),
   OrganismGigRemove: () => import('@apparatus/gig-organisms-gig-remove/meta' /* webpackChunkName: "OrganismGigRemove" */),
+  OrganismGigUpdate: () => import('@apparatus/gig-organisms-gig-update/meta' /* webpackChunkName: "OrganismGigUpdate" */),
   OrganismHome: () => import('@apparatus/gig-organisms-home/meta' /* webpackChunkName: "OrganismHome" */),
   OrganismOnboarding: () => import('@apparatus/gig-organisms-onboarding/meta' /* webpackChunkName: "OrganismOnboarding" */),
   OrganismSettings: () => import('@apparatus/gig-organisms-settings/meta' /* webpackChunkName: "OrganismSettings" */),

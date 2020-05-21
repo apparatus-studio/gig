@@ -6,6 +6,7 @@ import * as OrganismGig from '@apparatus/gig-organisms-gig/meta'
 import * as OrganismGigCongratulations from '@apparatus/gig-organisms-gig-congratulations/meta'
 import * as OrganismGigNew from '@apparatus/gig-organisms-gig-new/meta'
 import * as OrganismGigRemove from '@apparatus/gig-organisms-gig-remove/meta'
+import * as OrganismGigUpdate from '@apparatus/gig-organisms-gig-update/meta'
 import * as OrganismHome from '@apparatus/gig-organisms-home/meta'
 import * as OrganismOnboarding from '@apparatus/gig-organisms-onboarding/meta'
 import * as OrganismSplash from '@apparatus/gig-organisms-splash/meta'
@@ -23,6 +24,7 @@ export const components: TComponents = {
   OrganismGigCongratulations: () => Promise.resolve(OrganismGigCongratulations),
   OrganismGigNew: () => Promise.resolve(OrganismGigNew),
   OrganismGigRemove: () => Promise.resolve(OrganismGigRemove),
+  OrganismGigUpdate: () => Promise.resolve(OrganismGigUpdate),
   OrganismHome: () => Promise.resolve(OrganismHome),
   OrganismOnboarding: () => Promise.resolve(OrganismOnboarding),
   OrganismSplash: () => Promise.resolve(OrganismSplash),
