@@ -8,6 +8,7 @@ import {
 } from '@apparatus/blocks-index'
 import * as tokens from '@apparatus/gig-themes-gig-tokens'
 import { ContainerShare } from '@apparatus/gig-containers-share'
+import { ContainerSyncState } from '@apparatus/gig-containers-sync-state'
 
 export type TOrganismSectionSelector = {
   Section: FC<any>,
@@ -22,6 +23,7 @@ export const OrganismSectionSelector: FC<TOrganismSectionSelector> = ({
 }) => (
   <>
     <ContainerShare/>
+    <ContainerSyncState/>
     <ContextParentSizeProvider
       parentHeight={parentHeight}
       parentWidth={parentWidth}
