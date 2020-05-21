@@ -41,7 +41,7 @@ export const reducer: Reducer<TState, TAction> = (state = initialState, action) 
           ...state.gigs,
           action.payload,
         ],
-        section: 'GIG_CONGRATULATIONS',
+        section: state.section === 'ONBOARDING' ? 'GIG' : 'GIG_CONGRATULATIONS',
         selectedGig: action.payload.name,
       }
     }

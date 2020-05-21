@@ -3,9 +3,12 @@ import { getUnixTime, addMinutes, addHours, parseISO } from 'date-fns'
 import { state } from '@apparatus/gig-data-demo'
 import { reducer } from '../src'
 
-test('reducer: add gig', (t) => {
+test('reducer: add gig from random place', (t) => {
   const result = reducer(
-    state,
+    {
+      ...state,
+      section: 'GIG_NEW',
+    },
     {
       type: 'GIG_NEW',
       payload: {
@@ -26,6 +29,43 @@ test('reducer: add gig', (t) => {
     result.section,
     'GIG_CONGRATULATIONS',
     'should be GIG_CONGRATULATIONS'
+  )
+
+  t.deepEquals(
+    result.selectedGig,
+    'Globex',
+    'should be Globex'
+  )
+
+  t.end()
+})
+
+test('reducer: add gig from onboarding', (t) => {
+  const result = reducer(
+    {
+      ...state,
+      section: 'ONBOARDING',
+    },
+    {
+      type: 'GIG_NEW',
+      payload: {
+        name: 'Globex',
+        timeReports: [],
+        currentRate: 1500,
+      },
+    }
+  )
+
+  t.deepEquals(
+    result.gigs[2].name,
+    'Globex',
+    'should be Globex'
+  )
+
+  t.deepEquals(
+    result.section,
+    'GIG',
+    'should be GIG'
   )
 
   t.deepEquals(
