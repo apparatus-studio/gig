@@ -39,8 +39,8 @@ export type TOrganismGig = {
   selectedGig: string,
   setShowDrawer: (showDrawer: boolean) => void,
   showDrawer: boolean,
-  totalEarnings?: string,
-  totalHours?: string,
+  periodEarnings?: string,
+  periodHours?: string,
 }
 
 export const OrganismGig: FC<TOrganismGig> = ({
@@ -57,8 +57,8 @@ export const OrganismGig: FC<TOrganismGig> = ({
   showDrawer,
   selectedGig,
   setShowDrawer,
-  totalEarnings,
-  totalHours,
+  periodEarnings,
+  periodHours,
 }) => (
   <FullCover>
     <MainScrollable multiplier={10}>
@@ -70,7 +70,7 @@ export const OrganismGig: FC<TOrganismGig> = ({
       </ContextHeader>
 
       <Text level={TEXT_LEVEL_PRIMARY_TITLE}>
-        {totalEarnings} kr
+        {periodEarnings} kr
       </Text>
 
       <Horizontal hAlign="center">
@@ -78,7 +78,7 @@ export const OrganismGig: FC<TOrganismGig> = ({
       </Horizontal>
 
       <Text level={TEXT_LEVEL_BODY}>
-        You’ve worked a total of <AtomText level={TEXT_LEVEL_BODY} isBold>{totalHours}</AtomText> on {selectedGig}.
+        You’ve worked a total of <AtomText level={TEXT_LEVEL_BODY} isBold>{periodHours}</AtomText> on {selectedGig}.
       </Text>
 
       <Horizontal hAlign="center">
@@ -91,7 +91,7 @@ export const OrganismGig: FC<TOrganismGig> = ({
           options={[
             {
               label: 'Day',
-              value: 'today',
+              value: 'day',
             },
             {
               label: 'Week',

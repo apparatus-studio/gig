@@ -114,7 +114,7 @@ export const OrganismHome: FC<TOrganismHome> = ({
                   period === 'month',
                   transformGig.thisMonthHours(gig, month),
                   period === 'week',
-                  transformGig.thisMonthHours(gig, month),
+                  transformGig.thisWeekHours(gig, today),
                   true,
                   transformGig.todayHours(gig, today)
                 )
@@ -123,7 +123,7 @@ export const OrganismHome: FC<TOrganismHome> = ({
                   period === 'month',
                   transformGig.thisMonthEarnings(gig, month),
                   period === 'week',
-                  transformGig.thisMonthEarnings(gig, month),
+                  transformGig.thisWeekEarnings(gig, today),
                   true,
                   transformGig.todayEarnings(gig, today)
                 )

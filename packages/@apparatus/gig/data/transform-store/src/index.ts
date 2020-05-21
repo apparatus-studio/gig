@@ -9,8 +9,6 @@ import {
   todayEarnings as todayGigEarnings,
 } from '@apparatus/gig-data-transform-gig'
 import { TExtend } from 'tsfn'
-import { splitByDay, lengthInHooman } from '@apparatus/gig-data-transform-time-report'
-import { moneyInHooman } from '@apparatus/gig-data-transform-numbers'
 
 export const currentGig = ({ gigs, selectedGig }: TState) =>
   gigs.find((gig) => gig.name === selectedGig)
@@ -74,18 +72,6 @@ export const homeProps = (state: TExtend<TState, {}>) => ({
 export const gigUpdateProps = (state: TState) => ({
   currentRate: currentGig(state)?.currentRate,
 })
-
-export const gigProps = (state: TState) => {
-  const gig = currentGig(state)
-
-  return gig !== undefined
-    ? {
-      days: splitByDay(gig.timeReports),
-      totalHours: lengthInHooman(gig.timeReports.map(({ length }) => length).reduce((a, b) => a + b, 0)),
-      totalEarnings: moneyInHooman(totalGigEarnings(gig)),
-    }
-    : {}
-}
 
 export const trackTimeProps = (state: TState) => ({
   currentRate: currentGig(state)?.currentRate,

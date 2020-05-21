@@ -1,8 +1,11 @@
 import { component, mapHandlers, mapState, mapWithProps } from 'refun'
 import { mapStoreDispatch, mapStoreState } from '@apparatus/gig-data-store'
-import { gigProps } from '@apparatus/gig-data-transform-store'
+import { currentGig } from '@apparatus/gig-data-transform-store'
 import { OrganismGig } from '@apparatus/gig-organisms-gig'
 import { TPeriod } from '@apparatus/gig-types-data'
+import { splitByDay } from '@apparatus/gig-data-transform-time-report'
+import { moneyInHooman, hoursInHooman } from '@apparatus/gig-data-transform-numbers'
+import { thisMonthEarnings, thisMonthHours, thisWeekEarnings, thisWeekHours, todayEarnings, todayHours } from '@apparatus/gig-data-transform-gig'
 
 export const componentGig = component(
   mapStoreState(
@@ -12,7 +15,55 @@ export const componentGig = component(
       'section',
     ]
   ),
-  mapWithProps(gigProps),
+  mapWithProps((state) => {
+    const gig = currentGig(state)
+
+    if (gig !== undefined) {
+      const days = splitByDay(gig.timeReports)
+
+      switch (state.period) {
+        case 'day': {
+          return {
+            days,
+            periodEarnings: moneyInHooman(
+              todayEarnings(gig, state.today)
+            ),
+            periodHours: hoursInHooman(
+              todayHours(gig, state.today)
+            ),
+          }
+        }
+
+        case 'week': {
+          return {
+            days,
+            periodEarnings: moneyInHooman(
+              thisWeekEarnings(gig, state.today)
+            ),
+            periodHours: hoursInHooman(
+              thisWeekHours(gig, state.today)
+            ),
+          }
+        }
+
+        case 'month': {
+          const currentMonth = state.today.slice(0, 7)
+
+          return {
+            days,
+            periodEarnings: moneyInHooman(
+              thisMonthEarnings(gig, currentMonth)
+            ),
+            periodHours: hoursInHooman(
+              thisMonthHours(gig, currentMonth)
+            ),
+          }
+        }
+      }
+    }
+
+    return {}
+  }),
   mapStoreDispatch('dispatch'),
   mapState('showDrawer', 'setShowDrawer', () => false, []),
   mapHandlers({

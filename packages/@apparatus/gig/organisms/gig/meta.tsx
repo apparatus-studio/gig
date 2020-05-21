@@ -18,8 +18,8 @@ export const config: TComponentConfig<TOrganismGig> = {
     selectedGig: ['ACME'],
     setShowDrawer: [() => {}],
     showDrawer: [true],
-    totalEarnings: ['24000'],
-    totalHours: ['64'],
+    periodEarnings: ['24000'],
+    periodHours: ['64'],
   },
   required: [
     'onAddTimeReport',
