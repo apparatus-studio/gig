@@ -41,3 +41,27 @@ export const run = (file: string) =>
 
     await main()
   })
+
+export const patchDependencies = () => plugin('patchDependencies', ({ logMessage }) => async () => {
+  const { readFile, writeFile } = await import('pifs')
+  const { resolve } = await import('path')
+
+  const files = [
+    [
+      'link-android-dependency.js.template',
+      resolve('node_modules', '@rebox', 'android', 'node', 'link-android-dependency.js'),
+    ],
+    [
+      'package.json.template',
+      resolve('node_modules', '@react-native-community', 'async-storage', 'package.json'),
+    ],
+  ]
+
+  return Promise.all(files.map(async ([fileName, target]) => {
+    logMessage(`patching ${fileName}`)
+
+    const contents = await readFile(resolve('tasks', 'patchDependencies', fileName))
+
+    await writeFile(target, contents)
+  }))
+})
