@@ -9,10 +9,7 @@ export const componentSplash = component(
   mapHandlers({
     onLoaded: ({ dispatch }) => () => {
       dispatch({
-        type: 'NAVIGATE',
-        payload: {
-          section: 'WELCOME',
-        },
+        type: 'LOADED',
       })
     },
   }),

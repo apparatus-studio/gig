@@ -498,6 +498,43 @@ test('reducer: share stop', (t) => {
   t.end()
 })
 
+test('reducer: loaded, no gigs', (t) => {
+  const result = reducer(
+    {
+      ...state,
+      gigs: [],
+    },
+    {
+      type: 'LOADED',
+    }
+  )
+
+  t.deepEquals(
+    result.section,
+    'WELCOME',
+    'should be WELCOME'
+  )
+
+  t.end()
+})
+
+test('reducer: loaded, gig data already', (t) => {
+  const result = reducer(
+    state,
+    {
+      type: 'LOADED',
+    }
+  )
+
+  t.deepEquals(
+    result.section,
+    'HOME',
+    'should be HOME'
+  )
+
+  t.end()
+})
+
 test('reducer: sync state', (t) => {
   const gigs = [
     {
@@ -529,6 +566,9 @@ test('reducer: sync state', (t) => {
         currentCurrency: state.currencies[7],
         gigs,
         selectedGig: 'Ericsson',
+        currentTimeZone: 'Europe/Stockholm',
+        currentTimeZoneOffset: -1,
+        firstDayOfWeek: 'Monday',
       },
     }
   )

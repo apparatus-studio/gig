@@ -68,6 +68,15 @@ export const reducer: Reducer<TState, TAction> = (state = initialState, action) 
       }
     }
 
+    case 'LOADED': {
+      return {
+        ...state,
+        section: state.gigs.length === 0
+          ? 'WELCOME'
+          : 'HOME',
+      }
+    }
+
     case 'SHARE_START': {
       return {
         ...state,

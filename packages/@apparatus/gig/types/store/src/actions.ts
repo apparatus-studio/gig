@@ -39,6 +39,10 @@ export type TActionKeyboardStatusUpdate = {
   payload: TKeyboard,
 }
 
+export type TActionLoaded = {
+  type: 'LOADED',
+}
+
 export type TActionNavigate = {
   type: 'NAVIGATE',
   payload: TRequireKeys<Partial<TState>, 'section'>,
@@ -110,6 +114,7 @@ export type TAction =
   | TActionGigRemove
   | TActionGigUpdate
   | TActionKeyboardStatusUpdate
+  | TActionLoaded
   | TActionNavigate
   | TActionPeriodUpdate
   | TActionRootDimensionsUpdate
