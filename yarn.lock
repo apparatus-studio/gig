@@ -671,6 +671,13 @@
     "@types/react-native" "^0.62.9"
     react-native "^0.62.2"
 
+"@apparatus/effects-sync-persistent-state@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/effects-sync-persistent-state/-/effects-sync-persistent-state-0.1.0.tgz#4231b85bc800c936538c782641d9315777e25120"
+  integrity sha512-uZxbdIh/Y7Ffm0KwT2Y0h1iof6ZLIK9+3boDf3XQ7hnfYfgQ6trp/zBL5eRKORI7QJ1e7OfjZNXWXFZt2Uy5ZA==
+  dependencies:
+    "@react-native-community/async-storage" "^1.10.0"
+
 "@apparatus/effects-update-keyboard-status@^0.1.1":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@apparatus/effects-update-keyboard-status/-/effects-update-keyboard-status-0.1.1.tgz#147bdc76c71891b0e5c56a0e857284a869e17664"
@@ -719,10 +726,10 @@
     lottie-web "^5.6.8"
     react-native "^0.62.2"
 
-"@apparatus/meta-start-preset@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/meta-start-preset/-/meta-start-preset-0.2.0.tgz#e84d8e07f797b428e4e6f0d7f1e52d330cea821e"
-  integrity sha512-egBwEwSlYvzb777bMltB1ZZZUz5Hh5fqxgWo9bYdXPK4KPWmlGoHuIcT/AUS0bXZht39X0RaHl0mf2ioCJ1BBA==
+"@apparatus/meta-start-preset@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/meta-start-preset/-/meta-start-preset-0.3.0.tgz#5cca2f539f194a4893ad5a8999271d784d644d40"
+  integrity sha512-3n2IR8QqPlcyZQ7wA46IRkFp9apMfx88IJ+NctTB9YL/veYntEV0ykdCbwVWQ/HK73aM3O2fiw+E4Mtj9ZJpxw==
   dependencies:
     "@auto/changelog" "^0.1.0"
     "@auto/commit-prompt" "^0.1.0"
@@ -735,6 +742,7 @@
     "@babel/core" "^7.8.0"
     "@babel/register" "^7.8.0"
     "@nextools/babel-config" "^0.1.4"
+    "@react-native-community/async-storage" "^1.10.3"
     "@rebox/android" "^2.0.5"
     "@rebox/ios" "^2.0.5"
     "@rebox/web" "^2.1.5"
@@ -2609,6 +2617,13 @@
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@psxcode/wait/-/wait-0.1.1.tgz#9462de148dcb67bdeb98e8adf274d23f86839546"
   integrity sha512-HVQ1dG+tifm45G92p2P27KCuWDsQuu1Ha+LDn0mK0qmL6pOrJQ+haWUqXKLLs8Qp3pK4dRFPK1n8/rWb/f+2hA==
+
+"@react-native-community/async-storage@^1.10.0", "@react-native-community/async-storage@^1.10.3":
+  version "1.10.3"
+  resolved "https://registry.yarnpkg.com/@react-native-community/async-storage/-/async-storage-1.10.3.tgz#6974404a903a317f462bd0ac3fafa7c0291679df"
+  integrity sha512-f3G3dX5aoFZZC1G7alnaFmlTpXn8HPfpR8H3Hf7wbbQrQvZmW7mW2fXHv/oj99FNPd228bneL3GOnjGe2Epkww==
+  dependencies:
+    deep-assign "^3.0.0"
 
 "@react-native-community/cli-debugger-ui@^4.8.0":
   version "4.8.0"
@@ -5715,6 +5730,13 @@ dedent@^0.7.0:
   resolved "https://registry.yarnpkg.com/dedent/-/dedent-0.7.0.tgz#2495ddbaf6eb874abb0e1be9df22d2e5a544326c"
   integrity sha1-JJXduvbrh0q7Dhvp3yLS5aVEMmw=
 
+deep-assign@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/deep-assign/-/deep-assign-3.0.0.tgz#c8e4c4d401cba25550a2f0f486a2e75bc5f219a2"
+  integrity sha512-YX2i9XjJ7h5q/aQ/IM9PEwEnDqETAIYbggmdDB3HLTlSgo1CxPsj6pvhPG68rq6SVE0+p+6Ywsm5fTYNrYtBWw==
+  dependencies:
+    is-obj "^1.0.0"
+
 deep-equal@^1.0.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/deep-equal/-/deep-equal-1.1.1.tgz#b5c98c942ceffaf7cb051e24e1434a25a2e6076a"
@@ -8309,6 +8331,11 @@ is-number@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/is-number/-/is-number-7.0.0.tgz#7535345b896734d5f80c4d06c50955527a14f12b"
   integrity sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==
+
+is-obj@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/is-obj/-/is-obj-1.0.1.tgz#3e4729ac1f5fde025cd7d83a896dab9f4f67db0f"
+  integrity sha1-PkcprB9f3gJc19g6iW2rn09n2w8=
 
 is-object@^1.0.1:
   version "1.0.1"
