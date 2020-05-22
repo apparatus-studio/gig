@@ -1,3 +1,7 @@
+## v0.7.0
+
+* 🌱 alignment improvements
+
 ## v0.6.1
 
 * 🐞 update blocks version and fix spacing

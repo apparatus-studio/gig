@@ -1,3 +1,7 @@
+## v0.7.0
+
+* ♻️ update dependencies `@apparatus/gig-organisms-home`
+
 ## v0.6.0
 
 * ♻️ update dependencies `@apparatus/gig-data-store`, `@apparatus/gig-data-transform-store`, `@apparatus/gig-organisms-home`
