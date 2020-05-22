@@ -15,11 +15,12 @@ export const config: TComponentConfig<TOrganismGig> = {
     onUpdatePeriod: [() => {}],
     onUpdateTimeReport: [() => {}],
     period: ['day', 'week', 'month'],
+    periodEarnings: ['24000'],
+    periodHours: ['64'],
     selectedGig: ['ACME'],
     setShowDrawer: [() => {}],
     showDrawer: [true],
-    periodEarnings: ['24000'],
-    periodHours: ['64'],
+    today: ['2020-04-14'],
   },
   required: [
     'onAddTimeReport',
@@ -33,6 +34,7 @@ export const config: TComponentConfig<TOrganismGig> = {
     'period',
     'selectedGig',
     'setShowDrawer',
+    'today',
   ],
 }
 

@@ -41,6 +41,7 @@ export type TOrganismGig = {
   showDrawer: boolean,
   periodEarnings?: string,
   periodHours?: string,
+  today: string,
 }
 
 export const OrganismGig: FC<TOrganismGig> = ({
@@ -54,11 +55,12 @@ export const OrganismGig: FC<TOrganismGig> = ({
   onTrackTime,
   onUpdateTimeReport,
   onUpdatePeriod,
+  periodEarnings,
+  periodHours,
   showDrawer,
   selectedGig,
   setShowDrawer,
-  periodEarnings,
-  periodHours,
+  today,
 }) => (
   <FullCover>
     <MainScrollable
@@ -118,7 +120,7 @@ export const OrganismGig: FC<TOrganismGig> = ({
       {days?.map((dayReport: TDayReport) => (
         <View key={dayReport.date}>
           <Text level={TEXT_LEVEL_SECONDARY_TITLE}>
-            {dayInHooman(dayReport, '2020-04-14')}
+            {dayInHooman(dayReport, today)}
           </Text>
 
           <Horizontal hAlign="center">

@@ -3,8 +3,8 @@ import { mapStoreDispatch, mapStoreState } from '@apparatus/gig-data-store'
 import { currentGig } from '@apparatus/gig-data-transform-store'
 import { OrganismGig } from '@apparatus/gig-organisms-gig'
 import { TPeriod } from '@apparatus/gig-types-data'
-import { splitByDay } from '@apparatus/gig-data-transform-time-report'
-import { moneyInHooman, hoursInHooman } from '@apparatus/gig-data-transform-numbers'
+import { splitByDay, lengthInHooman } from '@apparatus/gig-data-transform-time-report'
+import { moneyInHooman } from '@apparatus/gig-data-transform-numbers'
 import { thisMonthEarnings, thisMonthHours, thisWeekEarnings, thisWeekHours, todayEarnings, todayHours } from '@apparatus/gig-data-transform-gig'
 
 export const componentGig = component(
@@ -13,6 +13,7 @@ export const componentGig = component(
     [
       'period',
       'section',
+      'today',
     ]
   ),
   mapWithProps((state) => {
@@ -28,8 +29,8 @@ export const componentGig = component(
             periodEarnings: moneyInHooman(
               todayEarnings(gig, state.today)
             ),
-            periodHours: hoursInHooman(
-              todayHours(gig, state.today)
+            periodHours: lengthInHooman(
+              todayHours(gig, state.today) * (60 * 60)
             ),
           }
         }
@@ -40,8 +41,8 @@ export const componentGig = component(
             periodEarnings: moneyInHooman(
               thisWeekEarnings(gig, state.today)
             ),
-            periodHours: hoursInHooman(
-              thisWeekHours(gig, state.today)
+            periodHours: lengthInHooman(
+              thisWeekHours(gig, state.today) * (60 * 60)
             ),
           }
         }
@@ -54,8 +55,8 @@ export const componentGig = component(
             periodEarnings: moneyInHooman(
               thisMonthEarnings(gig, currentMonth)
             ),
-            periodHours: hoursInHooman(
-              thisMonthHours(gig, currentMonth)
+            periodHours: lengthInHooman(
+              thisMonthHours(gig, currentMonth) * (60 * 60)
             ),
           }
         }

@@ -6,7 +6,7 @@ export const config: TComponentConfig<TOrganismHome> = {
   props: {
     earnings: [13000],
     gigs: [[ACME, BigBuy]],
-    hours: [78.3],
+    hours: ['7 h 30 mins'],
     month: ['January'],
     onNewGig: [() => {}],
     onSelect: [() => {}],

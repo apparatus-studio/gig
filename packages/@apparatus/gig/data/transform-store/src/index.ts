@@ -1,21 +1,25 @@
-import { elegir } from 'elegir'
 import { TState } from '@apparatus/gig-types-store'
 import {
-  totalHours as totalGigHours,
-  totalEarnings as totalGigEarnings,
+  thisWeekHours as thisWeekGigHours,
+  thisWeekEarnings as thisWeekGigEarnings,
   thisMonthHours as thisMonthGigHours,
   thisMonthEarnings as thisMonthGigEarnings,
   todayHours as todayGigHours,
   todayEarnings as todayGigEarnings,
 } from '@apparatus/gig-data-transform-gig'
-import { TExtend } from 'tsfn'
 
 export const currentGig = ({ gigs, selectedGig }: TState) =>
   gigs.find((gig) => gig.name === selectedGig)
 
-export const totalHours = ({ gigs }: TState): number => (
+export const thisWeekEarnings = ({ gigs, today }: TState): number => (
   gigs
-    .map((gig) => totalGigHours(gig))
+    .map((gig) => thisWeekGigEarnings(gig, today))
+    .reduce((a, b) => a + b, 0)
+)
+
+export const thisWeekHours = ({ gigs, today }: TState): number => (
+  gigs
+    .map((gig) => thisWeekGigHours(gig, today))
     .reduce((a, b) => a + b, 0)
 )
 
@@ -31,12 +35,6 @@ export const todayHours = ({ gigs, today }: TState): number => (
     .reduce((a, b) => a + b, 0)
 )
 
-export const totalEarnings = ({ gigs }: TState): number => (
-  gigs
-    .map((gig) => totalGigEarnings(gig))
-    .reduce((a, b) => a + b, 0)
-)
-
 export const thisMonthEarnings = ({ gigs, today }: TState): number => (
   gigs
     .map((gig) => thisMonthGigEarnings(gig, today.slice(0, 7)))
@@ -48,26 +46,6 @@ export const todayEarnings = ({ gigs, today }: TState): number => (
     .map((gig) => todayGigEarnings(gig, today))
     .reduce((a, b) => a + b, 0)
 )
-
-export const homeProps = (state: TExtend<TState, {}>) => ({
-  hours: elegir(
-    state.period === 'month',
-    totalHours(state),
-    state.period === 'week',
-    thisMonthHours(state),
-    true,
-    todayHours(state)
-  ),
-  earnings: elegir(
-    state.period === 'month',
-    totalEarnings(state),
-    state.period === 'week',
-    thisMonthEarnings(state),
-    true,
-    todayEarnings(state)
-  ),
-  month: state.today.slice(0, 7),
-})
 
 export const gigUpdateProps = (state: TState) => ({
   currentRate: currentGig(state)?.currentRate,

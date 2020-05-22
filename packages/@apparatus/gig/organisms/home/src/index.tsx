@@ -22,13 +22,14 @@ import {
   Horizontal,
   GRID,
 } from '@apparatus/blocks-index'
-import { hoursInHooman, moneyInHooman } from '@apparatus/gig-data-transform-numbers'
+import { moneyInHooman } from '@apparatus/gig-data-transform-numbers'
 import * as transformGig from '@apparatus/gig-data-transform-gig'
+import { lengthInHooman } from '@apparatus/gig-data-transform-time-report'
 
 export type TOrganismHome = {
   earnings: number,
   gigs: TGig[],
-  hours: number,
+  hours: string,
   month: string,
   onNewGig: () => void,
   onSelect: (gigName: string) => void,
@@ -70,7 +71,7 @@ export const OrganismHome: FC<TOrganismHome> = ({
       </Text>
       <AtomSpacer multiplier={6}/>
       <Text level={TEXT_LEVEL_BODY}>
-        You’ve worked a total of <AtomText level={TEXT_LEVEL_BODY} isBold>{hoursInHooman(hours)}</AtomText> {elegir(period === 'day', 'day', period === 'week', 'this week', true, 'this month')}.
+        You’ve worked a total of <AtomText level={TEXT_LEVEL_BODY} isBold>{hours}</AtomText> {elegir(period === 'day', 'day', period === 'week', 'this week', true, 'this month')}.
       </Text>
       <AtomSpacer multiplier={6}/>
       <Horizontal>
@@ -110,7 +111,7 @@ export const OrganismHome: FC<TOrganismHome> = ({
             <View key={gig.name} style={{ display: 'flex', flexDirection: 'row' }}>
               <Card
                 title={gig.name}
-                description={`You’ve worked ${hoursInHooman(
+                description={`You’ve worked ${lengthInHooman(
                   elegir(
                     period === 'month',
                     transformGig.thisMonthHours(gig, month),
@@ -128,7 +129,14 @@ export const OrganismHome: FC<TOrganismHome> = ({
                     true,
                     transformGig.todayEarnings(gig, today)
                   )
-                )} ${period}.`}
+                )} ${elegir(
+                  period === 'month',
+                  'this month',
+                  period === 'week',
+                  'this week',
+                  period === 'day',
+                  'today'
+                )}.`}
                 action="View reports"
                 onSelect={onSelect}
               />
