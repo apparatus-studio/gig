@@ -14,7 +14,6 @@ import {
   TEXT_LEVEL_BODY,
   TEXT_LEVEL_PRIMARY_TITLE,
   Vertical,
-  GRID,
   ContextParentSize,
   MainScrollable,
 } from '@apparatus/blocks-index'
