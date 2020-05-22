@@ -10,7 +10,7 @@
     "build/"
   ],
   "dependencies": {
-    "@apparatus/gig-data-store": "^0.5.0",
+    "@apparatus/gig-data-store": "^0.6.0",
     "@babel/runtime": "^7.1.2",
     "@types/react-native-share": "^3.1.0",
     "react": "16.11.0",
