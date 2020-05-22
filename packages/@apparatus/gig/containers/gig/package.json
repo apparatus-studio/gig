@@ -15,7 +15,7 @@
     "@apparatus/gig-data-transform-numbers": "^0.1.1",
     "@apparatus/gig-data-transform-store": "^0.5.0",
     "@apparatus/gig-data-transform-time-report": "^0.5.0",
-    "@apparatus/gig-organisms-gig": "^0.6.1",
+    "@apparatus/gig-organisms-gig": "^0.7.0",
     "@apparatus/gig-types-data": "^0.2.0",
     "@babel/runtime": "^7.1.2",
     "refun": "^2.0.0"
