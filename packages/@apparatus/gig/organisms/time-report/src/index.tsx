@@ -115,6 +115,7 @@ export const OrganismTimeReport: FC<TOrganismTimeReport> = ({
           <Button level={BUTTON_LEVEL_PRIMARY} onPress={onSave}>
             {primaryCallToAction}
           </Button>
+          <AtomSpacer multiplier={4}/>
           <Button level={BUTTON_LEVEL_SECONDARY} onPress={onDiscard}>
             {secondaryCallToAction}
           </Button>

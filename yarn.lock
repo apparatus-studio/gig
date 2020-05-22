@@ -408,9 +408,9 @@
     refun "^2.0.0"
 
 "@apparatus/blocks-molecules-sticky-button@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-sticky-button/-/blocks-molecules-sticky-button-0.7.0.tgz#b2fc8e9016df0829fbd05b8268113b4ae6cfd70b"
-  integrity sha512-P6Npa9gF5HdTxhtokOtKF+vgFcFK4ZZbHnNATV+hyyY7MgbF2Ai/gPMolmWhw1AXeyvob8/AgtfHPXFm2eNgwQ==
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-sticky-button/-/blocks-molecules-sticky-button-0.7.1.tgz#451eccf0f2c138f5584949aee8fba3aa00825b6e"
+  integrity sha512-2dTie+0kvrdP7+1aXjnkA49ThpdglMfrM+nvqY6+ygupFymw9oNqaWjdTEsXx+t9YVAgJb2+R4qWEaD5y0r9XQ==
   dependencies:
     "@apparatus/blocks-atoms-background" "^0.8.0"
     "@apparatus/blocks-atoms-icon" "^0.8.0"
@@ -620,9 +620,9 @@
   integrity sha512-St76ARqCjbysvj7XGzKvzZ8L/uL8RbQM+ipyJWgJrYcEbownn8cvOyQfkvjE+R7O+Uq0edAWc+B56cPpS4b3MA==
 
 "@apparatus/blocks-utils-scroll-horizontal@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-utils-scroll-horizontal/-/blocks-utils-scroll-horizontal-0.1.0.tgz#5be3a46750d827ad12fd8e582b97dbecfcd59b9b"
-  integrity sha512-fBbvahdOEpMBLn0Y4rr83TtDu9MwSfXlgnaQay6XNub33ypjDka500J11x/b3zogait1oxWIGc0KrLSwrjPeQQ==
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-utils-scroll-horizontal/-/blocks-utils-scroll-horizontal-0.1.1.tgz#2f684c2ee187f7976ff24ea80158db4ca90e1cd4"
+  integrity sha512-nKhcX4elIFK+p6C6l7IuXkhKtvgH09liioWM7u9ZlhLp/bM2qlDeHQjRSG/6a/4ax/6TF4kl5DBShIbHmZTbqg==
   dependencies:
     react "16.11.0"
 

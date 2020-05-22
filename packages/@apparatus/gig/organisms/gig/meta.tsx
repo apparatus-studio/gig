@@ -33,7 +33,6 @@ export const config: TComponentConfig<TOrganismGig> = {
     'period',
     'selectedGig',
     'setShowDrawer',
-    'showDrawer',
   ],
 }
 

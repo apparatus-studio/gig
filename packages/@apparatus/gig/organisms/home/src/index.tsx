@@ -16,11 +16,11 @@ import {
   TEXT_LEVEL_BODY,
   TEXT_LEVEL_PRIMARY_TITLE,
   TEXT_LEVEL_SECONDARY_TITLE,
-  platformSelect,
   FullCover,
   MainScrollable,
   ScrollHorizontal,
   Horizontal,
+  GRID,
 } from '@apparatus/blocks-index'
 import { hoursInHooman, moneyInHooman } from '@apparatus/gig-data-transform-numbers'
 import * as transformGig from '@apparatus/gig-data-transform-gig'
@@ -57,11 +57,6 @@ export const OrganismHome: FC<TOrganismHome> = ({
           position: 'absolute',
           top: 0,
           right: 0,
-          paddingTop: platformSelect({
-            ios: 20 + 10,
-            default: 10,
-          }),
-          paddingRight: 10,
           zIndex: 1,
         }}
       >
@@ -73,11 +68,11 @@ export const OrganismHome: FC<TOrganismHome> = ({
       <Text level={TEXT_LEVEL_PRIMARY_TITLE}>
         {moneyInHooman(earnings)} kr
       </Text>
-      <AtomSpacer multiplier={4}/>
+      <AtomSpacer multiplier={6}/>
       <Text level={TEXT_LEVEL_BODY}>
         You’ve worked a total of <AtomText level={TEXT_LEVEL_BODY} isBold>{hoursInHooman(hours)}</AtomText> {elegir(period === 'day', 'day', period === 'week', 'this week', true, 'this month')}.
       </Text>
-      <AtomSpacer multiplier={4}/>
+      <AtomSpacer multiplier={6}/>
       <Horizontal>
         <TabSelector
           onChange={onUpdatePeriod}
@@ -98,42 +93,53 @@ export const OrganismHome: FC<TOrganismHome> = ({
           value={period}
         />
       </Horizontal>
-      <AtomSpacer multiplier={4}/>
+      <AtomSpacer multiplier={10}/>
       <Text level={TEXT_LEVEL_SECONDARY_TITLE}>
         Your Gigs
       </Text>
-      <AtomSpacer multiplier={4}/>
-      <ScrollHorizontal>
-        {gigs.map((gig: TGig) => (
-          <View key={gig.name} style={{ display: 'flex', flexDirection: 'row' }}>
-            <AtomSpacer multiplier={4}/>
-            <Card
-              title={gig.name}
-              description={`You’ve worked ${hoursInHooman(
-                elegir(
-                  period === 'month',
-                  transformGig.thisMonthHours(gig, month),
-                  period === 'week',
-                  transformGig.thisWeekHours(gig, today),
-                  true,
-                  transformGig.todayHours(gig, today)
-                )
-              )} and generated ${moneyInHooman(
-                elegir(
-                  period === 'month',
-                  transformGig.thisMonthEarnings(gig, month),
-                  period === 'week',
-                  transformGig.thisWeekEarnings(gig, today),
-                  true,
-                  transformGig.todayEarnings(gig, today)
-                )
-              )} ${period}.`}
-              action="View reports"
-              onSelect={onSelect}
-            />
-          </View>
-        ))}
-      </ScrollHorizontal>
+      <AtomSpacer multiplier={6}/>
+      <View
+        style={{
+          marginLeft: -10 * GRID,
+          marginRight: -10 * GRID,
+        }}
+      >
+        <ScrollHorizontal>
+          <AtomSpacer multiplier={10}/>
+          {gigs.map((gig: TGig, index) => (
+            <View key={gig.name} style={{ display: 'flex', flexDirection: 'row' }}>
+              <Card
+                title={gig.name}
+                description={`You’ve worked ${hoursInHooman(
+                  elegir(
+                    period === 'month',
+                    transformGig.thisMonthHours(gig, month),
+                    period === 'week',
+                    transformGig.thisWeekHours(gig, today),
+                    true,
+                    transformGig.todayHours(gig, today)
+                  )
+                )} and generated ${moneyInHooman(
+                  elegir(
+                    period === 'month',
+                    transformGig.thisMonthEarnings(gig, month),
+                    period === 'week',
+                    transformGig.thisWeekEarnings(gig, today),
+                    true,
+                    transformGig.todayEarnings(gig, today)
+                  )
+                )} ${period}.`}
+                action="View reports"
+                onSelect={onSelect}
+              />
+              {(index < gigs.length - 1) && (
+                <AtomSpacer multiplier={4}/>
+              )}
+            </View>
+          ))}
+          <AtomSpacer multiplier={10}/>
+        </ScrollHorizontal>
+      </View>
     </MainScrollable>
 
     <Bottom multiplier={10}>

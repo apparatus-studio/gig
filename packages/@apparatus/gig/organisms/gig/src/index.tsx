@@ -177,18 +177,16 @@ export const OrganismGig: FC<TOrganismGig> = ({
 
     {(showDrawer === undefined || !showDrawer) && (
       <Bottom multiplier={10}>
-        <Vertical hAlign="center" width="100%">
-          <Horizontal>
-            <StickyButton name={ICON_NAMES_PLUS} onPress={onAddTimeReport}>
-              Create report
-            </StickyButton>
-            <AtomSpacer multiplier={10}/>
-            <AtomSpacer multiplier={10}/>
-            <StickyButton name={ICON_NAMES_TIMER} onPress={onTrackTime}>
-              Track time
-            </StickyButton>
-          </Horizontal>
-        </Vertical>
+        <Horizontal hAlign="center" shouldGrow>
+          <StickyButton name={ICON_NAMES_PLUS} onPress={onAddTimeReport}>
+            Create report
+          </StickyButton>
+          <AtomSpacer multiplier={10}/>
+          <AtomSpacer multiplier={10}/>
+          <StickyButton name={ICON_NAMES_TIMER} onPress={onTrackTime}>
+            Track time
+          </StickyButton>
+        </Horizontal>
       </Bottom>
     )}
   </FullCover>
