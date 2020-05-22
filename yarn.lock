@@ -727,10 +727,10 @@
     lottie-web "^5.6.8"
     react-native "^0.62.2"
 
-"@apparatus/meta-start-preset@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/meta-start-preset/-/meta-start-preset-0.3.0.tgz#5cca2f539f194a4893ad5a8999271d784d644d40"
-  integrity sha512-3n2IR8QqPlcyZQ7wA46IRkFp9apMfx88IJ+NctTB9YL/veYntEV0ykdCbwVWQ/HK73aM3O2fiw+E4Mtj9ZJpxw==
+"@apparatus/meta-start-preset@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@apparatus/meta-start-preset/-/meta-start-preset-0.3.1.tgz#028da47d961cb890995032fd5098c49c35863142"
+  integrity sha512-VqnCha+1QDwiQcyEetb2Hu5mfDT210b4poQ+6ZcLqsCzTd+9hcxCp/ybOp/zorgnq5J/jU0g8LdusjRd84+CDg==
   dependencies:
     "@auto/changelog" "^0.1.0"
     "@auto/commit-prompt" "^0.1.0"
@@ -744,7 +744,7 @@
     "@babel/register" "^7.8.0"
     "@nextools/babel-config" "^0.1.4"
     "@react-native-community/async-storage" "^1.10.3"
-    "@rebox/android" "^2.0.5"
+    "@rebox/android" "^2.0.6"
     "@rebox/ios" "^2.0.5"
     "@rebox/web" "^2.1.5"
     "@start/plugin" "^1.0.0"
@@ -2733,10 +2733,10 @@
     sudo-prompt "^9.0.0"
     wcwidth "^1.0.1"
 
-"@rebox/android@^2.0.5":
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/@rebox/android/-/android-2.0.5.tgz#621008a7350c1665eb14574380f6a77229d44aa6"
-  integrity sha512-A0M5PYSvp6E1PbAWVw5l7iB+cAHzVANycxKHwHrtcdp/fcu+SW9llxNxRelS/W/XgNk1yMT1bD8KrcB7NoZtaA==
+"@rebox/android@^2.0.6":
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@rebox/android/-/android-2.0.6.tgz#2511a760bf8fee45ee022e8a08cff4c348b29deb"
+  integrity sha512-QNFvnCRPOKsQswhnFtUOSmsXKKKkc8rqg2lNzbKf7wY04EiXJoIGkk3hysPQPxnupZdq/alZ0aS86TBsXk5+1A==
   dependencies:
     "@babel/runtime" "^7.4.3"
     "@rebox/native-utils" "^2.0.5"

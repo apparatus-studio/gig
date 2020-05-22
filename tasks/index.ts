@@ -48,10 +48,6 @@ export const patchDependencies = () => plugin('patchDependencies', ({ logMessage
 
   const files = [
     [
-      'link-android-dependency.js.template',
-      resolve('node_modules', '@rebox', 'android', 'node', 'link-android-dependency.js'),
-    ],
-    [
       'package.json.template',
       resolve('node_modules', '@react-native-community', 'async-storage', 'package.json'),
     ],
