@@ -1,3 +1,9 @@
+## v0.8.0
+
+* 🐞 several visual fixes
+
+* ♻️ update dependencies `@apparatus/gig-data-transform-gig`, `@apparatus/gig-data-transform-time-report`
+
 ## v0.7.0
 
 * 🌱 alignment improvements

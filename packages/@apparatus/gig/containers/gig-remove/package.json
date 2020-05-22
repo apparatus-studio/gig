@@ -1,6 +1,6 @@
 {
   "name": "@apparatus/gig-containers-gig-remove",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "main": "src/index.ts",
   "browser": "src/index.ts",
   "react-native": "src/index.ts",

@@ -1,3 +1,11 @@
+## v0.6.0
+
+* 🌱 introduce pulse update for date, tz, and tzoffset support
+
+* 🐞 several visual fixes
+
+* ♻️ update dependencies `@apparatus/gig-data-transform-gig`, `@apparatus/gig-data-demo`, `@apparatus/gig-types-store`
+
 ## v0.5.0
 
 * 🌱 use day | week | month periods properly

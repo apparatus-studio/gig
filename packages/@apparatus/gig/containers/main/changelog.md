@@ -1,3 +1,7 @@
+## v0.8.0
+
+* ♻️ update dependencies `@apparatus/gig-containers-splash`, `@apparatus/gig-organisms-section-selector`, `@apparatus/gig-containers-gig`, `@apparatus/gig-containers-home`, `@apparatus/gig-containers-time-report`, `@apparatus/gig-containers-about-gig`, `@apparatus/gig-containers-currency-select`, `@apparatus/gig-containers-gig-congratulations`, `@apparatus/gig-containers-gig-remove`, `@apparatus/gig-containers-gig-update`, `@apparatus/gig-containers-gig-new`, `@apparatus/gig-containers-onboarding`, `@apparatus/gig-data-store`, `@apparatus/gig-containers-settings`, `@apparatus/gig-containers-track-time`, `@apparatus/gig-containers-welcome`, `@apparatus/gig-types-store`
+
 ## v0.7.0
 
 * ♻️ update dependencies `@apparatus/gig-containers-gig`, `@apparatus/gig-containers-home`, `@apparatus/gig-containers-time-report`

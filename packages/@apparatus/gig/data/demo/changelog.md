@@ -1,3 +1,9 @@
+## v0.6.0
+
+* 🌱 introduce pulse update for date, tz, and tzoffset support
+
+* ♻️ update dependencies `@apparatus/gig-types-store`
+
 ## v0.5.0
 
 * ♻️ update dependencies `@apparatus/gig-types-store`

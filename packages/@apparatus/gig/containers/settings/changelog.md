@@ -1,3 +1,7 @@
+## v0.7.0
+
+* ♻️ update dependencies `@apparatus/gig-data-store`
+
 ## v0.6.0
 
 * ♻️ update dependencies `@apparatus/gig-data-store`

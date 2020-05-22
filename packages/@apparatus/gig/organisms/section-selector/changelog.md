@@ -1,3 +1,7 @@
+## v0.7.0
+
+* ♻️ update dependencies `@apparatus/gig-containers-sync-state`, `@apparatus/gig-containers-share`
+
 ## v0.6.1
 
 * 🐞 update blocks version and fix spacing

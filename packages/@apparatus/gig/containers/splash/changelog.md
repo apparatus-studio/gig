@@ -1,3 +1,9 @@
+## v0.7.0
+
+* 🌱 introduce pulse update for date, tz, and tzoffset support
+
+* ♻️ update dependencies `@apparatus/gig-data-store`
+
 ## v0.6.0
 
 * 🐞 point to the right section after loading
