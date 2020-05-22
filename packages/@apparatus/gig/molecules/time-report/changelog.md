@@ -1,3 +1,7 @@
+## v0.6.1
+
+* 🐞 update blocks version and fix spacing
+
 ## v0.6.0
 
 * ♻️ update dependencies `@apparatus/gig-data-transform-time-report`

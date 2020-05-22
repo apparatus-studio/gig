@@ -1,3 +1,7 @@
+## v0.3.1
+
+* 🐞 update blocks version and fix spacing
+
 ## v0.3.0
 
 * 🌱 testing csv sharing

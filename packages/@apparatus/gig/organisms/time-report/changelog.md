@@ -1,3 +1,7 @@
+## v0.2.2
+
+* 🐞 update blocks version and fix spacing
+
 ## v0.2.1
 
 * 🐞 fix drawers and hide bottom when keyboard is open

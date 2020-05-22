@@ -1,3 +1,7 @@
+## v0.2.1
+
+* 🐞 update blocks version and fix spacing
+
 ## v0.2.0
 
 * 🌱 theme support and new blocks version

@@ -1,3 +1,9 @@
+## v0.2.1
+
+* 🐞 update blocks version and fix spacing
+
+* ♻️ update dependencies `@apparatus/gig-molecules-time-tracked`
+
 ## v0.2.0
 
 * 🌱 theme support and new blocks version

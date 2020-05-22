@@ -1,3 +1,9 @@
+## v0.6.1
+
+* 🐞 update blocks version and fix spacing
+
+* ♻️ update dependencies `@apparatus/gig-molecules-time-report`
+
 ## v0.6.0
 
 * 🌱 use day | week | month periods properly

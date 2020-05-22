@@ -1,3 +1,7 @@
+## v0.3.2
+
+* 🐞 update blocks version and fix spacing
+
 ## v0.3.1
 
 * 🐞 better alignment of chat bubbles
