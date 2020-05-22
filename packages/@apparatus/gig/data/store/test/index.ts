@@ -3,6 +3,60 @@ import { getUnixTime, addMinutes, addHours, parseISO } from 'date-fns'
 import { state } from '@apparatus/gig-data-demo'
 import { reducer } from '../src'
 
+test('reducer: current day update', (t) => {
+  const result = reducer(
+    state,
+    {
+      type: 'UPDATE_CURRENT_DAY',
+      payload: '2020-05-20',
+    }
+  )
+
+  t.deepEquals(
+    result.today,
+    '2020-05-20',
+    'should be 2020-05-20'
+  )
+
+  t.end()
+})
+
+test('reducer: current time zone update', (t) => {
+  const result = reducer(
+    state,
+    {
+      type: 'UPDATE_CURRENT_TIME_ZONE',
+      payload: 'Europe/Berlin',
+    }
+  )
+
+  t.deepEquals(
+    result.currentTimeZone,
+    'Europe/Berlin',
+    'should be Europe/Berlin'
+  )
+
+  t.end()
+})
+
+test('reducer: current time zone offset update', (t) => {
+  const result = reducer(
+    state,
+    {
+      type: 'UPDATE_CURRENT_TIME_ZONE_OFFSET',
+      payload: -2,
+    }
+  )
+
+  t.deepEquals(
+    result.currentTimeZoneOffset,
+    -2,
+    'should be -2'
+  )
+
+  t.end()
+})
+
 test('reducer: add gig from random place', (t) => {
   const result = reducer(
     {
@@ -589,6 +643,12 @@ test('reducer: sync state', (t) => {
     result.selectedGig,
     'Ericsson',
     'should be Ericsson'
+  )
+
+  t.deepEquals(
+    result.hasReadStorage,
+    true,
+    'should be true'
   )
 
   t.end()

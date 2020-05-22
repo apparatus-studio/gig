@@ -3,6 +3,7 @@ import { component, mapHandlers, mapWithProps } from 'refun'
 import { mapStoreState, mapStoreDispatch } from '@apparatus/gig-data-store'
 import { saveState, readState } from '@apparatus/effects-sync-persistent-state'
 import { TStorableData } from '@apparatus/gig-types-store'
+import { subscribe } from '@apparatus/effects-time-information-events'
 
 export const componentSyncState = component(
   mapStoreState(
@@ -13,6 +14,7 @@ export const componentSyncState = component(
       'currentTimeZoneOffset',
       'firstDayOfWeek',
       'gigs',
+      'hasReadStorage',
       'selectedGig',
     ]
   ),
@@ -38,16 +40,38 @@ export const componentSyncState = component(
         },
       })
     },
+    onUpdateCurrentDay: ({ dispatch }) => (day: string) => {
+      dispatch({
+        type: 'UPDATE_CURRENT_DAY',
+        payload: day,
+      })
+    },
+    onUpdateCurrentTimeZone: ({ dispatch }) => (timeZone: string) => {
+      dispatch({
+        type: 'UPDATE_CURRENT_TIME_ZONE',
+        payload: timeZone,
+      })
+    },
+    onUpdateCurrentTimeZoneOffset: ({ dispatch }) => (timeZoneOffset: number) => {
+      dispatch({
+        type: 'UPDATE_CURRENT_TIME_ZONE_OFFSET',
+        payload: timeZoneOffset,
+      })
+    },
   }),
   mapWithProps(
     ({
-      onSyncState,
       currentCurrency,
-      gigs,
-      selectedGig,
       currentTimeZone,
       currentTimeZoneOffset,
       firstDayOfWeek,
+      gigs,
+      hasReadStorage,
+      onSyncState,
+      onUpdateCurrentDay,
+      onUpdateCurrentTimeZone,
+      onUpdateCurrentTimeZoneOffset,
+      selectedGig,
     }) => {
       useEffect(() => {
         readState()
@@ -63,23 +87,46 @@ export const componentSyncState = component(
           .catch(() => {
             // odd error
           })
+
+        const unsubscribeNewDay = subscribe({
+          type: 'newDay',
+          callback: onUpdateCurrentDay,
+        })
+
+        const unsubscribeTimeZone = subscribe({
+          type: 'timeZone',
+          callback: onUpdateCurrentTimeZone,
+        })
+
+        const unsubscribeTimeZoneOffset = subscribe({
+          type: 'timeZoneOffset',
+          callback: onUpdateCurrentTimeZoneOffset,
+        })
+
+        return () => {
+          unsubscribeNewDay()
+          unsubscribeTimeZone()
+          unsubscribeTimeZoneOffset()
+        }
       }, [])
 
       useEffect(() => {
-        saveState({
-          currentCurrency,
-          gigs,
-          selectedGig,
-          currentTimeZone,
-          currentTimeZoneOffset,
-          firstDayOfWeek,
-        })
-          .then(() => {
-            // nothing to do here
+        if (hasReadStorage) {
+          saveState({
+            currentCurrency,
+            gigs,
+            selectedGig,
+            currentTimeZone,
+            currentTimeZoneOffset,
+            firstDayOfWeek,
           })
-          .catch(() => {
-            // nothing here either
-          })
+            .then(() => {
+              // nothing to do here, but linter wants it
+            })
+            .catch(() => {
+              // nothing here either, but linter wants it
+            })
+        }
       }, [
         currentCurrency,
         gigs,
@@ -87,6 +134,7 @@ export const componentSyncState = component(
         currentTimeZone,
         currentTimeZoneOffset,
         firstDayOfWeek,
+        hasReadStorage,
       ])
 
       return {}

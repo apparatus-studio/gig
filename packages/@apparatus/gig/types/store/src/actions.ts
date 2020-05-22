@@ -13,6 +13,21 @@ export type TActionCurrencyUpdate = {
   payload: TCurrency,
 }
 
+export type TActionCurrentDayUpdate = {
+  type: 'UPDATE_CURRENT_DAY',
+  payload: string,
+}
+
+export type TActionCurrentTimeZoneUpdate = {
+  type: 'UPDATE_CURRENT_TIME_ZONE',
+  payload: string,
+}
+
+export type TActionCurrentTimeZoneOffsetUpdate = {
+  type: 'UPDATE_CURRENT_TIME_ZONE_OFFSET',
+  payload: number,
+}
+
 export type TActionExportCSV = {
   type: 'EXPORT_CSV',
 }
@@ -109,6 +124,9 @@ export type TActionTrackingStop = {
 
 export type TAction =
   | TActionCurrencyUpdate
+  | TActionCurrentDayUpdate
+  | TActionCurrentTimeZoneUpdate
+  | TActionCurrentTimeZoneOffsetUpdate
   | TActionExportCSV
   | TActionGigNew
   | TActionGigRemove

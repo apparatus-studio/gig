@@ -13,6 +13,7 @@ export const initialState: TState = {
   firstDayOfWeek: 'Monday',
   gigs: [],
   isKeyboardVisible: false,
+  hasReadStorage: false,
   keyboardHeight: 0,
   keyboardWidth: 0,
   patreonLink: 'https://patreon.com/Apparatus',
@@ -26,11 +27,34 @@ export const initialState: TState = {
 }
 
 export const reducer: Reducer<TState, TAction> = (state = initialState, action) => {
+  console.log(action)
+
   switch (action.type) {
     case 'CURRENCY_UPDATE': {
       return {
         ...state,
         currentCurrency: action.payload,
+      }
+    }
+
+    case 'UPDATE_CURRENT_DAY': {
+      return {
+        ...state,
+        today: action.payload,
+      }
+    }
+
+    case 'UPDATE_CURRENT_TIME_ZONE': {
+      return {
+        ...state,
+        currentTimeZone: action.payload,
+      }
+    }
+
+    case 'UPDATE_CURRENT_TIME_ZONE_OFFSET': {
+      return {
+        ...state,
+        currentTimeZoneOffset: action.payload,
       }
     }
 
@@ -95,6 +119,7 @@ export const reducer: Reducer<TState, TAction> = (state = initialState, action) 
       return {
         ...state,
         ...action.payload,
+        hasReadStorage: true,
       }
     }
 

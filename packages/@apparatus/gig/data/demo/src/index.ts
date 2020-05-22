@@ -152,6 +152,7 @@ export const state: TState = {
   firstDayOfWeek: 'Monday',
   gigs: [ACME, BigBuy],
   isKeyboardVisible: false,
+  hasReadStorage: false,
   keyboardHeight: 0,
   keyboardWidth: 0,
   patreonLink: 'https://patreon.com/Apparatus',

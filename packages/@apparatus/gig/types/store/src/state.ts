@@ -27,6 +27,7 @@ export type TState = {
   length?: number,
   period: TPeriod,
   patreonLink: string,
+  hasReadStorage: boolean,
 } & TEnvironment
   & TRootDimensions
   & TStorableData
