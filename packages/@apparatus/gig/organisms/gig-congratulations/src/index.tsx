@@ -16,6 +16,7 @@ import {
   Vertical,
   GRID,
   ContextParentSize,
+  MainScrollable,
 } from '@apparatus/blocks-index'
 import { AnimationGigCongratulations } from '@apparatus/exhibition-animations-gig-congratulations'
 
@@ -34,47 +35,43 @@ export const OrganismGigCongratulations = component(
   onGoToGig,
   onGoToHome,
   onClose,
-  parentWidth,
 }) => (
   <FullCover>
-    <AtomSpacer multiplier={10}/>
-    <Horizontal
-      width={parentWidth}
+    <MainScrollable
+      multiplierBottom={10}
+      multiplierLeft={10}
+      multiplierRight={10}
+      multiplierTop={4}
     >
-      <AtomSpacer multiplier={10}/>
-      <Vertical
-        width={parentWidth - (GRID * 20)}
+      <ContextHeader onClose={onClose}>
+        Add New Gig
+      </ContextHeader>
+
+      <View
+        style={{
+          marginBottom: -100,
+          marginLeft: -140,
+          marginTop: -170,
+        }}
       >
-        <ContextHeader onClose={onClose}>
-          Add New Gig
-        </ContextHeader>
+        <AnimationGigCongratulations
+          height={570}
+          width={570}
+        />
+      </View>
 
-        <View
-          style={{
-            marginBottom: -100,
-            marginLeft: -140,
-            marginTop: -170,
-          }}
-        >
-          <AnimationGigCongratulations
-            height={570}
-            width={570}
-          />
-        </View>
+      <Text level={TEXT_LEVEL_PRIMARY_TITLE}>
+        Congrats on your new gig!
+      </Text>
 
-        <Text level={TEXT_LEVEL_PRIMARY_TITLE}>
-          Congrats on your new gig!
-        </Text>
+      <Horizontal hAlign="center">
+        <AtomSpacer multiplier={6}/>
+      </Horizontal>
 
-        <Horizontal hAlign="center">
-          <AtomSpacer multiplier={6}/>
-        </Horizontal>
-
-        <Text level={TEXT_LEVEL_BODY}>
-          We hope you the best in working with {selectedGig}! Start by tracking your first working hours. 🙌
-        </Text>
-      </Vertical>
-    </Horizontal>
+      <Text level={TEXT_LEVEL_BODY}>
+        We hope you the best in working with {selectedGig}! Start by tracking your first working hours. 🙌
+      </Text>
+    </MainScrollable>
 
     <Bottom multiplier={10}>
       <Vertical width="100%">

@@ -17,7 +17,12 @@ export type TOrganismAboutGig = {
 
 export const OrganismAboutGig: FC<TOrganismAboutGig> = ({ onBack }) => (
   <FullCover>
-    <MainScrollable multiplier={10}>
+    <MainScrollable
+      multiplierBottom={10}
+      multiplierLeft={10}
+      multiplierRight={10}
+      multiplierTop={4}
+    >
       <ContextHeader onBack={onBack}>
         About the app
       </ContextHeader>

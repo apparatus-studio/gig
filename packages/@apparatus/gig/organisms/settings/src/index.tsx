@@ -27,7 +27,12 @@ export const OrganismSettings: FC<TOrganismSettings> = ({
   onStartShare,
 }) => (
   <FullCover>
-    <MainScrollable multiplier={10}>
+    <MainScrollable
+      multiplierBottom={10}
+      multiplierLeft={10}
+      multiplierRight={10}
+      multiplierTop={4}
+    >
       <ContextHeader onBack={onBack}>
         Settings
       </ContextHeader>

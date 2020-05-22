@@ -10,7 +10,7 @@
     "packages/@apparatus/gig/types/*"
   ],
   "devDependencies": {
-    "@apparatus/blocks-index": "^0.13.0",
+    "@apparatus/blocks-index": "^0.14.0",
     "@apparatus/gig-containers-main": "*",
     "@apparatus/meta-start-preset": "^0.3.0",
     "@nextools/eslint-config": "^0.1.2",

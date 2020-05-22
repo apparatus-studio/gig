@@ -2,39 +2,40 @@
 # yarn lockfile v1
 
 
-"@apparatus/blocks-atoms-background@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-atoms-background/-/blocks-atoms-background-0.7.0.tgz#8f40296b3a991c18bb443036752c27fc03c7129c"
-  integrity sha512-hQWl4MzMEXUPixbbEm12Ftl/x6aHoDiwt3P6NqUuXCdB5LYDCLVq99M4k8h3Y+Zo3stkAdNkWxm4wPWdX4BEgg==
+"@apparatus/blocks-atoms-background@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-atoms-background/-/blocks-atoms-background-0.8.0.tgz#c56abf463be6261a4085c9a071ea54ba43350586"
+  integrity sha512-+W56P3oKotxOvqa8KUj3q5wYbyVE7YJ6846rpG54H1aBa4io9jqVyGgX9NR1WafWCEQc3xgwHAKvH1Uauo43Hg==
   dependencies:
     "@apparatus/blocks-contexts-interface" "^0.2.0"
-    "@apparatus/blocks-contexts-theme" "^0.7.0"
+    "@apparatus/blocks-contexts-theme" "^0.8.0"
     "@apparatus/blocks-utils-animated-background" "^0.1.0"
     "@babel/runtime" "^7.1.2"
     refun "^2.0.0"
 
-"@apparatus/blocks-atoms-border@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-atoms-border/-/blocks-atoms-border-0.7.0.tgz#7ab8e62719a2007865dcff64ffec06fd509007fb"
-  integrity sha512-sCHGga39cu/2hecn6VY5C6P4uuRnmCQOORdNbMVDFVUldIJV0yTOJ9lsJKG8JcpDBEWthooXaHsm27WEAgqo7Q==
+"@apparatus/blocks-atoms-border@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-atoms-border/-/blocks-atoms-border-0.8.0.tgz#79489e20467167e3270927a8e0b0994afd31a705"
+  integrity sha512-EqzRrDQA004kKTULsNQbkF1vz+/PGquy870uKkML1CK0dm/2b/s/5JwKqQz1sn89/38WzejxdGPYoQchHqrtUw==
   dependencies:
     "@apparatus/blocks-contexts-interface" "^0.2.0"
-    "@apparatus/blocks-contexts-theme" "^0.7.0"
+    "@apparatus/blocks-contexts-theme" "^0.8.0"
     "@babel/runtime" "^7.1.2"
     "@primitives/border" "^2.0.0"
     "@themeables/border" "^2.0.0"
     refun "^2.0.0"
 
-"@apparatus/blocks-atoms-container@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-atoms-container/-/blocks-atoms-container-0.7.0.tgz#e5f7ddba2ba163789ab2f60231f9dfa7151bf052"
-  integrity sha512-7iBtMj1toQ+mGkPnPWEKxxu6xHCM/v7ASCk8ZuUz6QIwObVMYVtbyVzAbBDLfLqDdmrI1DKrw2WTawq8tdCkTQ==
+"@apparatus/blocks-atoms-container@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-atoms-container/-/blocks-atoms-container-0.8.0.tgz#b99ebc23f5e6e7293098bec686ca73539a4ca24e"
+  integrity sha512-lffzjMobUPTT0JyUQ975BbERAnPDEPklJKavFBkK95bMzkVjrhLTnF5cSXA5z1D7RS6b0fTYkuOT0h0SRPxmNg==
   dependencies:
     "@apparatus/blocks-contexts-debug" "^0.1.0"
     "@apparatus/blocks-contexts-interface" "^0.2.0"
     "@apparatus/blocks-contexts-parent-size" "^0.1.0"
-    "@apparatus/blocks-contexts-theme" "^0.7.0"
+    "@apparatus/blocks-contexts-theme" "^0.8.0"
     "@apparatus/blocks-utils-horizontal" "^0.2.0"
+    "@apparatus/blocks-utils-platform" "^0.1.0"
     "@apparatus/blocks-utils-scroll-vertical" "^0.1.1"
     "@apparatus/blocks-utils-vertical" "^0.2.0"
     "@babel/runtime" "^7.1.2"
@@ -42,61 +43,61 @@
     "@themeables/spacer" "^0.2.0"
     refun "^2.0.0"
 
-"@apparatus/blocks-atoms-footprint@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-atoms-footprint/-/blocks-atoms-footprint-0.7.0.tgz#f027e9b3d60b7f6191cdd3c0c83414baedd1b25d"
-  integrity sha512-9Dg8Thz5iVS13APT3w3i7I9Gq4eN5QI58b5RcTOivAqu6nTw+YT00FQrc7zzDUZ2Kgh/scNcPoLo1Z/iBcDqiw==
+"@apparatus/blocks-atoms-footprint@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-atoms-footprint/-/blocks-atoms-footprint-0.8.0.tgz#18d7dee1dd9b3f69702280e3d24c23297632c148"
+  integrity sha512-PSrSx/glhn/KzLtViyvWjTKjgVVOehzceSOoFv5GHJsiA4dNwq5oqFP0X++Uv1HE0f/t6o4WkpJ0R7dWMKDQRQ==
   dependencies:
-    "@apparatus/blocks-contexts-theme" "^0.7.0"
+    "@apparatus/blocks-contexts-theme" "^0.8.0"
     "@apparatus/blocks-particles-text-levels" "^0.1.0"
     "@babel/runtime" "^7.1.2"
     "@primitives/view" "^1.0.0"
     "@themeables/spacer" "^0.2.0"
 
-"@apparatus/blocks-atoms-icon@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-atoms-icon/-/blocks-atoms-icon-0.7.0.tgz#aa7156d45f49cf759a5c518e288ea98ac91204bb"
-  integrity sha512-dKPCVpvAfm13lCySdAbVV9hb63oCIjliSUu2zkPHUYWNVjzmf1A7GcY0i3/hLCFWGgCHWA0SXuyyTxgw1hE/9g==
+"@apparatus/blocks-atoms-icon@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-atoms-icon/-/blocks-atoms-icon-0.8.0.tgz#fc5f0db1bee701c1e30feb020e5582eb889a0b6f"
+  integrity sha512-OfQv4b0BGQAOv0qOkCU9pdV1xHNT5MazYMtoExTEAmSqYSfkUMQhwAvMbQFq2JX4esuYBNENY1wdOg8SXkaAvw==
   dependencies:
     "@apparatus/blocks-contexts-interface" "^0.2.0"
-    "@apparatus/blocks-contexts-theme" "^0.7.0"
+    "@apparatus/blocks-contexts-theme" "^0.8.0"
     "@apparatus/blocks-particles-icon-names" "^0.1.0"
     "@babel/runtime" "^7.1.2"
     "@primitives/vector-shape" "^2.0.2"
     refun "^2.0.0"
 
-"@apparatus/blocks-atoms-input@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-atoms-input/-/blocks-atoms-input-0.7.0.tgz#95660ccc06fdc731fe3e07bbc9ec2d598f06ac13"
-  integrity sha512-D896ZJVF4B30aoH+wRy2a6sNNqqcCgfqi7PxXDsLbAq4vsc1sQnBSby3HoKsVlvY+B2Lhz3G2YrxHK1kiMDdRQ==
+"@apparatus/blocks-atoms-input@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-atoms-input/-/blocks-atoms-input-0.8.0.tgz#b6430004eb7185476d6302357bdfced3d6865987"
+  integrity sha512-kR8NohSRAO4I97iTnedWRsLzLDqZJeL8xe8HIBSFrbpdEOQFSFHPjN8dbxvpHwM0EWHv3yWT9Dn60WY5M2mSnA==
   dependencies:
     "@apparatus/blocks-contexts-interface" "^0.2.0"
-    "@apparatus/blocks-contexts-theme" "^0.7.0"
+    "@apparatus/blocks-contexts-theme" "^0.8.0"
     "@babel/runtime" "^7.1.2"
     "@primitives/input" "^3.0.0"
     "@themeables/spacer" "^0.2.0"
     "@themeables/text" "^2.0.0"
     refun "^2.0.0"
 
-"@apparatus/blocks-atoms-spacer@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-atoms-spacer/-/blocks-atoms-spacer-0.7.0.tgz#db525b4050fd17d044f28d18ee379942bdb76b0d"
-  integrity sha512-rNP1/5NFvx9POSrBrgcwodk3Cq/APzS8FotZPCKmAS0loJlMUF1Kp04KxyjEmGG5FM0YjuR3H+exp0wkrkYKLQ==
+"@apparatus/blocks-atoms-spacer@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-atoms-spacer/-/blocks-atoms-spacer-0.8.0.tgz#a9e027578faed6f6967a3739ef9bf336cd4ca78c"
+  integrity sha512-ReN0fou1wyHSc3m8kTexOfQL7OXpmTBUoFwDhYom5T/8eUpNrGhcNUYx6i9+amAG405H8h0kvAm5AII1nAFUNw==
   dependencies:
     "@apparatus/blocks-contexts-debug" "^0.1.0"
-    "@apparatus/blocks-contexts-theme" "^0.7.0"
+    "@apparatus/blocks-contexts-theme" "^0.8.0"
     "@babel/runtime" "^7.1.2"
     "@primitives/view" "^1.0.0"
     "@themeables/spacer" "^0.2.0"
     refun "^2.0.0"
 
-"@apparatus/blocks-atoms-text@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-atoms-text/-/blocks-atoms-text-0.7.0.tgz#072d5377cb8938847e7236f6c18157fea3e2a381"
-  integrity sha512-lNH0PoWZtE8OXAENIItYksBWnSg7gRalC63xDSrkglFqwZ2jL2dSTJ42DUvHf2qVgb4KzIY5GN4sVVPB2DtaSw==
+"@apparatus/blocks-atoms-text@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-atoms-text/-/blocks-atoms-text-0.8.0.tgz#f8ab5fc2b2fa18190a9aac061e106c2f91b154ce"
+  integrity sha512-1UnLxSH34DcOjHu2/57UJO0VBerMUwXNtV1rcFL/uwz7AcP4SHJmz67kkevCdWF0s1XR1IMSXT6FMKErz8IJoQ==
   dependencies:
     "@apparatus/blocks-contexts-interface" "^0.2.0"
-    "@apparatus/blocks-contexts-theme" "^0.7.0"
+    "@apparatus/blocks-contexts-theme" "^0.8.0"
     "@apparatus/blocks-particles-text-levels" "^0.1.0"
     "@babel/runtime" "^7.1.2"
     "@primitives/text" "^2.0.0"
@@ -120,14 +121,14 @@
   resolved "https://registry.yarnpkg.com/@apparatus/blocks-contexts-parent-size/-/blocks-contexts-parent-size-0.1.0.tgz#62f616f0621ad08688e3cf555a946dcd1173cc70"
   integrity sha512-30O4NDJDs7n5cTRH626N3Jx4ileXJGp5vMmTpWb5babFs0yZtBcLeRDhwtXE2ApoFWO/W4rlHFs/GFZpxxzJpA==
 
-"@apparatus/blocks-contexts-theme@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-contexts-theme/-/blocks-contexts-theme-0.7.0.tgz#578a89117d3b023c78a29f54cf537a5c48717bb2"
-  integrity sha512-aKPwtyetvrJYhXB1vktLWpzS3Xbd67WvX2ONPflOQlCYIAHXkja1/pfU3EY4ZbRxjXWoK23Qn1RGbOGiBqRfcQ==
+"@apparatus/blocks-contexts-theme@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-contexts-theme/-/blocks-contexts-theme-0.8.0.tgz#9833f8e2712a840a72661f07a37afb9af8dfe91c"
+  integrity sha512-4zjeD9ndEWFpgeG3gBhCfi6YTiu9tQwIuWjnRgNFFtVQdK6KNf1usnDLaqSuDBk6eFw+AJ4ypbaVu6rG2tB/6g==
   dependencies:
-    "@apparatus/blocks-themes-default-mappings" "^0.7.0"
-    "@apparatus/blocks-themes-default-tokens" "^0.2.0"
-    "@apparatus/blocks-types-theme" "^0.7.0"
+    "@apparatus/blocks-themes-default-mappings" "^0.8.0"
+    "@apparatus/blocks-themes-default-tokens" "^0.2.1"
+    "@apparatus/blocks-types-theme" "^0.8.0"
     "@themeables/background" "^2.0.0"
     "@themeables/border" "^2.0.0"
     "@themeables/image" "^2.0.0"
@@ -150,51 +151,51 @@
   dependencies:
     date-fns "2.12.0"
 
-"@apparatus/blocks-index@^0.13.0":
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-index/-/blocks-index-0.13.0.tgz#e5b63d2332aba027e93954ae1b886c3de78ba2e3"
-  integrity sha512-BYxh3xIorzA8QQYiti0kmE9lNduSvgjGw1xPLLHJ3d/jLBj5RBse4Z3hsy8SJ/qxeo6WqGXWzFsi+MzycQ1M4A==
+"@apparatus/blocks-index@^0.14.0":
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-index/-/blocks-index-0.14.0.tgz#8d43231b04aff4357172ee74e0a65817a68f1952"
+  integrity sha512-M8ONmrazGWfWcHgHLRIDiNu536w1t4r6Vpg+2fhtRe3o1QCPM98q/sJKke6qes3Jx0mT5IR4pIL6fWWI3Bzmag==
   dependencies:
-    "@apparatus/blocks-atoms-background" "^0.7.0"
-    "@apparatus/blocks-atoms-border" "^0.7.0"
-    "@apparatus/blocks-atoms-footprint" "^0.7.0"
-    "@apparatus/blocks-atoms-icon" "^0.7.0"
-    "@apparatus/blocks-atoms-input" "^0.7.0"
-    "@apparatus/blocks-atoms-spacer" "^0.7.0"
-    "@apparatus/blocks-atoms-text" "^0.7.0"
+    "@apparatus/blocks-atoms-background" "^0.8.0"
+    "@apparatus/blocks-atoms-border" "^0.8.0"
+    "@apparatus/blocks-atoms-footprint" "^0.8.0"
+    "@apparatus/blocks-atoms-icon" "^0.8.0"
+    "@apparatus/blocks-atoms-input" "^0.8.0"
+    "@apparatus/blocks-atoms-spacer" "^0.8.0"
+    "@apparatus/blocks-atoms-text" "^0.8.0"
     "@apparatus/blocks-contexts-debug" "^0.1.0"
     "@apparatus/blocks-contexts-interface" "^0.2.0"
     "@apparatus/blocks-contexts-parent-size" "^0.1.0"
-    "@apparatus/blocks-contexts-theme" "^0.7.0"
+    "@apparatus/blocks-contexts-theme" "^0.8.0"
     "@apparatus/blocks-data-transform-input" "^0.1.1"
     "@apparatus/blocks-data-validation" "^0.1.1"
-    "@apparatus/blocks-molecules-action-sheet" "^0.6.0"
-    "@apparatus/blocks-molecules-bottom" "^0.3.0"
-    "@apparatus/blocks-molecules-button" "^0.8.0"
-    "@apparatus/blocks-molecules-button-icon" "^0.8.0"
-    "@apparatus/blocks-molecules-card" "^0.8.0"
-    "@apparatus/blocks-molecules-chat-bubble" "^0.8.0"
-    "@apparatus/blocks-molecules-context-header" "^0.6.0"
-    "@apparatus/blocks-molecules-date-input" "^0.6.0"
-    "@apparatus/blocks-molecules-full-cover" "^0.5.0"
-    "@apparatus/blocks-molecules-input" "^0.8.0"
-    "@apparatus/blocks-molecules-list-option" "^0.8.0"
-    "@apparatus/blocks-molecules-main-scrollable" "^0.4.0"
+    "@apparatus/blocks-molecules-action-sheet" "^0.7.0"
+    "@apparatus/blocks-molecules-bottom" "^0.4.0"
+    "@apparatus/blocks-molecules-button" "^0.9.0"
+    "@apparatus/blocks-molecules-button-icon" "^0.9.0"
+    "@apparatus/blocks-molecules-card" "^0.9.0"
+    "@apparatus/blocks-molecules-chat-bubble" "^0.9.0"
+    "@apparatus/blocks-molecules-context-header" "^0.7.0"
+    "@apparatus/blocks-molecules-date-input" "^0.7.0"
+    "@apparatus/blocks-molecules-full-cover" "^0.6.0"
+    "@apparatus/blocks-molecules-input" "^0.9.0"
+    "@apparatus/blocks-molecules-list-option" "^0.9.0"
+    "@apparatus/blocks-molecules-main-scrollable" "^0.5.0"
     "@apparatus/blocks-molecules-overlay" "^0.1.0"
-    "@apparatus/blocks-molecules-side-navigation" "^0.3.0"
-    "@apparatus/blocks-molecules-sticky-button" "^0.6.0"
-    "@apparatus/blocks-molecules-tab-selector" "^0.6.0"
-    "@apparatus/blocks-molecules-text" "^0.7.0"
-    "@apparatus/blocks-molecules-time-input" "^0.6.0"
-    "@apparatus/blocks-molecules-toast" "^0.6.0"
-    "@apparatus/blocks-molecules-toggle" "^0.7.0"
+    "@apparatus/blocks-molecules-side-navigation" "^0.3.1"
+    "@apparatus/blocks-molecules-sticky-button" "^0.7.0"
+    "@apparatus/blocks-molecules-tab-selector" "^0.7.0"
+    "@apparatus/blocks-molecules-text" "^0.8.0"
+    "@apparatus/blocks-molecules-time-input" "^0.7.0"
+    "@apparatus/blocks-molecules-toast" "^0.7.0"
+    "@apparatus/blocks-molecules-toggle" "^0.8.0"
     "@apparatus/blocks-particles-button-levels" "^0.1.0"
     "@apparatus/blocks-particles-icon-names" "^0.1.0"
     "@apparatus/blocks-particles-interface-contexts" "^0.2.0"
     "@apparatus/blocks-particles-text-levels" "^0.1.0"
-    "@apparatus/blocks-themes-default-mappings" "^0.7.0"
-    "@apparatus/blocks-themes-default-tokens" "^0.2.0"
-    "@apparatus/blocks-types-theme" "^0.7.0"
+    "@apparatus/blocks-themes-default-mappings" "^0.8.0"
+    "@apparatus/blocks-themes-default-tokens" "^0.2.1"
+    "@apparatus/blocks-types-theme" "^0.8.0"
     "@apparatus/blocks-utils-animated-background" "^0.1.0"
     "@apparatus/blocks-utils-horizontal" "^0.2.0"
     "@apparatus/blocks-utils-platform" "^0.1.0"
@@ -203,13 +204,13 @@
     "@apparatus/blocks-utils-vertical" "^0.2.0"
     "@apparatus/blocks-utils-view" "^0.1.0"
 
-"@apparatus/blocks-molecules-action-sheet@^0.6.0":
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-action-sheet/-/blocks-molecules-action-sheet-0.6.1.tgz#4dcf17754bac5688a45a3aeba813ccdd45d39849"
-  integrity sha512-yMdIwRuZcghVkEAtaLawHKjVmzD6uGBgt/jkLL8a/8DvNNZ0yKKv+Nzi6GQCH/Yj97oiXkKLXESViyvrcvPS0g==
+"@apparatus/blocks-molecules-action-sheet@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-action-sheet/-/blocks-molecules-action-sheet-0.7.0.tgz#3aea36a5d0693a0004dfb5a6ba5b99fa3fc78084"
+  integrity sha512-VxKSyz9sDRHhyFM9rzFr00vMfeSvGxvs5QuZn1j21jf2G8gAAgyKtkJc/Hq+fLof01PVbKKVuyJxCiqJGbRa+Q==
   dependencies:
-    "@apparatus/blocks-atoms-background" "^0.7.0"
-    "@apparatus/blocks-atoms-spacer" "^0.7.0"
+    "@apparatus/blocks-atoms-background" "^0.8.0"
+    "@apparatus/blocks-atoms-spacer" "^0.8.0"
     "@apparatus/blocks-contexts-interface" "^0.2.0"
     "@apparatus/blocks-particles-interface-contexts" "^0.2.0"
     "@apparatus/blocks-themes-default-tokens" "^0.2.1"
@@ -219,39 +220,39 @@
     "@primitives/view" "^1.0.0"
     refun "^2.0.0"
 
-"@apparatus/blocks-molecules-bottom@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-bottom/-/blocks-molecules-bottom-0.3.0.tgz#2a7aaab1339cac9fb1ec5a62f3ec84a6a27072e7"
-  integrity sha512-hxeGnQJQvi201L3m9q5DsnheYklPV3cgdRCQXtDMwmlowUxEOZWLnrGIbPW5HKTOg/R9zU5VdlGCdMFMpcX8NQ==
+"@apparatus/blocks-molecules-bottom@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-bottom/-/blocks-molecules-bottom-0.4.0.tgz#b778bcaf611eb4396a63132e18c7ca0f29f968e2"
+  integrity sha512-2Pb8EyENPqAoyhgHmbcZQIGCsPe8/m+aTFtmWJisJdYrToX/5Q3z+2Qi9QgSOIiePrpJl0FcyRrGnuFDyzRlBw==
   dependencies:
-    "@apparatus/blocks-atoms-container" "^0.7.0"
+    "@apparatus/blocks-atoms-container" "^0.8.0"
     "@apparatus/blocks-contexts-parent-size" "^0.1.0"
     "@babel/runtime" "^7.1.2"
     "@primitives/view" "^1.0.0"
     refun "^2.0.0"
 
-"@apparatus/blocks-molecules-button-icon@^0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-button-icon/-/blocks-molecules-button-icon-0.8.0.tgz#dec677bdfacb5f4c4951c913ee9964e27dae481e"
-  integrity sha512-58CUOifEC+O180sFGCu7BL9tbusKKdHYb3v2PrjjUZYz+y+LrccaP5hiOUtnLcpGFxmbVfkfgVXcnCkBNm/f+Q==
+"@apparatus/blocks-molecules-button-icon@^0.9.0":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-button-icon/-/blocks-molecules-button-icon-0.9.0.tgz#d4c7e13a0e055c28078cd5b5b4a60bdcb3e7299f"
+  integrity sha512-n9PJqGGT7qTNyoEz0VU0I8kAQNEFbZxY+LAw9DztLcTb8tzlhGNbMrLIewfyRVu1wOVon+6tVZquhyVN/ScMcQ==
   dependencies:
-    "@apparatus/blocks-atoms-icon" "^0.7.0"
+    "@apparatus/blocks-atoms-icon" "^0.8.0"
     "@apparatus/blocks-particles-icon-names" "^0.1.0"
     "@apparatus/blocks-utils-horizontal" "^0.2.0"
     "@babel/runtime" "^7.1.2"
     "@primitives/button" "^2.0.0"
     refun "^2.0.0"
 
-"@apparatus/blocks-molecules-button@^0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-button/-/blocks-molecules-button-0.8.0.tgz#d390887710621e38bf7914ef13dc82491747d3bd"
-  integrity sha512-jt0vojQzVmtJVFZWtuIg2OQdNsb6dYb/DMHBWEk0+CnZpAtNVE53eQLxvv7nwPhCpdZog+L6Pxsc71iYZw1qTg==
+"@apparatus/blocks-molecules-button@^0.9.0":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-button/-/blocks-molecules-button-0.9.0.tgz#28ff23e6677628bf90876a2cf71ffe43d7c1f79b"
+  integrity sha512-OGUy1FPhTF5DCB/Jy6vqTz4Ni8b9FuegXwJUub3b1QzBPutCdOlkgs5B04FCHpk9Ce8XSDfQd9CQb6/B6pdz5g==
   dependencies:
-    "@apparatus/blocks-atoms-background" "^0.7.0"
-    "@apparatus/blocks-atoms-icon" "^0.7.0"
-    "@apparatus/blocks-atoms-spacer" "^0.7.0"
+    "@apparatus/blocks-atoms-background" "^0.8.0"
+    "@apparatus/blocks-atoms-icon" "^0.8.0"
+    "@apparatus/blocks-atoms-spacer" "^0.8.0"
     "@apparatus/blocks-contexts-interface" "^0.2.0"
-    "@apparatus/blocks-molecules-text" "^0.7.0"
+    "@apparatus/blocks-molecules-text" "^0.8.0"
     "@apparatus/blocks-particles-button-levels" "^0.1.0"
     "@apparatus/blocks-particles-icon-names" "^0.1.0"
     "@apparatus/blocks-particles-interface-contexts" "^0.2.0"
@@ -263,17 +264,17 @@
     elegir "^1.0.0"
     refun "^2.0.0"
 
-"@apparatus/blocks-molecules-card@^0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-card/-/blocks-molecules-card-0.8.0.tgz#5a4bb41e323b874ea981b398b7b5bc03b62d6020"
-  integrity sha512-IkECCR+gF09XuWWKAYPRODZunXljIRUaibsm4BD2nOrJ9/ZoZ8jn3fgjV/kZd4wiu4d9080fqkIB3DjgWNBvOg==
+"@apparatus/blocks-molecules-card@^0.9.0":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-card/-/blocks-molecules-card-0.9.0.tgz#8da1665689e5637f5a290e31888a4c99dd3e1be4"
+  integrity sha512-O4B3RXP4BCt9cWiLnWxD5f2fX3v7FezhVSkOQqfvNGQuRJEDVkWMlUGa6uU4u9IuF8akJvTEgAyCpSzKYW1Nyg==
   dependencies:
-    "@apparatus/blocks-atoms-background" "^0.7.0"
-    "@apparatus/blocks-atoms-icon" "^0.7.0"
-    "@apparatus/blocks-atoms-spacer" "^0.7.0"
-    "@apparatus/blocks-atoms-text" "^0.7.0"
+    "@apparatus/blocks-atoms-background" "^0.8.0"
+    "@apparatus/blocks-atoms-icon" "^0.8.0"
+    "@apparatus/blocks-atoms-spacer" "^0.8.0"
+    "@apparatus/blocks-atoms-text" "^0.8.0"
     "@apparatus/blocks-contexts-interface" "^0.2.0"
-    "@apparatus/blocks-molecules-text" "^0.7.0"
+    "@apparatus/blocks-molecules-text" "^0.8.0"
     "@apparatus/blocks-particles-icon-names" "^0.1.0"
     "@apparatus/blocks-particles-interface-contexts" "^0.2.0"
     "@apparatus/blocks-particles-text-levels" "^0.1.0"
@@ -284,32 +285,32 @@
     elegir "^1.0.0"
     refun "^2.0.0"
 
-"@apparatus/blocks-molecules-chat-bubble@^0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-chat-bubble/-/blocks-molecules-chat-bubble-0.8.0.tgz#6653eeaf7dc31f035552e11d62236de5f6be53cf"
-  integrity sha512-2c8qdHf3YznpNR4hGdQodhFJix59H5lKtD2Cws8kqbUDynDwVdQMcg+jJMW+bCWLYI+mCxP216BY5H3aFxlwUw==
+"@apparatus/blocks-molecules-chat-bubble@^0.9.0":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-chat-bubble/-/blocks-molecules-chat-bubble-0.9.0.tgz#c86e8cd99b2abf0c07aeb44284430587b78763ae"
+  integrity sha512-KaK4to0jXZpHLgZP/DskcIgqquAa+RdAD2YitaMl8p8ayS9enOkwltrXCnok5NZQWEbdpoVgrDtGjq7LN/Dgtw==
   dependencies:
-    "@apparatus/blocks-atoms-background" "^0.7.0"
-    "@apparatus/blocks-atoms-spacer" "^0.7.0"
+    "@apparatus/blocks-atoms-background" "^0.8.0"
+    "@apparatus/blocks-atoms-spacer" "^0.8.0"
     "@apparatus/blocks-contexts-interface" "^0.2.0"
-    "@apparatus/blocks-molecules-text" "^0.7.0"
+    "@apparatus/blocks-molecules-text" "^0.8.0"
     "@apparatus/blocks-particles-interface-contexts" "^0.2.0"
     "@apparatus/blocks-particles-text-levels" "^0.1.0"
-    "@apparatus/blocks-themes-default-tokens" "^0.2.0"
+    "@apparatus/blocks-themes-default-tokens" "^0.2.1"
     "@apparatus/blocks-utils-horizontal" "^0.2.0"
     "@apparatus/blocks-utils-vertical" "^0.2.0"
     "@babel/runtime" "^7.1.2"
     elegir "^1.0.0"
     refun "^2.0.0"
 
-"@apparatus/blocks-molecules-context-header@^0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-context-header/-/blocks-molecules-context-header-0.6.0.tgz#a5e4688fe909aa902bd145684db6f5ca45f1eaa9"
-  integrity sha512-dEPaace8VDh3Mzn/kaKAml/eovhuoOmMXVyJIFsXZ1un/9KikpDEWVLBBnqSVGTOAPZwkFG6QFy5ratSxn7eVA==
+"@apparatus/blocks-molecules-context-header@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-context-header/-/blocks-molecules-context-header-0.7.0.tgz#513a12c79b6977561652be0ca6a4a37e9b1b905e"
+  integrity sha512-vczyt8FS4iH/s72kFMTPLDRPO1bDu9I4N5bUpFcLxQOrMvWP0RPgHkQcomMzb2R6pAz+NUnQdhB3u0mrerQlcA==
   dependencies:
-    "@apparatus/blocks-atoms-spacer" "^0.7.0"
-    "@apparatus/blocks-molecules-button-icon" "^0.8.0"
-    "@apparatus/blocks-molecules-text" "^0.7.0"
+    "@apparatus/blocks-atoms-spacer" "^0.8.0"
+    "@apparatus/blocks-molecules-button-icon" "^0.9.0"
+    "@apparatus/blocks-molecules-text" "^0.8.0"
     "@apparatus/blocks-particles-icon-names" "^0.1.0"
     "@apparatus/blocks-particles-text-levels" "^0.1.0"
     "@apparatus/blocks-utils-horizontal" "^0.2.0"
@@ -318,39 +319,39 @@
     elegir "^1.0.0"
     refun "^2.0.0"
 
-"@apparatus/blocks-molecules-date-input@^0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-date-input/-/blocks-molecules-date-input-0.6.0.tgz#549455a6f63ff8e7d6dcf5cfd07f22d693d6c93c"
-  integrity sha512-KWusXk/p9QEOLAprgE9m99ETDZiAJduRiRjgNIAWk0X+vRn5DMurnwsJHhLnv2SGrcKtsx3YZmnSeUsYI25ctg==
+"@apparatus/blocks-molecules-date-input@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-date-input/-/blocks-molecules-date-input-0.7.0.tgz#9a291aed0ba3839715b7d79a6ab6d6b0ba7fcb43"
+  integrity sha512-lZzV2aUbjbT+3gz0dy9dAMc3rWCXoF/rDwhRqajl+fag5cMvhKZ+DaeB05t9Ig31q98VWa97P1kioRKhqKRDwg==
   dependencies:
     "@apparatus/blocks-data-validation" "^0.1.1"
-    "@apparatus/blocks-molecules-input" "^0.8.0"
+    "@apparatus/blocks-molecules-input" "^0.9.0"
     "@apparatus/blocks-particles-icon-names" "^0.1.0"
     "@babel/runtime" "^7.1.2"
     react "16.11.0"
     refun "^2.0.0"
 
-"@apparatus/blocks-molecules-full-cover@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-full-cover/-/blocks-molecules-full-cover-0.5.0.tgz#e5a64556a5b48bfef52a16ad1032487d2c2dc0df"
-  integrity sha512-4fWoTHeD+Huchqs0YLKlKZxb4RJgCoAEx7C9i+xyf0KIQRYnMz7F7N62yjNB7+6VwXbo9ueJEscoHUtFcym5qw==
+"@apparatus/blocks-molecules-full-cover@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-full-cover/-/blocks-molecules-full-cover-0.6.0.tgz#62f6c9b4d8ead3d1d277d2b6d21b709af596bab3"
+  integrity sha512-GsClma01xY+s9SK2v+YDlRUF9Z/bJIU0DgdjDfaBdyEa1IiXg+q/HjCrUS48lUDEUFM7RtZYvTNzC1i7FWCVcg==
   dependencies:
-    "@apparatus/blocks-atoms-background" "^0.7.0"
+    "@apparatus/blocks-atoms-background" "^0.8.0"
     "@apparatus/blocks-contexts-parent-size" "^0.1.0"
     "@apparatus/blocks-utils-vertical" "^0.2.0"
     refun "^2.0.0"
 
-"@apparatus/blocks-molecules-input@^0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-input/-/blocks-molecules-input-0.8.0.tgz#08483474b00676035cabc2e1d08b01de9353b7a5"
-  integrity sha512-+DVOxvuJLz9rJfq2Hsj6GiWVyCSN6+TLDkyY37NJSWdQ/Zta7MUDlQaSGTrKYO63Nj0+fGxDAqLAVKUSbCmIew==
+"@apparatus/blocks-molecules-input@^0.9.0":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-input/-/blocks-molecules-input-0.9.0.tgz#44e0ef4df124c06fb8ebc75282b50c972b2833d5"
+  integrity sha512-rPOOVUroC8Q26mmQbUzXZQLqxi6TVjaKdWFZdN3pGTctCL08RhEm8hTrq/KBZK08V9hklXpGAyjBBQ1mxpKJ8w==
   dependencies:
-    "@apparatus/blocks-atoms-background" "^0.7.0"
-    "@apparatus/blocks-atoms-border" "^0.7.0"
-    "@apparatus/blocks-atoms-icon" "^0.7.0"
-    "@apparatus/blocks-atoms-input" "^0.7.0"
-    "@apparatus/blocks-atoms-spacer" "^0.7.0"
-    "@apparatus/blocks-molecules-text" "^0.7.0"
+    "@apparatus/blocks-atoms-background" "^0.8.0"
+    "@apparatus/blocks-atoms-border" "^0.8.0"
+    "@apparatus/blocks-atoms-icon" "^0.8.0"
+    "@apparatus/blocks-atoms-input" "^0.8.0"
+    "@apparatus/blocks-atoms-spacer" "^0.8.0"
+    "@apparatus/blocks-molecules-text" "^0.8.0"
     "@apparatus/blocks-particles-icon-names" "^0.1.0"
     "@apparatus/blocks-particles-text-levels" "^0.1.0"
     "@apparatus/blocks-utils-horizontal" "^0.2.0"
@@ -359,15 +360,15 @@
     "@primitives/view" "^1.0.0"
     refun "^2.0.0"
 
-"@apparatus/blocks-molecules-list-option@^0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-list-option/-/blocks-molecules-list-option-0.8.0.tgz#5b9928852ec39fca8d5fa9b9b85fa888a6f36024"
-  integrity sha512-Rd2AzOSwSkkCPOe54GSnQQXHIh2KNrG/S6+xt3mKquFzBzaGYSX+yffPtnHh+UjmKJNm8LsjTmYAsKFY0XXnfQ==
+"@apparatus/blocks-molecules-list-option@^0.9.0":
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-list-option/-/blocks-molecules-list-option-0.9.0.tgz#a54bddb20667c7be0124977ad5ad5dac6cd7233a"
+  integrity sha512-1eurCAVNeqFr7gvApg1/svuihabItbEaawBcR34KMoNN2Fa7SYNmcyUtP+jcYuTu9uYthxe491HjynHiiVb/xw==
   dependencies:
-    "@apparatus/blocks-atoms-border" "^0.7.0"
-    "@apparatus/blocks-atoms-icon" "^0.7.0"
-    "@apparatus/blocks-atoms-spacer" "^0.7.0"
-    "@apparatus/blocks-molecules-text" "^0.7.0"
+    "@apparatus/blocks-atoms-border" "^0.8.0"
+    "@apparatus/blocks-atoms-icon" "^0.8.0"
+    "@apparatus/blocks-atoms-spacer" "^0.8.0"
+    "@apparatus/blocks-molecules-text" "^0.8.0"
     "@apparatus/blocks-particles-icon-names" "^0.1.0"
     "@apparatus/blocks-particles-text-levels" "^0.1.0"
     "@apparatus/blocks-utils-horizontal" "^0.2.0"
@@ -376,12 +377,12 @@
     "@primitives/button" "^2.0.0"
     refun "^2.0.0"
 
-"@apparatus/blocks-molecules-main-scrollable@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-main-scrollable/-/blocks-molecules-main-scrollable-0.4.0.tgz#b4fb9db4e4424765275bb28d23225d01940dde48"
-  integrity sha512-dD6vzO2M6oxLi0bv4Sb1YyBcl56EmC2dTcN+/KbTrPqaakjvgQ8nmet2pKPK8vMFTiSgrgW91wocLtr21KsEtQ==
+"@apparatus/blocks-molecules-main-scrollable@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-main-scrollable/-/blocks-molecules-main-scrollable-0.5.0.tgz#daa1ddb17cc59d6413a57de5600df2a76189ca86"
+  integrity sha512-Rh0BlfPYBPp/ViYB3UuTta/j3s1XUgXTBAFX37C7vCABZ41am5bWFW3htXsODyBWwmiSI2siYEn6gy/URT7trw==
   dependencies:
-    "@apparatus/blocks-atoms-container" "^0.7.0"
+    "@apparatus/blocks-atoms-container" "^0.8.0"
     "@apparatus/blocks-contexts-parent-size" "^0.1.0"
     refun "^2.0.0"
 
@@ -395,7 +396,7 @@
     "@primitives/view" "^1.0.0"
     refun "^2.0.0"
 
-"@apparatus/blocks-molecules-side-navigation@^0.3.0":
+"@apparatus/blocks-molecules-side-navigation@^0.3.1":
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-side-navigation/-/blocks-molecules-side-navigation-0.3.1.tgz#1ab2b87f9d402954b9b605600802a328886b6d02"
   integrity sha512-2fmXwFA/vBNu4Ra4UiLyqI41P4HJSkOOi44NFOeWKEXY+Gbw9bmnEZB+M+KRgr2u2H68WS3VQ1DapZbBm4L5YQ==
@@ -406,16 +407,16 @@
     "@primitives/animation" "^1.0.0"
     refun "^2.0.0"
 
-"@apparatus/blocks-molecules-sticky-button@^0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-sticky-button/-/blocks-molecules-sticky-button-0.6.0.tgz#f5203b87d4751f7a29b547d74236c067f6137ece"
-  integrity sha512-0nHKOK7HTOf6cVO+zAgnDejfOPo5AtURVufKnEsd6TyzSDsPs+6WoJPGhqljhMkRmJhL1ZmV8ywOM5Ewo8V20w==
+"@apparatus/blocks-molecules-sticky-button@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-sticky-button/-/blocks-molecules-sticky-button-0.7.0.tgz#b2fc8e9016df0829fbd05b8268113b4ae6cfd70b"
+  integrity sha512-P6Npa9gF5HdTxhtokOtKF+vgFcFK4ZZbHnNATV+hyyY7MgbF2Ai/gPMolmWhw1AXeyvob8/AgtfHPXFm2eNgwQ==
   dependencies:
-    "@apparatus/blocks-atoms-background" "^0.7.0"
-    "@apparatus/blocks-atoms-icon" "^0.7.0"
-    "@apparatus/blocks-atoms-spacer" "^0.7.0"
+    "@apparatus/blocks-atoms-background" "^0.8.0"
+    "@apparatus/blocks-atoms-icon" "^0.8.0"
+    "@apparatus/blocks-atoms-spacer" "^0.8.0"
     "@apparatus/blocks-contexts-interface" "^0.2.0"
-    "@apparatus/blocks-molecules-text" "^0.7.0"
+    "@apparatus/blocks-molecules-text" "^0.8.0"
     "@apparatus/blocks-particles-icon-names" "^0.1.0"
     "@apparatus/blocks-particles-interface-contexts" "^0.2.0"
     "@apparatus/blocks-particles-text-levels" "^0.1.0"
@@ -426,15 +427,15 @@
     react "16.11.0"
     refun "^2.0.0"
 
-"@apparatus/blocks-molecules-tab-selector@^0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-tab-selector/-/blocks-molecules-tab-selector-0.6.0.tgz#e3ffa21a6e378087b0a48339b7204695a46be0ed"
-  integrity sha512-whnLWNE6/lzFdcCThTQJ3lVgv9efDmZnK2N/HzWgXLCzLZzzbcifwb84GcfWsmIPzxNN8U8RI+p+RjOtPe/w0A==
+"@apparatus/blocks-molecules-tab-selector@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-tab-selector/-/blocks-molecules-tab-selector-0.7.0.tgz#8c29eb8dc9ced7602db92d5a603e3eba4b9ba09d"
+  integrity sha512-WYEdm4PFqXeJZ1mXlT2npc7PtG0wk40mkcBuTrSdS3TFZMN3UNMBWcm3Sxko0mrKtXW+yze83JhM9xEX2j5q6w==
   dependencies:
-    "@apparatus/blocks-atoms-background" "^0.7.0"
-    "@apparatus/blocks-atoms-spacer" "^0.7.0"
+    "@apparatus/blocks-atoms-background" "^0.8.0"
+    "@apparatus/blocks-atoms-spacer" "^0.8.0"
     "@apparatus/blocks-contexts-interface" "^0.2.0"
-    "@apparatus/blocks-molecules-text" "^0.7.0"
+    "@apparatus/blocks-molecules-text" "^0.8.0"
     "@apparatus/blocks-particles-interface-contexts" "^0.2.0"
     "@apparatus/blocks-particles-text-levels" "^0.1.0"
     "@apparatus/blocks-utils-horizontal" "^0.2.0"
@@ -444,42 +445,42 @@
     refun "^2.0.0"
     tsfn "^1.1.1"
 
-"@apparatus/blocks-molecules-text@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-text/-/blocks-molecules-text-0.7.0.tgz#4cc69bcc921526ae387a34b74a1cdaa27357080e"
-  integrity sha512-1B/SeVs3mMWJQ8ptu6MWvxmSIL7pWRNQIR0imou/uHfhnnNG81GDADTPvmeFoIL01tpiHKUayGdMc+AyGixtog==
+"@apparatus/blocks-molecules-text@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-text/-/blocks-molecules-text-0.8.0.tgz#f9dc34385ddefb4ce5910e1c97ad28ff6148363d"
+  integrity sha512-e1DGUM0yHZ39LnntyeAaluYJ779HzZag7KA2Y5cJ9X/fyyz7CPbkYyFMhmKvh96udjd8GscC+61fwSV21maDpA==
   dependencies:
-    "@apparatus/blocks-atoms-footprint" "^0.7.0"
-    "@apparatus/blocks-atoms-text" "^0.7.0"
+    "@apparatus/blocks-atoms-footprint" "^0.8.0"
+    "@apparatus/blocks-atoms-text" "^0.8.0"
     "@apparatus/blocks-particles-text-levels" "^0.1.0"
     "@babel/runtime" "^7.1.2"
     "@primitives/background" "^2.0.0"
     "@primitives/block" "^2.0.1"
     refun "^2.0.0"
 
-"@apparatus/blocks-molecules-time-input@^0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-time-input/-/blocks-molecules-time-input-0.6.0.tgz#e879d8efbdeb96774629047a88529f51aa6eaf0f"
-  integrity sha512-P2OOjkm0NFljZ4JEF6tNtC9AGiqNWZW/ffOpCeHaD9bYh6uVvHMWLdwIs9xtabFldD1acq3eA0a/AyQI/3joLw==
+"@apparatus/blocks-molecules-time-input@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-time-input/-/blocks-molecules-time-input-0.7.0.tgz#1b810d33c55c0853511a75c5baae12ab6337e7c8"
+  integrity sha512-sSdsTOOMdEXZRCT6IRlduQds5FFgpo27q1YWdP6ucRXu4y1RG/ECxmQkFb1Oi8eEXBc1tLhkVhUulh2j+6zdkA==
   dependencies:
     "@apparatus/blocks-data-transform-input" "^0.1.1"
     "@apparatus/blocks-data-validation" "^0.1.1"
-    "@apparatus/blocks-molecules-input" "^0.8.0"
+    "@apparatus/blocks-molecules-input" "^0.9.0"
     "@apparatus/blocks-particles-icon-names" "^0.1.0"
     "@babel/runtime" "^7.1.2"
     react "16.11.0"
     refun "^2.0.0"
 
-"@apparatus/blocks-molecules-toast@^0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-toast/-/blocks-molecules-toast-0.6.0.tgz#bfbe8044ec1ad5485011d020b0d1068288d1f5f8"
-  integrity sha512-T22TQxRZwtq2ChGzDa6AuG4waL73O+Ht8IDOTtRaF1s/fQnavJonvIbg3AhJiZv/ST/3yPE1ZmZoOT51XCCGDQ==
+"@apparatus/blocks-molecules-toast@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-toast/-/blocks-molecules-toast-0.7.0.tgz#961f3f80b203dad8097dffc2ef842009a575057b"
+  integrity sha512-z4Qn9JdxZilJm9RXw25QRcvbAj/7ipL6Rq3Zger+KPKgfnEO62fc90qnkWGYYBdY4xcA1oBnvc8ochu8zQgyKg==
   dependencies:
-    "@apparatus/blocks-atoms-background" "^0.7.0"
-    "@apparatus/blocks-atoms-icon" "^0.7.0"
-    "@apparatus/blocks-atoms-spacer" "^0.7.0"
+    "@apparatus/blocks-atoms-background" "^0.8.0"
+    "@apparatus/blocks-atoms-icon" "^0.8.0"
+    "@apparatus/blocks-atoms-spacer" "^0.8.0"
     "@apparatus/blocks-contexts-interface" "^0.2.0"
-    "@apparatus/blocks-molecules-text" "^0.7.0"
+    "@apparatus/blocks-molecules-text" "^0.8.0"
     "@apparatus/blocks-particles-feedback-states" "^0.1.0"
     "@apparatus/blocks-particles-icon-names" "^0.1.0"
     "@apparatus/blocks-particles-interface-contexts" "^0.2.0"
@@ -489,13 +490,13 @@
     react "16.11.0"
     refun "^2.0.0"
 
-"@apparatus/blocks-molecules-toggle@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-toggle/-/blocks-molecules-toggle-0.7.0.tgz#947e22065b4377e9b1cd7aef2a9bb54449b11b23"
-  integrity sha512-xXCk3StQv3io+LobUoEJKQAHe4eFGVo3CDRPiSftprQKKikBia/tMSxgidezvNSdrgeu0j5DVtqfc+Adb9WGuw==
+"@apparatus/blocks-molecules-toggle@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-molecules-toggle/-/blocks-molecules-toggle-0.8.0.tgz#53bcf31dd951159f1f13b5b58a8c565cf6b70b4a"
+  integrity sha512-ix11XyNKFA08fHMJhSME9xRPd6g1fkJMJC1PtW3AuNlmxzpAjpUPIMCvglIHYd3qlq6fbqxSGBtEgFZ4LDVz+Q==
   dependencies:
-    "@apparatus/blocks-atoms-background" "^0.7.0"
-    "@apparatus/blocks-atoms-spacer" "^0.7.0"
+    "@apparatus/blocks-atoms-background" "^0.8.0"
+    "@apparatus/blocks-atoms-spacer" "^0.8.0"
     "@apparatus/blocks-contexts-interface" "^0.2.0"
     "@apparatus/blocks-particles-interface-contexts" "^0.2.0"
     "@apparatus/blocks-utils-horizontal" "^0.2.0"
@@ -530,24 +531,24 @@
   resolved "https://registry.yarnpkg.com/@apparatus/blocks-particles-text-levels/-/blocks-particles-text-levels-0.1.0.tgz#526c1901f090889ae268cc436a90bfb50d77ccb7"
   integrity sha512-BWxhQ7gc7LnzghXeIfDuw6Q35k6FGgzInjjE69ecvJdRs7kWOsC3ufrd/4PQBrz/sHsq8bLS2OriURh94xaZng==
 
-"@apparatus/blocks-themes-default-mappings@^0.7.0":
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-themes-default-mappings/-/blocks-themes-default-mappings-0.7.1.tgz#971af8c0bc25dc3afabb29bbf0b407d4b0257a18"
-  integrity sha512-LrTfQ5WhHckqITh4k2igtfYNWpL9lxLWS6H+TZqFiv6KMFBFO87ltkS4dc9n3B+ynGmcqcMDC8qHh7O4q2B3HQ==
+"@apparatus/blocks-themes-default-mappings@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-themes-default-mappings/-/blocks-themes-default-mappings-0.8.0.tgz#a59cb2c1665bed6b15af823d79a122762515810e"
+  integrity sha512-AhS65ct9mPt4wjYnnn7xqkYAxyxBeGJbqA0xBDCuwjS1GJkqRHRWFP8v5GsMiP6qrNGtot9KA4wvp75YF0vVRA==
   dependencies:
-    "@apparatus/blocks-atoms-background" "^0.7.0"
-    "@apparatus/blocks-atoms-border" "^0.7.0"
-    "@apparatus/blocks-atoms-container" "^0.7.0"
-    "@apparatus/blocks-atoms-footprint" "^0.7.0"
-    "@apparatus/blocks-atoms-icon" "^0.7.0"
-    "@apparatus/blocks-atoms-input" "^0.7.0"
-    "@apparatus/blocks-atoms-spacer" "^0.7.0"
-    "@apparatus/blocks-atoms-text" "^0.7.0"
+    "@apparatus/blocks-atoms-background" "^0.8.0"
+    "@apparatus/blocks-atoms-border" "^0.8.0"
+    "@apparatus/blocks-atoms-container" "^0.8.0"
+    "@apparatus/blocks-atoms-footprint" "^0.8.0"
+    "@apparatus/blocks-atoms-icon" "^0.8.0"
+    "@apparatus/blocks-atoms-input" "^0.8.0"
+    "@apparatus/blocks-atoms-spacer" "^0.8.0"
+    "@apparatus/blocks-atoms-text" "^0.8.0"
     "@apparatus/blocks-particles-icon-names" "^0.1.0"
     "@apparatus/blocks-particles-interface-contexts" "^0.2.0"
     "@apparatus/blocks-particles-text-levels" "^0.1.0"
     "@apparatus/blocks-themes-default-tokens" "^0.2.1"
-    "@apparatus/blocks-types-theme" "^0.7.0"
+    "@apparatus/blocks-types-theme" "^0.8.0"
     "@apparatus/blocks-utils-platform" "^0.1.0"
     "@fantasy-color/lab-to-rgb" "^1.0.0"
     "@fantasy-color/map-color-space-polynomial" "^1.0.0"
@@ -561,7 +562,7 @@
     colorido "^1.0.1"
     elegir "^1.0.0"
 
-"@apparatus/blocks-themes-default-tokens@^0.2.0", "@apparatus/blocks-themes-default-tokens@^0.2.1":
+"@apparatus/blocks-themes-default-tokens@^0.2.1":
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/@apparatus/blocks-themes-default-tokens/-/blocks-themes-default-tokens-0.2.1.tgz#9fa7e8edd5fb551a4822e1aa3e5749df6ac5512c"
   integrity sha512-6gka97ZVnsXVecl3Axbie4yBfzr5p4D+Uz1TEY5Pc0oNCriz3ZblcoGzHRypNBOstWxr4kKtydzh5/hGx9pnFQ==
@@ -570,19 +571,19 @@
     "@themeables/text" "^2.0.0"
     colorido "^1.0.1"
 
-"@apparatus/blocks-types-theme@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/blocks-types-theme/-/blocks-types-theme-0.7.0.tgz#fc5f00f9af3d3bc57219b5b48b505e8dbab0e564"
-  integrity sha512-eRALg+ub/GjIpxjGKh2AvUOw0Od5tdsB/02hO398SbRXiHyfUpsSuFh6cCaAqJnZxyjDYClhMjDcTXP9khfMXA==
+"@apparatus/blocks-types-theme@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/blocks-types-theme/-/blocks-types-theme-0.8.0.tgz#beb08db6baefd1bc48ddaad658689b8a897d2aa7"
+  integrity sha512-fxU0sK49IA3SO/JutrMcjGuV2ntvsK6eXpsNlr9SYBGxZnL61ssLGv/W7I9A7uze7y6qgDcmVI9jcR8+TIAEIw==
   dependencies:
-    "@apparatus/blocks-atoms-background" "^0.7.0"
-    "@apparatus/blocks-atoms-border" "^0.7.0"
-    "@apparatus/blocks-atoms-container" "^0.7.0"
-    "@apparatus/blocks-atoms-footprint" "^0.7.0"
-    "@apparatus/blocks-atoms-icon" "^0.7.0"
-    "@apparatus/blocks-atoms-input" "^0.7.0"
-    "@apparatus/blocks-atoms-spacer" "^0.7.0"
-    "@apparatus/blocks-atoms-text" "^0.7.0"
+    "@apparatus/blocks-atoms-background" "^0.8.0"
+    "@apparatus/blocks-atoms-border" "^0.8.0"
+    "@apparatus/blocks-atoms-container" "^0.8.0"
+    "@apparatus/blocks-atoms-footprint" "^0.8.0"
+    "@apparatus/blocks-atoms-icon" "^0.8.0"
+    "@apparatus/blocks-atoms-input" "^0.8.0"
+    "@apparatus/blocks-atoms-spacer" "^0.8.0"
+    "@apparatus/blocks-atoms-text" "^0.8.0"
     "@apparatus/blocks-particles-interface-contexts" "^0.2.0"
     "@themeables/background" "^2.0.0"
     "@themeables/border" "^2.0.0"
