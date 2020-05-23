@@ -1,3 +1,7 @@
+## v0.9.0
+
+* 🌱 update blocks and add improved input interaction
+
 ## v0.8.0
 
 * 🐞 several visual fixes

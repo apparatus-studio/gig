@@ -1,3 +1,7 @@
+## v0.8.0
+
+* ♻️ update dependencies `@apparatus/gig-organisms-about-gig`
+
 ## v0.7.0
 
 * ♻️ update dependencies `@apparatus/gig-data-store`

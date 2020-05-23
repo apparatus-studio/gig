@@ -1,3 +1,7 @@
+## v0.9.0
+
+* ♻️ update dependencies `@apparatus/gig-organisms-home`
+
 ## v0.8.0
 
 * 🐞 several visual fixes

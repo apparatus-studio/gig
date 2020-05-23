@@ -1,3 +1,7 @@
+## v0.3.0
+
+* 🌱 update blocks and add improved input interaction
+
 ## v0.2.2
 
 * 🐞 update blocks version and fix spacing

@@ -1,3 +1,7 @@
+## v0.8.0
+
+* 🌱 update blocks and add improved input interaction
+
 ## v0.7.0
 
 * ♻️ update dependencies `@apparatus/gig-containers-sync-state`, `@apparatus/gig-containers-share`

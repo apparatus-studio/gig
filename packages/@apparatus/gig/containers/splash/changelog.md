@@ -1,3 +1,7 @@
+## v0.8.0
+
+* ♻️ update dependencies `@apparatus/gig-organisms-splash`
+
 ## v0.7.0
 
 * 🌱 introduce pulse update for date, tz, and tzoffset support

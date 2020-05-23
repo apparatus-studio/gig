@@ -1,6 +1,6 @@
 {
   "name": "@apparatus/gig-containers-currency-select",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "main": "src/index.ts",
   "browser": "src/index.ts",
   "react-native": "src/index.ts",

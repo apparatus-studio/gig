@@ -1,3 +1,7 @@
+## v0.8.0
+
+* ♻️ update dependencies `@apparatus/gig-organisms-currency-select`
+
 ## v0.7.0
 
 * ♻️ update dependencies `@apparatus/gig-data-store`

@@ -1,6 +1,6 @@
 {
   "name": "@apparatus/gig-organisms-section-selector",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "main": "src/index.tsx",
   "browser": "src/index.tsx",
   "react-native": "src/index.tsx",

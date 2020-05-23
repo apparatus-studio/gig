@@ -1,3 +1,9 @@
+## v0.3.0
+
+* 🌱 update blocks and add improved input interaction
+
+* ♻️ update dependencies `@apparatus/gig-molecules-time-tracked`
+
 ## v0.2.1
 
 * 🐞 update blocks version and fix spacing

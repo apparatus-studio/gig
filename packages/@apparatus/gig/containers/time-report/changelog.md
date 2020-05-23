@@ -1,3 +1,7 @@
+## v0.9.0
+
+* ♻️ update dependencies `@apparatus/gig-organisms-time-report`
+
 ## v0.8.0
 
 * ♻️ update dependencies `@apparatus/gig-data-transform-time-report`, `@apparatus/gig-data-store`, `@apparatus/gig-data-transform-store`
