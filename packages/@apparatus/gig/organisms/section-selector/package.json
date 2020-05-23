@@ -10,7 +10,7 @@
     "build/"
   ],
   "dependencies": {
-    "@apparatus/blocks-index": "^0.14.0",
+    "@apparatus/blocks-index": "^0.16.0",
     "@apparatus/gig-containers-share": "^0.5.0",
     "@apparatus/gig-containers-sync-state": "^0.2.0",
     "@apparatus/gig-themes-gig-tokens": "^0.1.0",

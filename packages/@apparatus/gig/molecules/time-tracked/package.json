@@ -10,7 +10,7 @@
     "build/"
   ],
   "dependencies": {
-    "@apparatus/blocks-index": "^0.14.0",
+    "@apparatus/blocks-index": "^0.16.0",
     "@apparatus/effects-get-current-time-in-seconds": "^0.1.0",
     "@apparatus/gig-data-transform-numbers": "^0.1.1",
     "@babel/runtime": "^7.1.2",

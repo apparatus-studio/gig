@@ -48,7 +48,11 @@ export const OrganismGigUpdate: FC<TOrganismGigUpdate> = ({
       <AtomSpacer multiplier={4}/>
       <Input value={gigName} onChange={setGigName}/>
       <AtomSpacer multiplier={4}/>
-      <Input value={rate} onChange={setRate}/>
+      <Input
+        onChange={setRate}
+        shouldUseNumberKeyboard
+        value={rate}
+      />
     </MainScrollable>
 
     {!isKeyboardVisible && (

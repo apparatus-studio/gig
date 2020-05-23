@@ -53,9 +53,9 @@ export const OrganismGigNew: FC<TOrganismGigNew> = ({
       </Horizontal>
 
       <Input
-        value={gigName}
         onChange={setGigName}
         placeholder="Company Name"
+        value={gigName}
       />
 
       <Horizontal hAlign="center">
@@ -63,9 +63,10 @@ export const OrganismGigNew: FC<TOrganismGigNew> = ({
       </Horizontal>
 
       <Input
-        value={rate}
         onChange={setRate}
         placeholder="Hourly Rate"
+        shouldUseNumberKeyboard
+        value={rate}
       />
     </MainScrollable>
 

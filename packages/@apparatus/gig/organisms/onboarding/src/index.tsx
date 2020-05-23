@@ -67,6 +67,7 @@ export const OrganismOnboarding: FC<TOrganismOnboarding> = component(
               placeholder="Write your response"
               value={message}
               onChange={setMessage}
+              shouldUseNumberKeyboard={messages.length === 4}
             />
             <AtomSpacer multiplier={4}/>
             <Button level={BUTTON_LEVEL_PRIMARY} onPress={onSend}>

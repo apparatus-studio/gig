@@ -10,7 +10,7 @@
     "build/"
   ],
   "dependencies": {
-    "@apparatus/blocks-index": "^0.14.0",
+    "@apparatus/blocks-index": "^0.16.0",
     "@apparatus/exhibition-animations-gig-congratulations": "^0.1.2",
     "@babel/runtime": "^7.1.2",
     "@primitives/view": "^1.0.0",
