@@ -101,6 +101,13 @@ export const reducer: Reducer<TState, TAction> = (state = initialState, action) 
       }
     }
 
+    case 'READ_STATE': {
+      return {
+        ...state,
+        hasReadStorage: true,
+      }
+    }
+
     case 'SHARE_START': {
       return {
         ...state,

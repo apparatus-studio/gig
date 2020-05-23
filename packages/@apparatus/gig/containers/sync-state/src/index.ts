@@ -20,6 +20,11 @@ export const componentSyncState = component(
   ),
   mapStoreDispatch('dispatch'),
   mapHandlers({
+    onReadStorage: ({ dispatch }) => () => {
+      dispatch({
+        type: 'READ_STATE',
+      })
+    },
     onSyncState: ({ dispatch }) => ({
       currentCurrency,
       gigs,
@@ -67,6 +72,7 @@ export const componentSyncState = component(
       firstDayOfWeek,
       gigs,
       hasReadStorage,
+      onReadStorage,
       onSyncState,
       onUpdateCurrentDay,
       onUpdateCurrentTimeZone,
@@ -81,6 +87,8 @@ export const componentSyncState = component(
 
               if (state !== null && (state as TStorableData).gigs != null) {
                 onSyncState(state as TStorableData)
+              } else {
+                onReadStorage()
               }
             }
           )

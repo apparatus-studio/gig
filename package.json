@@ -12,7 +12,7 @@
   "devDependencies": {
     "@apparatus/blocks-index": "^0.16.0",
     "@apparatus/gig-containers-main": "*",
-    "@apparatus/meta-start-preset": "^0.3.1",
+    "@apparatus/meta-start-preset": "^0.4.0",
     "@nextools/eslint-config": "^0.1.2",
     "@nextools/typescript-config": "^0.1.0",
     "@sandbox/ui": "^3.0.0",

@@ -691,13 +691,14 @@
   dependencies:
     "@react-native-community/async-storage" "^1.10.0"
 
-"@apparatus/effects-time-information-events@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@apparatus/effects-time-information-events/-/effects-time-information-events-0.1.0.tgz#7f50575069fd0344eb43bcfdf864e4872db5c586"
-  integrity sha512-otQ0W5d2Y+NNNb/VyHeLYEVzyP+Pn8uNPu/ZgWZP4h4WwdjG27AuxsOD0C5dpbnyyBFFoCd3o53OdJGjckthEQ==
+"@apparatus/effects-time-information-events@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@apparatus/effects-time-information-events/-/effects-time-information-events-0.1.1.tgz#f498c15f21066d73b79baef3f9b29f32bfa373c4"
+  integrity sha512-AWypq3iRRAJx6NAX+dWzL77samlrlFoOkHjq+AsJFBUMCO9LwBJWlFejxbklQ7s6wsVWauT2FxNP572sZb913w==
   dependencies:
     "@apparatus/effects-get-current-time-in-seconds" "^0.1.0"
     date-fns "^2.12.0"
+    react-native-localize "^1.4.0"
 
 "@apparatus/effects-update-keyboard-status@^0.1.1":
   version "0.1.1"
@@ -747,10 +748,10 @@
     lottie-web "^5.6.8"
     react-native "^0.62.2"
 
-"@apparatus/meta-start-preset@^0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@apparatus/meta-start-preset/-/meta-start-preset-0.3.1.tgz#028da47d961cb890995032fd5098c49c35863142"
-  integrity sha512-VqnCha+1QDwiQcyEetb2Hu5mfDT210b4poQ+6ZcLqsCzTd+9hcxCp/ybOp/zorgnq5J/jU0g8LdusjRd84+CDg==
+"@apparatus/meta-start-preset@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@apparatus/meta-start-preset/-/meta-start-preset-0.4.0.tgz#9225302eedb55adfd94da145fd531a921c3f6e43"
+  integrity sha512-8BsoRNRY85AsfH4j4u8ERlRAG5CKQ6NGWTm7sByk+vpICTNkKe/XyBu8bixPdN/EYwlBu3X5XvZ+wT5+ng94sg==
   dependencies:
     "@auto/changelog" "^0.1.0"
     "@auto/commit-prompt" "^0.1.0"
@@ -812,6 +813,7 @@
     prompts "^2.1.0"
     react "16.11.0"
     react-native-exception-handler "^2.10.8"
+    react-native-localize "^1.4.0"
     react-native-share "^3.3.2"
     react-native-svg "^12.1.0"
     react-native-view-shot "^3.1.1"
@@ -11284,6 +11286,11 @@ react-native-exception-handler@^2.10.8:
   version "2.10.8"
   resolved "https://registry.yarnpkg.com/react-native-exception-handler/-/react-native-exception-handler-2.10.8.tgz#1a7f846592d888d23adaf797e31802585f1d9ff0"
   integrity sha512-ZN+jwpADRkCUNdad/50k0mZdMoICGrGdtaxgvRU+pNcWRRBAXJhuo4+jY0eQaoVpx1ghycGE6tBu9ka8gL2NOQ==
+
+react-native-localize@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/react-native-localize/-/react-native-localize-1.4.0.tgz#4653596d066d0941c48f5404dc1c0d08b6950443"
+  integrity sha512-W2MQxm6hzD549ZbZcbWzWtYJseY7S7WR2WgsNhm9ULmbwP7tXFfOTbkJjQoqgPXYSXogKN3srXhntVsNZL0Ksw==
 
 react-native-safe-modules@^1.0.0:
   version "1.0.0"

@@ -653,3 +653,20 @@ test('reducer: sync state', (t) => {
 
   t.end()
 })
+
+test('reducer: read state', (t) => {
+  const result = reducer(
+    state,
+    {
+      type: 'READ_STATE',
+    }
+  )
+
+  t.deepEquals(
+    result.hasReadStorage,
+    true,
+    'should be true'
+  )
+
+  t.end()
+})

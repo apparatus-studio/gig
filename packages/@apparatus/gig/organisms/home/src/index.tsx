@@ -114,11 +114,11 @@ export const OrganismHome: FC<TOrganismHome> = ({
                 description={`You’ve worked ${lengthInHooman(
                   elegir(
                     period === 'month',
-                    transformGig.thisMonthHours(gig, month),
+                    transformGig.thisMonthHours(gig, month) * 60 * 60,
                     period === 'week',
-                    transformGig.thisWeekHours(gig, today),
+                    transformGig.thisWeekHours(gig, today) * 60 * 60,
                     true,
-                    transformGig.todayHours(gig, today)
+                    transformGig.todayHours(gig, today) * 60 * 60
                   )
                 )} and generated ${moneyInHooman(
                   elegir(

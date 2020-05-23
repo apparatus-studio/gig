@@ -70,6 +70,10 @@ export type TActionPeriodUpdate = {
   },
 }
 
+export type TActionReadState = {
+  type: 'READ_STATE',
+}
+
 export type TActionRootDimensionsUpdate = {
   type: 'ROOT_DIMENSIONS_UPDATE',
   payload: TRootDimensions,
@@ -135,6 +139,7 @@ export type TAction =
   | TActionLoaded
   | TActionNavigate
   | TActionPeriodUpdate
+  | TActionReadState
   | TActionRootDimensionsUpdate
   | TActionShareStart
   | TActionShareStop
