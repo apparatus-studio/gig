@@ -11,7 +11,7 @@
   ],
   "dependencies": {
     "@apparatus/blocks-index": "^0.16.0",
-    "@apparatus/gig-molecules-time-report": "^0.7.0",
+    "@apparatus/gig-molecules-time-report": "^0.8.0",
     "@apparatus/gig-types-data": "^0.2.0",
     "@babel/runtime": "^7.1.2",
     "@primitives/view": "*"

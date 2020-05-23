@@ -13,7 +13,7 @@
     "@apparatus/effects-get-current-time-in-seconds": "^0.1.0",
     "@apparatus/gig-data-store": "^0.6.0",
     "@apparatus/gig-data-transform-store": "^0.6.0",
-    "@apparatus/gig-organisms-track-time": "^0.2.1",
+    "@apparatus/gig-organisms-track-time": "^0.3.0",
     "@babel/runtime": "^7.1.2",
     "refun": "^2.0.0"
   },

@@ -12,7 +12,7 @@
   "dependencies": {
     "@apparatus/blocks-index": "^0.16.0",
     "@apparatus/exhibition-animations-gig-timer": "^0.1.1",
-    "@apparatus/gig-molecules-time-tracked": "^0.2.1",
+    "@apparatus/gig-molecules-time-tracked": "^0.3.0",
     "@babel/runtime": "^7.1.2"
   },
   "devDependencies": {
