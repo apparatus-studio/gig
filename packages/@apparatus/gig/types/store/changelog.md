@@ -1,3 +1,7 @@
+## v0.5.1
+
+* 🐞 fix intl and storage
+
 ## v0.5.0
 
 * 🌱 introduce pulse update for date, tz, and tzoffset support

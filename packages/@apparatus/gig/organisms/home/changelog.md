@@ -1,3 +1,7 @@
+## v0.9.1
+
+* 🐞 fix intl and storage
+
 ## v0.9.0
 
 * 🌱 update blocks and add improved input interaction
