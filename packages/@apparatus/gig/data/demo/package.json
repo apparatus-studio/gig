@@ -12,7 +12,7 @@
   "dependencies": {
     "@apparatus/data-currencies": "^0.1.0",
     "@apparatus/gig-types-data": "^0.2.0",
-    "@apparatus/gig-types-store": "^0.5.0",
+    "@apparatus/gig-types-store": "^0.5.1",
     "date-fns": "2.12.0"
   },
   "sideEffects": false

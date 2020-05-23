@@ -10,7 +10,7 @@
     "build/"
   ],
   "dependencies": {
-    "@apparatus/gig-data-store": "^0.6.0",
+    "@apparatus/gig-data-store": "^0.6.1",
     "@apparatus/gig-data-transform-input": "^0.1.0",
     "@apparatus/gig-data-transform-store": "^0.6.0",
     "@apparatus/gig-data-transform-time-report": "^0.6.0",
